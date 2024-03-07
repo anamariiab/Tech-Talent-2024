@@ -1,5 +1,5 @@
 
-public class T2Ejercicio02App {
+public class T2Ejercicio02 {
 
 	public static void main(String[] args) {
 
