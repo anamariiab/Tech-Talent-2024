@@ -43,6 +43,35 @@ public class UD8Frutas {
 		this.precio = 0.0;
 	}
 	
+
+	
+	public String getNombre() {       //Geters 
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {     //Seters
+		this.nombre = nombre;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+	
+	
+	
+	
 	// Metodos
 
 	public static void main(String[] args) {
@@ -51,6 +80,9 @@ public class UD8Frutas {
 		UD8Frutas platano = new UD8Frutas("Plátano");
 		UD8Frutas arandanos = new UD8Frutas("Arandanos", "lila");
 		UD8Frutas albaricoque = new UD8Frutas("Albaricoque", "Naranja", 11.15);
+		
+		
+	// Mostrar los valores iniciales despues de la instanciacion
 
 		System.out.println(" Mi primera fruta tiene el nombre: " + manzana.nombre + " y tiene un color igual a "
 				+ manzana.color + " y tiene un precio de " + manzana.precio + "€");
@@ -76,5 +108,4 @@ public class UD8Frutas {
 		System.out.println(" Mi primera fruta tiene el nombre: " + manzana.nombre + " y tiene un color igual a "
 				+ manzana.color + " tiene un precio de " + manzana.precio + "€");
 	}
-
 }
