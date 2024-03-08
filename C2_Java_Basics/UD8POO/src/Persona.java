@@ -1,23 +1,27 @@
 
-public class UD8Persona {
+public class Persona {
 		
 		// Atributos (o campos/propiedades)
+	
 	    private String nombre;
 	    private int edad;
 	    private String ciudad;
 
 	    // Constructor(es)
-	    public UD8Persona() {
+	    
+	    public Persona() {
 	        // Constructor por defecto
 	    }
 
-	    public UD8Persona(String nombre, int edad, String ciudad) {
+	    public Persona(String nombre, int edad, String ciudad) {
+	    	
 	        this.nombre = nombre;
 	        this.edad = edad;
 	        this.ciudad = ciudad;
 	    }
 
 	    // Métodos (o funciones)
+	    
 	    public String getNombre() {
 	        return nombre;
 	    }
