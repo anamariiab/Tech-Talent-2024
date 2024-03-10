@@ -88,8 +88,6 @@ public class T7Ejercicio02App {
 
 			double cambio = cantidadPagada - precioTotalIVA;
 			System.out.println("Cambio a devolver al cliente: " + cambio);
-
-		
 			
 		}
 
