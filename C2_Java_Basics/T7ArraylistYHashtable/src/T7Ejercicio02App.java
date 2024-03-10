@@ -12,11 +12,10 @@ public class T7Ejercicio02App {
 			List<String> nombresArticulos = new ArrayList<>();
 			List<Integer> cantidadArticulosCarrito = new ArrayList<>();
 			List<Double> precioUnidadArticulo = new ArrayList<>();
+			List<Double> ivaArticulo = new ArrayList<>();                                    //almacenamos el iva de cada articulo
 
 			int opcionMenu;
-			double precioTotalBruto = 0;
-			int numeroArticulosComprados = 0;
-
+		
 			do {
 				mostrarMenu();                                                                                     //llamamos al metodo q imprime las opc en la consola para el user
 				System.out.print("Porfavor, introduce una opción: ");
@@ -24,10 +23,10 @@ public class T7Ejercicio02App {
 
 				switch (opcionMenu) {
 				case 1:
-					agregarArticulo(nombresArticulos, cantidadArticulosCarrito, precioUnidadArticulo);
+					agregarArticulo(nombresArticulos, cantidadArticulosCarrito, precioUnidadArticulo, ivaArticulo);
 					break;                                                                                  //se repite el bucle hasta que el user decide salir (opc3)
 				case 2:
-					efectuarCompra(nombresArticulos, cantidadArticulosCarrito, precioUnidadArticulo, precioTotalBruto, numeroArticulosComprados);
+					efectuarCompra(nombresArticulos, cantidadArticulosCarrito, precioUnidadArticulo, ivaArticulo);
 					break;
 				case 3:
 					System.out.println("Gracias!");
@@ -45,9 +44,9 @@ public class T7Ejercicio02App {
 			
 		}
 
-		public static void agregarArticulo(List<String> nombresArticulos, List<Integer> cantidadArticulosCarrito, List<Double> precioUnidadArticulo) {
+		public static void agregarArticulo(List<String> nombresArticulos, List<Integer> cantidadArticulosCarrito, List<Double> precioUnidadArticulo, List<Double> ivaArticulo) {
 			
-			System.out.print("Porfavor, introduce el nombre del artículo: ");
+			System.out.print("Porfavor, introduce el nombre del artículo: ");                                                                                //solicitamos al usuario ingresar detalles del articulo
 			String nombreArticulo = sc.nextLine();
 
 			System.out.print("Introduce la cantidad: ");
@@ -57,34 +56,37 @@ public class T7Ejercicio02App {
 			double precioPorUnidad = Double.parseDouble(sc.nextLine());
 
 			nombresArticulos.add(nombreArticulo);
-			cantidadArticulosCarrito.add(cantidad);
+			cantidadArticulosCarrito.add(cantidad);                                                                             //añadimos los detalles correspondientes de cada articulo a las listas
 			precioUnidadArticulo.add(precioPorUnidad);
 
-			IVA = obtenerIVA();                                                                   //llamamos al metodo obtener iva para obtener el tipo 
+			ivaArticulo.add(obtenerIVA());                                                                         
 
-			System.out.println("Artículo añadido al carrito con un IVA del " + IVA + "%.");
+			System.out.println("Artículo añadido al carrito con un IVA del " + ivaArticulo + "%.");
 		}
 
-		public static void efectuarCompra(List<String> nombresArticulos, List<Integer> cantidadArticulosCarrito, List<Double> precioUnidadArticulo, double precioTotalBruto, int numeroArticulosComprados) {
+		public static void efectuarCompra(List<String> nombresArticulos, List<Integer> cantidadArticulosCarrito, 
+				List<Double> precioUnidadArticulo, List<Double> ivaArticulo) {
 			
 			System.out.println("\nResumen de la compra:\n" + "=========================");
-
-			for (int i = 0; i < nombresArticulos.size(); i++) {
-				precioTotalBruto += cantidadArticulosCarrito.get(i) * precioUnidadArticulo.get(i);                    //recorre cada articulo del carrito, calculando el precio total bruto de la compra sumando la cantidad y el precio por unidad y cuenta el número total de artículos comprados.
+				
+			double precioTotalBruto = 0;
+			double precioTotalIVA = 0;
+			int numeroArticulosComprados = 0;
+			
+			for (int i = 0; i < nombresArticulos.size(); i++) {                                                                         //recorremos los elementos de las listas 
+				precioTotalBruto += cantidadArticulosCarrito.get(i) * precioUnidadArticulo.get(i);                                      
+				precioTotalIVA += cantidadArticulosCarrito.get(i) * precioUnidadArticulo.get(i) * (1 + ivaArticulo.get(i) / 100);
 				numeroArticulosComprados += cantidadArticulosCarrito.get(i);
 			}
 
-			double precioConIVA = precioTotalBruto * (1 + IVA / 100);                                               //ajuste para aplicar el iva al precio total bruto. ej: si fuera 21%: (1 + 21 / 100) = 1.21.
-
-			System.out.println("IVA aplicado: " + IVA + "%");
-			System.out.println("Precio total bruto: " + precioTotalBruto);
-			System.out.println("Precio total con IVA: " + precioConIVA);
+			System.out.println("Precio total bruto: " + precioTotalBruto);                             
+			System.out.println("Precio total con IVA: " + precioTotalIVA);
 			System.out.println("Número de artículos comprados: " + numeroArticulosComprados);
 
 			System.out.print("Introduce la cantidad pagada: ");
 			double cantidadPagada = Double.parseDouble(sc.nextLine());
 
-			double cambio = cantidadPagada - precioConIVA;
+			double cambio = cantidadPagada - precioTotalIVA;
 			System.out.println("Cambio a devolver al cliente: " + cambio);
 
 		
