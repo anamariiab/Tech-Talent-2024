@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class T5Ejercicio10App {
 
