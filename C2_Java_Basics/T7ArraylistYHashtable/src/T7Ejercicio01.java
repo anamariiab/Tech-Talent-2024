@@ -10,7 +10,7 @@ public class T7Ejercicio01 {
 
         Map<String, Double[]> notasAlumnos = new HashMap<>();
 
-        System.out.print("Porfavor, introduce el número total de alumnos: ");
+        System.out.print("Por favor, introduce el número total de alumnos: ");
         int numTotalAlumnos = sc.nextInt();
 
         inputNombreNotas(notasAlumnos, numTotalAlumnos);
