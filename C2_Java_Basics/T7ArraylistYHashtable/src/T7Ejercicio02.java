@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class T7Ejercicio02App {
+public class T7Ejercicio02 {
 
 		public static Scanner sc = new Scanner(System.in);
 		public static double IVA;                                  //he declarado la var iva como global para poder utilizarla tanto en "agregar articulo" como en "efectuar compra"

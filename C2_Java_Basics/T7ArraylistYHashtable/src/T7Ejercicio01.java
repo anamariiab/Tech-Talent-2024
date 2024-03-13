@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class T7Ejercicio01App {
+public class T7Ejercicio01 {
 
 	public static void main(String[] args) {
 		

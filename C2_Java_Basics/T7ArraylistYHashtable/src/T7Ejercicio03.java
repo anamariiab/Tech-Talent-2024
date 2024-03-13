@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class T7Ejercicio03App {
+public class T7Ejercicio03 {
 
 		public static Scanner sc = new Scanner(System.in);
 
