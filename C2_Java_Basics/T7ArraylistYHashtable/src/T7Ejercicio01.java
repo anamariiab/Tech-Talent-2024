@@ -19,7 +19,7 @@ public class T7Ejercicio01 {
         sc.close();
     }
 
-    private static void inputNombreNotas(Map<String, Double[]> notasAlumnos, int cantidadAlumnos) {
+	public static void inputNombreNotas(Map<String, Double[]> notasAlumnos, int cantidadAlumnos) {
         Scanner sc = new Scanner(System.in);
 
         for (int i = 0; i < cantidadAlumnos; i++) {
