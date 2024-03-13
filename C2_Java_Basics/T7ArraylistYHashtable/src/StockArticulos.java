@@ -142,6 +142,9 @@ public class StockArticulos {
 		double gananciasBrutoTotal = 0;                           
 		double gananciasNetoTotal = 0;
 
+		System.out.println("Este es el stock actual de la tienda:\n");
+        mostrarStock();
+		
 		while (otroCliente) {
 			HashMap<String, Double[]> compra = new HashMap<>();                                              //mapa para alamcenar la info de la compra
 
