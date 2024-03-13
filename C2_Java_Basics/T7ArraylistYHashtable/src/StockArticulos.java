@@ -5,21 +5,20 @@ import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Iterator;
 
+
+                                                                               //atributos de la clase
 public class StockArticulos {
 
-	// ATRIBUTOS
 	String nombre;
-	double precioBruto;
+	double precioBruto;                                                   
 	double IVA;
 	int cantidad;
 
-	// Lista para almacenar los productos
-	static List<StockArticulos> inventario = new ArrayList<>();
+	static List<StockArticulos> inventario = new ArrayList<>();                    //lista que almacena objetos de clase
 
-	// CONSTRUCTORES
 	public StockArticulos() {
 		this.nombre = "##";
-		this.precioBruto = 0.0;
+		this.precioBruto = 0.0;                                               //el primer constructor con los valroes predeterminados
 		this.IVA = 0.0;
 		this.cantidad = 0;
 	}
@@ -27,18 +26,20 @@ public class StockArticulos {
 	public StockArticulos(String nombre, double precioBruto, double IVA, int cantidad) {
 		this.nombre = nombre;
 		this.precioBruto = precioBruto;
-		this.IVA = IVA;
+		this.IVA = IVA;                                                        //el constructor con los valores especificos
 		this.cantidad = cantidad;
 	}
 
 	public static void agregarArticulo() {
 		String nombre = JOptionPane.showInputDialog("Ingrese el nombre del artículo:");
-		nombre = nombre.toUpperCase(); // Convertir a mayúsculas
-		double precioBruto = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el precio bruto del artículo:"));
+		nombre = nombre.toUpperCase();
+		double precioBruto = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el precio bruto del artículo:"));  //solicita 	info al usuario sobre un nuevo articulo a agregar
+																													
 		double IVA = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el IVA del artículo:"));
 		int cantidad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad del artículo:"));
 
-		StockArticulos producto = new StockArticulos(nombre, precioBruto, IVA, cantidad);
+		StockArticulos producto = new StockArticulos(nombre, precioBruto, IVA, cantidad);                       //creacion objeto con los datos introducidos por el usuario y los añade al inventario
+																						
 		inventario.add(producto);
 
 		if (inventario.size() >= 10) {
@@ -50,11 +51,15 @@ public class StockArticulos {
 	}
 
 	public static void eliminarArticulo() {
-		String nombre = JOptionPane.showInputDialog("Ingrese el nombre del artículo a eliminar:");
-		nombre = nombre.toUpperCase(); // Convertir a mayúsculas
+		String nombre = JOptionPane.showInputDialog("Ingrese el nombre del artículo a eliminar:"); //solicita info al usuario sobre el articulo que quiere eliminar
+																									 
+																									
+																									
+		nombre = nombre.toUpperCase(); 
 
 		Iterator<StockArticulos> iterator = inventario.iterator();
-		while (iterator.hasNext()) {
+		while (iterator.hasNext()) {                                              //el iterator para recorrer la lista y eliminar el articulo si lo encuentra en el inventario
+										
 			StockArticulos producto = iterator.next();
 
 			if (producto.nombre.equalsIgnoreCase(nombre)) {
@@ -72,15 +77,16 @@ public class StockArticulos {
 	public static StockArticulos buscarArticulo(String nombre) {
 		for (StockArticulos producto : inventario) {
 			if (producto.nombre.equalsIgnoreCase(nombre)) {
-				return producto;
+				return producto;                                                             //metodo para buscar un articulo en el inventario y devuelve el objeto stock articulos si se encuentra
+									
 			}
 		}
-		return null;
+		return null;                                                                      //devuelve null si el art no esta
 	}
 
-	public static void modificarCantidad() {
+	public static void modificarCantidad() {                                                             //metodo para modificar la cantidad de cada articulo del inventario
 		String nombre = JOptionPane.showInputDialog("Ingrese el nombre del artículo cuya cantidad desea modificar:");
-		nombre = nombre.toUpperCase(); // Convertir a mayúsculas
+		nombre = nombre.toUpperCase();                                                   
 
 		for (StockArticulos producto : inventario) {
 			if (producto.nombre.equalsIgnoreCase(nombre)) {
@@ -96,7 +102,7 @@ public class StockArticulos {
 				JOptionPane.ERROR_MESSAGE);
 	}
 
-	public static void mostrarStock() {
+	public static void mostrarStock() {                                                   //metodo para mostrar el inventario actual
 		StringBuilder stock = new StringBuilder("Inventario Actual:\n");
 
 		for (StockArticulos producto : inventario) {
@@ -105,7 +111,7 @@ public class StockArticulos {
 		JOptionPane.showMessageDialog(null, stock.toString(), "Inventario Actual", JOptionPane.INFORMATION_MESSAGE);
 	}
 
-	public static void listarProductos() {
+	public static void listarProductos() {                                                   //metodo para mostrar una lista con los articulos disponibles
 		StringBuilder lista = new StringBuilder("Productos disponibles:\n");
 		for (StockArticulos producto : inventario) {
 			lista.append(producto.nombre).append("\n");
@@ -114,11 +120,11 @@ public class StockArticulos {
 	}
 
 	public static void main(String[] args) {
-		StockArticulos leche = new StockArticulos("Leche", 1.10, 4, 20);
+		StockArticulos leche = new StockArticulos("Leche", 1.10, 4, 20);                             //las instancias de la clase stockarticulos para los diferentes articulso con sus atributos
 		inventario.add(leche);
 		StockArticulos pan = new StockArticulos("Pan", 0.90, 4, 30);
 		inventario.add(pan);
-		StockArticulos huevos = new StockArticulos("Huevos", 2.50, 4, 40);
+		StockArticulos huevos = new StockArticulos("Huevos", 2.50, 4, 40);                     
 		inventario.add(huevos);
 		StockArticulos arroz = new StockArticulos("Arroz", 1.30, 21, 15);
 		inventario.add(arroz);
@@ -131,29 +137,29 @@ public class StockArticulos {
 		StockArticulos manzanas = new StockArticulos("Manzanas", 1.75, 21, 45);
 		inventario.add(manzanas);
 
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);                                                //!!!
 		boolean otroCliente = true;
-		double gananciasBrutoTotal = 0;
+		double gananciasBrutoTotal = 0;                           
 		double gananciasNetoTotal = 0;
 
 		while (otroCliente) {
-			HashMap<String, Double[]> compra = new HashMap<>();
+			HashMap<String, Double[]> compra = new HashMap<>();                                              //mapa para alamcenar la info de la compra
 
 			System.out.println("-- INICIO COMPRA --");
-			comprarArticulos(sc, compra);
-			imprimirResumenCompra(compra);
-
+			comprarArticulos(sc, compra);                                                                      //se realiza la compra llamando al met comprar articulos
+			imprimirResumenCompra(compra);                                                                      //se imprime la compra realizada
+                                                  
 			double totalCompraBruto = calcularTotalCompraBruto(compra);
 			double totalCompraNeto = calcularTotalCompraNeto(compra);
-			gananciasBrutoTotal += totalCompraBruto;
+			gananciasBrutoTotal += totalCompraBruto;                                                          //se calcula los totales de la compra
 			gananciasNetoTotal += totalCompraNeto;
-			imprimirTotalesCompra(totalCompraBruto, totalCompraNeto);
-			procesarPago(sc, totalCompraNeto);
+			imprimirTotalesCompra(totalCompraBruto, totalCompraNeto);                                        
+			procesarPago(sc, totalCompraNeto);                                                               //se procesa el pago llamando al metodo procesar pago
 
 			System.out.println("¿Hay otro cliente? (Y/N)");
 			String respuesta = sc.nextLine().toUpperCase();
 
-			if (!respuesta.equals("Y")) {
+			if (!respuesta.equals("Y")) {                                                                   //si no hay otros clientes se imprime el resumen final de la compra, la caja final
 				otroCliente = false;
 				System.out.println("\n-- CAJA FINAL --" + "\nGanancias totales (Bruto): " + gananciasBrutoTotal
 						+ "\nGanancias totales (Neto): " + gananciasNetoTotal);
@@ -161,11 +167,11 @@ public class StockArticulos {
 				mostrarOpcionesInventario();
 			}
 
-			boolean continuar = true; // Variable para controlar si continuar en el bucle while
+			boolean continuar = true;                                                           //variable para controlar si continuar en el bucle while
 
 			while (continuar) {
 				String opcion = JOptionPane.showInputDialog(null,
-						"Seleccione una opción:\n" + "1. Agregar artículo\n" + "2. Eliminar artículo\n"
+						"Seleccione una opción:\n" + "1. Agregar artículo\n" + "2. Eliminar artículo\n"                  //el menu de opciones del inventario
 								+ "3. Modificar cantidad\n" + "4. Mostrar stock\n" + "5. Salir",
 						"Menú de Opciones", JOptionPane.PLAIN_MESSAGE);
 
@@ -181,55 +187,47 @@ public class StockArticulos {
 					break;
 				case "4":
 					mostrarStock();
-					// Preguntar al usuario si desea continuar después de mostrar el stock
-					continuar = JOptionPane.showConfirmDialog(null, "¿Desea realizar otra acción?", "Continuar",
-							JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION;
+					continuar = JOptionPane.showConfirmDialog(null, "¿Desea realizar otra acción?", "Continuar",       //se pregunta al usuario si desea realizar otra operacion 
+							JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION; 
 					break;
 				case "5":
-					continuar = false; // Salir del bucle
+					continuar = false;                                                                    //salir del bucle
 					break;
 				default:
 					JOptionPane.showMessageDialog(null, "Opción no válida", "Error", JOptionPane.ERROR_MESSAGE);
-
-//			CIERRE SWITCH
 				}
-
-//		CIERRE WHILE
 			}
 		}
-//	CIERRE MAIN 
 	}
 
-//  METODOS EJ2
-
-	// Va pidiendo los artículos conforme pasan por caja
-	public static void comprarArticulos(Scanner sc, HashMap<String, Double[]> compra) {
+	                                                                                                           //va pidiendo los artículos conforme pasan por caja
+	public static void comprarArticulos(Scanner sc, HashMap<String, Double[]> compra) {                        //permite al usuario comprar productos, verifica el inventario y actualiza las cantidades.
 		double totalDeArticulos = 0;
 		do {
 			System.out.println("Ingrese el nombre del artículo:");
 			String nombreProductoComprado = sc.nextLine();
 
-			// Buscar el artículo en el inventario
-			StockArticulos articulo = buscarArticulo(nombreProductoComprado);
+			                                                                                     
+			StockArticulos articulo = buscarArticulo(nombreProductoComprado);                   //buscar el artículo en el inventario
 
 			if (articulo != null) {
 				System.out.println("Cantidad disponible: " + articulo.cantidad);
 
-				// Verificar si hay suficiente cantidad en el inventario
+				
 				System.out.println("¿Cuántos desea comprar?");
-				int cantidad = Integer.parseInt(sc.nextLine());
+				int cantidad = Integer.parseInt(sc.nextLine());                                   //verificar si hay suficiente cantidad en el inventario
 				if (cantidad > articulo.cantidad) {
 					System.out.println("No hay suficiente cantidad disponible.");
 					continue;
 				}
 
-				// Agregar el artículo a la compra
-				double precioConIVA = calcularPrecioConIVA(articulo.precioBruto, articulo.IVA);
+				
+				double precioConIVA = calcularPrecioConIVA(articulo.precioBruto, articulo.IVA);      //agregamos el artículo a la compra 
 				compra.put(nombreProductoComprado,
 						new Double[] { articulo.precioBruto, precioConIVA, articulo.IVA, (double) cantidad });
 				totalDeArticulos++;
-				// Restar la cantidad comprada del inventario
-				articulo.cantidad -= cantidad;
+				
+				articulo.cantidad -= cantidad;                                                      //se resta la cantidad comprada del inventario
 			} else {
 				System.out.println("El artículo no está disponible en el inventario.");
 			}
@@ -238,8 +236,8 @@ public class StockArticulos {
 		} while (sc.nextLine().equalsIgnoreCase("Y"));
 	}
 
-	// Método para procesar el pago
-	public static void procesarPago(Scanner sc, double totalCompraNeto) {
+	
+	public static void procesarPago(Scanner sc, double totalCompraNeto) {                                  //método para procesar el pago en efectivo o en tarjeta
 		System.out.println("\n¿Efectivo o tarjeta?");
 		String tipoPago = sc.nextLine().toUpperCase();
 
@@ -263,8 +261,8 @@ public class StockArticulos {
 		}
 	}
 
-//  Te da el tiquet de la compra
-	public static void imprimirResumenCompra(HashMap<String, Double[]> compra) {
+
+	public static void imprimirResumenCompra(HashMap<String, Double[]> compra) {                               //impprime el tiquet de la compra
 		System.out.println("-- RESUMEN DE LA COMPRA --");
 		for (String nombreProducto : compra.keySet()) {
 			Double[] detalles = compra.get(nombreProducto);
@@ -277,25 +275,25 @@ public class StockArticulos {
 		}
 	}
 
-//  Devuelve por consola Total Bruto y Total Neto
-	public static void imprimirTotalesCompra(double totalCompraBruto, double totalCompraNeto) {
+
+	public static void imprimirTotalesCompra(double totalCompraBruto, double totalCompraNeto) {               //imprime por consola Total Bruto y Total Neto de la compra
 		System.out.println(
 				"Total de la compra (Bruto): " + totalCompraBruto + "\nTotal de la compra (Neto): " + totalCompraNeto);
 	}
 
-//	Método para mostrar opciones del inventario
-	public static void mostrarOpcionesInventario() {
+
+	public static void mostrarOpcionesInventario() {                                                             //método para mostrar opciones del inventario al user
 		System.out.println("\nOpciones del inventario:" + "\n1. Agregar artículo" + "\n2. Eliminar artículo"
 				+ "\n3. Modificar cantidad" + "\n4. Mostrar stock" + "\n5. Salir");
 	}
 
-//  Calcula el precio neto a partir del bruto y su IVA
-	public static double calcularPrecioConIVA(double precio, double iva) {
+
+	public static double calcularPrecioConIVA(double precio, double iva) {                         //calcula el precio y su IVA
 		return precio * (1 + iva / 100);
 	}
 
-//  Calcula el total Bruto de la compra
-	public static double calcularTotalCompraBruto(HashMap<String, Double[]> compra) {
+
+	public static double calcularTotalCompraBruto(HashMap<String, Double[]> compra) {               //calcula el total Bruto de la compra
 		double totalCompraBruto = 0;
 		for (Double[] detalles : compra.values()) {
 			totalCompraBruto += detalles[0];
@@ -303,8 +301,8 @@ public class StockArticulos {
 		return totalCompraBruto;
 	}
 
-//  Calcula el total Neto de la compra
-	public static double calcularTotalCompraNeto(HashMap<String, Double[]> compra) {
+
+	public static double calcularTotalCompraNeto(HashMap<String, Double[]> compra) {           //calcula el total Neto de la compra
 		double totalCompraNeto = 0;
 		for (Double[] detalles : compra.values()) {
 			totalCompraNeto += detalles[1];
