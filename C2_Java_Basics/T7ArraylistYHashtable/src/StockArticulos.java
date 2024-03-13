@@ -5,7 +5,6 @@ import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Iterator;
 
-
                                                                                //atributos de la clase
 public class StockArticulos {
 
