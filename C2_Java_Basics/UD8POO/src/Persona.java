@@ -2,15 +2,14 @@
 public class Persona {
 		
 		// Atributos (o campos/propiedades)
-	
 	    private String nombre;
 	    private int edad;
 	    private String ciudad;
+	    
 
 	    // Constructor(es)
-	    
 	    public Persona() {
-	        // Constructor por defecto
+	                                                                             // Constructor por defecto
 	    }
 
 	    public Persona(String nombre, int edad, String ciudad) {
@@ -20,8 +19,8 @@ public class Persona {
 	        this.ciudad = ciudad;
 	    }
 
-	    // Métodos (o funciones)
 	    
+	    // Métodos (o funciones)
 	    public String getNombre() {
 	        return nombre;
 	    }
