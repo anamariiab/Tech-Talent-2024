@@ -22,7 +22,7 @@ public class Persona {
     	
         this.nombre = nombre;
         this.edad = edad;
-        this.DNI = "  ";                                                  // constructor con nombre, edad, sexo
+        this.DNI = "  ";                                                
         this.sexo = hombre;
         this.peso = 0.0;
         this.altura = 0.0;
@@ -97,13 +97,30 @@ public class Persona {
     
     public static void main(String[] args) {
     	
-    	Persona personaA = new Persona("Laura", 29, "X");
-    	Persona personaB = new Persona("Victor", 20, "X");
-    	
-    	System.out.println(personaA.getNombre()); 
-		System.out.println(personaA.getEdad()); 
-		System.out.println(personaA.getDNI());
-    	
-    }
-}
+    	Persona personaA = new Persona("Cristian", 29, "H");
+        Persona personaB = new Persona("Victor", 20, "H");
+        Persona personaC = new Persona("Daniel", 20, "87654321Y", "H", 80, 1.80);
 
+        System.out.println("===============================");
+        System.out.println("Datos de la persona A:");
+        System.out.println("Nombre: " + personaA.getNombre()); 
+        System.out.println("Edad: " + personaA.getEdad()); 
+        System.out.println("Sexo: " + personaA.getSexo());
+
+        System.out.println("===============================");
+        System.out.println("Datos de la persona B:");
+        System.out.println("Nombre: " + personaB.getNombre()); 
+        System.out.println("Edad: " + personaB.getEdad()); 
+        System.out.println("Sexo: " + personaB.getSexo());
+        
+        System.out.println("===============================");
+        System.out.println("Datos de la persona C:");
+        System.out.println("Nombre: " + personaC.getNombre()); 
+        System.out.println("Edad: " + personaC.getEdad()); 
+        System.out.println("DNI: " + personaC.getDNI());
+        System.out.println("Sexo: " + personaC.getSexo());
+        System.out.println("Peso: " + personaC.getPeso());
+        System.out.println("Altura: " + personaC.getAltura());
+    }
+    
+}
