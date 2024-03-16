@@ -5,6 +5,11 @@ public class Electrodomestico {
 	private String color;
 	private char consumoEnergetico;
 	private double peso;
+	
+	private final static double PRECIO_BASE_DEFECTO = 100;
+	private final static String COLOR_DEFECTO = "blanco";
+	private final static char CONSUMO_ENERGETICO_DEFECTO = 'F';
+	private final static double PESO_DEFECTO = 5;
 
 	public enum Color {
 		BLANCO, NEGRO, ROJO, AZUL, GRIS
@@ -41,7 +46,7 @@ public class Electrodomestico {
 
 	@Override
 	public String toString() {
-		return "Precio: " + precioBase + "Color: " + color + "Consumo energetico: " + consumoEnergetico + "Peso: "
+		return "Precio: " + precioBase + "\nColor: " + color + "\nConsumo energetico: " + consumoEnergetico + "\nPeso: "
 				+ peso;
 	}
 
