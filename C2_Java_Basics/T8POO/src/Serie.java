@@ -80,23 +80,8 @@ public class Serie {
         this.creador = creador;
     }
     
-    
-    public static void main(String[] args) {
-    	
-    	
-    	Serie serie1 = new Serie();
-        Serie serie2 = new Serie("Halo", " Kyle Killen");
-        Serie serie3 = new Serie("Slow Horses", 3, "Drama", "James Hawes");
-        
-        System.out.println("========================================================================================================");
-        System.out.println("Serie 1:");
-        System.out.println("Titulo: " + serie1.getTitulo() + ", Temporadas: " + serie1.getNumTemporadas() + ", Entregado: " + serie1.isEntregado() + ", Género: " + serie1.getGenero() + ", Creador: " + serie1.getCreador());
-        System.out.println("========================================================================================================");
-        System.out.println("Serie 2:");
-        System.out.println("Titulo: " + serie2.getTitulo() + ", Temporadas: " + serie2.getNumTemporadas() + ", Entregado: " + serie2.isEntregado() + ", Género: " + serie2.getGenero() + ", Creador: " + serie2.getCreador());
-        System.out.println("========================================================================================================");
-        System.out.println("Serie 3:");
-        System.out.println("Titulo: " + serie3.getTitulo() + ", Temporadas: " + serie3.getNumTemporadas() + ", Entregado: " + serie3.isEntregado() + ", Género: " + serie3.getGenero() + ", Creador: " + serie3.getCreador());
-        
-    }
-}
+    @Override
+    public String toString() {
+        return "Titulo: " + titulo + "\nNúmero de temporada: " + numTemporadas + "\nEntregado: " + entregado + "\nGenero: " + genero + "\nCreador: " + creador;
+    } 
+}    
