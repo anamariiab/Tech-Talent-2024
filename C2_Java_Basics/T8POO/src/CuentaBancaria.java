@@ -18,7 +18,7 @@ public class CuentaBancaria {
 
 	public void ingresar(double cantidad) {
 
-		if (cantidad > 0) {
+		if (cantidad >= 0) {
 			saldo += cantidad;
 			System.out.println("Has ingresado " + cantidad + " a tu cuenta bancaria.");
 		}
@@ -26,7 +26,7 @@ public class CuentaBancaria {
 
 	public void retirar(double cantidad) {
 
-		if (cantidad > 0) {
+		if (cantidad >= 0) {
 			saldo -= cantidad;
 			System.out.println("Has retirado " + cantidad + " de tu cuenta bancaria.");
 		} else {
@@ -39,6 +39,7 @@ public class CuentaBancaria {
 
 	}
 	
+	@Override
 	public String toString() {
         return "Numero cuenta: " + numeroCuenta + "\nSaldo actual: " + saldo;
     }
