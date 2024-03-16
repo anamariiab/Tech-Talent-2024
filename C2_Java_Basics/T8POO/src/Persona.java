@@ -4,9 +4,12 @@ public class Persona {
     private String nombre;
     private int edad;
     private String DNI;                                                       //atributos
-    private String sexo;
+    private String sexo;          ////cambiar sexo a constante!!!
     private double peso;
-    private double altura;
+    private double altura; 
+    
+
+    
 
     public Persona() {
     	
@@ -93,52 +96,9 @@ public class Persona {
         this.altura = altura;
     }
     
-    
-    
-    public static void main(String[] args) {
-    	
-    	Persona personaA = new Persona();
-    	Persona personaB = new Persona("Cristian", 29, "H");
-        Persona personaC = new Persona("Victor", 20, "H");
-        Persona personaD = new Persona("Daniel", 20, "87654321Y", "H", 80, 1.80);
-
-        System.out.println("===============================");
-        System.out.println("Datos de la persona A:");
-        System.out.println("Nombre: " + personaA.getNombre()); 
-        System.out.println("Edad: " + personaA.getEdad()); 
-        System.out.println("DNI: " + personaA.getDNI());
-        System.out.println("Sexo: " + personaA.getSexo());
-        System.out.println("Peso: " + personaA.getPeso());
-        System.out.println("Altura: " + personaA.getAltura());
-        
-
-        System.out.println("===============================");
-        System.out.println("Datos de la persona B:");
-        System.out.println("Nombre: " + personaB.getNombre()); 
-        System.out.println("Edad: " + personaB.getEdad()); 
-        System.out.println("DNI: " + personaB.getDNI());
-        System.out.println("Sexo: " + personaB.getSexo());
-        System.out.println("Peso: " + personaB.getPeso());
-        System.out.println("Altura: " + personaB.getAltura());
-        
-        
-        System.out.println("===============================");
-        System.out.println("Datos de la persona C:");
-        System.out.println("Nombre: " + personaC.getNombre()); 
-        System.out.println("Edad: " + personaC.getEdad()); 
-        System.out.println("DNI: " + personaC.getDNI());
-        System.out.println("Sexo: " + personaC.getSexo());
-        System.out.println("Peso: " + personaC.getPeso());
-        System.out.println("Altura: " + personaC.getAltura());
-        
-        System.out.println("===============================");
-        System.out.println("Datos de la persona D:");
-        System.out.println("Nombre: " + personaD.getNombre()); 
-        System.out.println("Edad: " + personaD.getEdad()); 
-        System.out.println("DNI: " + personaD.getDNI());
-        System.out.println("Sexo: " + personaD.getSexo());
-        System.out.println("Peso: " + personaD.getPeso());
-        System.out.println("Altura: " + personaD.getAltura());
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + "\nEdad: " + edad + "\nDNI: " + DNI + "\nSexo: " + sexo + "\nPeso: " + peso + "\nAltura: " + altura;
     }
-    
 }
+    
