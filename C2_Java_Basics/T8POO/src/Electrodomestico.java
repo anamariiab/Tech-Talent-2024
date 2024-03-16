@@ -6,10 +6,10 @@ public class Electrodomestico {
 	private char consumoEnergetico;
 	private double peso;
 	
-	private final static double PRECIO_BASE_DEFECTO = 100;
-	private final static String COLOR_DEFECTO = "blanco";
-	private final static char CONSUMO_ENERGETICO_DEFECTO = 'F';
-	private final static double PESO_DEFECTO = 5;
+	private final static double PRECIO_BASE_PRED = 100;
+	private final static String COLOR_PRED = "blanco";
+	private final static char CONSUMO_ENERGETICO_PRED = 'F';
+	private final static double PESO_PRED = 5;
 
 	public enum Color {
 		BLANCO, NEGRO, ROJO, AZUL, GRIS
