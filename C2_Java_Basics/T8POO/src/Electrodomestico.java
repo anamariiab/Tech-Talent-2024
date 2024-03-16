@@ -40,13 +40,14 @@ public class Electrodomestico {
 	}
 
 	private boolean validarConsumoEnergetico(char consumoEnergetico) {
+		
         return consumoEnergetico >= 'A' && consumoEnergetico <= 'F';
     }
 	
 
 	@Override
 	public String toString() {
-		return "Precio: " + precioBase + "\nColor: " + color + "\nConsumo energetico: " + consumoEnergetico + "\nPeso: "
+		return "Precio: " + precioBase + "€" + "\nColor: " + color + "\nConsumo energetico: " + consumoEnergetico + "\nPeso: "
 				+ peso;
 	}
 
