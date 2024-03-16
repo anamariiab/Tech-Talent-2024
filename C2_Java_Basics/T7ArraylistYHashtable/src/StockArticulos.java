@@ -202,40 +202,39 @@ public class StockArticulos {
 		}
 	}
 
-	                                                                                                           //va pidiendo los artículos conforme pasan por caja
-	public static void comprarArticulos(Scanner sc, HashMap<String, Double[]> compra) {                        //permite al usuario comprar productos, verifica el inventario y actualiza las cantidades.
-		double totalDeArticulos = 0;
-		do {
-			System.out.println("Ingrese el nombre del artículo:");
-			String nombreProductoComprado = sc.nextLine();
+	                                                                                                          
+	public static void comprarArticulos(Scanner sc, HashMap<String, Double[]> compra) {                                     //va pidiendo los artículos conforme pasan por caja
+	    double totalDeArticulos = 0;
+	    do {
+	        System.out.println("Ingrese el nombre del artículo:");
+	        String nombreProductoComprado = sc.nextLine();
 
-			                                                                                     
-			StockArticulos articulo = buscarArticulo(nombreProductoComprado);                   //buscar el artículo en el inventario
+	        
+	        StockArticulos articulo = buscarArticulo(nombreProductoComprado);
 
-			if (articulo != null) {
-				System.out.println("Cantidad disponible: " + articulo.cantidad);
+	        if (articulo != null) {
+	            System.out.println("Cantidad disponible: " + articulo.cantidad);
 
-				
-				System.out.println("¿Cuántos desea comprar?");
-				int cantidad = Integer.parseInt(sc.nextLine());                                   //verificar si hay suficiente cantidad en el inventario
-				if (cantidad > articulo.cantidad) {
-					System.out.println("No hay suficiente cantidad disponible.");
-					continue;
-				}
+	            
+	            System.out.println("¿Cuántos desea comprar?");
+	            int cantidad = Integer.parseInt(sc.nextLine());
+	            if (cantidad > articulo.cantidad) {
+	                System.out.println("No hay suficiente cantidad disponible. Se agregarán " + articulo.cantidad + " unidades.");
+	                cantidad = articulo.cantidad; 
+	            }
 
-				
-				double precioConIVA = calcularPrecioConIVA(articulo.precioBruto, articulo.IVA);      //agregamos el artículo a la compra 
-				compra.put(nombreProductoComprado,
-						new Double[] { articulo.precioBruto, precioConIVA, articulo.IVA, (double) cantidad });
-				totalDeArticulos++;
-				
-				articulo.cantidad -= cantidad;                                                      //se resta la cantidad comprada del inventario
-			} else {
-				System.out.println("El artículo no está disponible en el inventario.");
-			}
+	            
+	            double precioConIVA = calcularPrecioConIVA(articulo.precioBruto, articulo.IVA);
+	            compra.put(nombreProductoComprado, new Double[]{articulo.precioBruto, precioConIVA, articulo.IVA, (double) cantidad});
+	            totalDeArticulos++;
+	            
+	            articulo.cantidad -= cantidad;
+	        } else {
+	            System.out.println("El artículo no está disponible en el inventario.");
+	        }
 
-			System.out.println("¿Desea añadir otro artículo? (Y/N)");
-		} while (sc.nextLine().equalsIgnoreCase("Y"));
+	        System.out.println("¿Desea añadir otro artículo? (Y/N)");
+	    } while (sc.nextLine().equalsIgnoreCase("Y"));
 	}
 
 	
