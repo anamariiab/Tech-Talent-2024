@@ -8,7 +8,7 @@ public class MainElectrodomestico {
 		Electrodomestico electroC = new Electrodomestico(850, 700, 
 				Electrodomestico.Color.ROJO, Electrodomestico.Consumo.C);         //se utiliza la enumeración Color y Consum definida en la class
 		Electrodomestico electroD = new Electrodomestico(2200, 650, 
-				Electrodomestico.Color.AZUL, Electrodomestico.Consumo.D);         
+				Electrodomestico.Color.AZUL, Electrodomestico.Consumo.D);         //se utiliza la enumeración Color y Consum definida en la class
 		
 		System.out.println("===============================");
 		System.out.println("··Nevera Samsung··");
