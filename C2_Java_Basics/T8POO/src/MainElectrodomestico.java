@@ -1,12 +1,14 @@
 
 public class MainElectrodomestico {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		
 		Electrodomestico electroA = new Electrodomestico();
 		Electrodomestico electroB = new Electrodomestico(1850, 500);
-		Electrodomestico electroC = new Electrodomestico(850, 700, "rojo", 'C');
-		Electrodomestico electroD = new Electrodomestico(2200, 650, "azul", 'D');
+		Electrodomestico electroC = new Electrodomestico(850, 700, 
+				Electrodomestico.Color.ROJO, Electrodomestico.Consumo.C);         //se utiliza la enumeración Color y Consum definida en la class
+		Electrodomestico electroD = new Electrodomestico(2200, 650, 
+				Electrodomestico.Color.AZUL, Electrodomestico.Consumo.D);         
 		
 		System.out.println("===============================");
 		System.out.println("··Nevera Samsung··");
