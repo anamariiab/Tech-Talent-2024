@@ -6,7 +6,7 @@ public class MainPassword {
 		Password constrasenya1 = new Password();
 		Password constrasenya2 = new Password(12);
 
-		System.out.println("··Contraseña 1: " + constrasenya1.getContrasenya());
-		System.out.println("··Contraseña 2: " + constrasenya2.getContrasenya());
+		System.out.println("··Contraseña 1: " + constrasenya1);
+		System.out.println("··Contraseña 2: " + constrasenya2);
 	}
 }
