@@ -5,8 +5,8 @@ public class MainPersona {
 
 		Persona personaA = new Persona();
 		Persona personaB = new Persona("Cristian", 29, "H");
-		Persona personaC = new Persona("Victor", 20, "12354321Y");
-		Persona personaD = new Persona("Daniel", 20, "87654321X", "H", 80, 1.80);
+		Persona personaC = new Persona("Victor", 25, "H");
+		Persona personaD = new Persona("Maria", 20, "87654321X", "M", 80, 1.80);
 		
 		    System.out.println("===============================");
 		    System.out.println("··Datos de la persona A··");

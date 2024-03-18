@@ -4,39 +4,38 @@ public class Persona {
     private String nombre;
     private int edad;
     private String DNI;                                                       //atributos
-    private String sexo;          ////cambiar sexo a constante!!!
+    private String sexo;          
     private double peso;
     private double altura; 
     
-
+    private final static String SEXO_PRED = "H";
     
-
     public Persona() {
     	
         this.nombre = "  ";
         this.edad = 0;
         this.DNI = "  ";
-        this.sexo = " ";                                                // constructor por defecto
+        this.sexo = SEXO_PRED;                                                // constructor por defecto
         this.peso = 0.0;
         this.altura = 0.0;
     }
 
-    public Persona(String nombre, int edad, String hombre) {
+    public Persona(String nombre, int edad, String sexo) {
     	
         this.nombre = nombre;
         this.edad = edad;
         this.DNI = "  ";                                                
-        this.sexo = hombre;
+        this.sexo = sexo;
         this.peso = 0.0;
         this.altura = 0.0;
     }
 
-    public Persona(String nombre, int edad, String DNI, String hombre, double peso, double altura) {
+    public Persona(String nombre, int edad, String DNI, String sexo, double peso, double altura) {
     	
         this.nombre = nombre;
         this.edad = edad;
         this.DNI = DNI;                                                       
-        this.sexo = hombre;
+        this.sexo = sexo;
         this.peso = peso;
         this.altura = altura;
     }
