@@ -16,12 +16,12 @@ public class MainSerie {
 		
 		System.out.println(
 				"========================================================================================================");
-		System.out.println("Serie 2:");
+		System.out.println("··Serie 2··");
 		System.out.println(serie2.toString());
 	
 		System.out.println(
 				"========================================================================================================");
-		System.out.println("Serie 3:");
+		System.out.println("··Serie 3··");
 		System.out.println(serie3.toString());
 
 	}

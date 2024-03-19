@@ -1,8 +1,8 @@
 public class Electrodomestico {
 
 	private double precioBase;
-	private Color color;
-	private Consumo consumoEnergetico;
+	private Color color;                                                        //el atributo es de tipo Color. See below enumeracion color
+	private Consumo consumoEnergetico;                                          //el atributo es de tipo Consumo. See below enumeracion consumo
 	private double peso;
 	
 	private final static double PRECIO_BASE_PRED = 100;
@@ -10,11 +10,11 @@ public class Electrodomestico {
 	private final static Consumo CONSUMO_ENERGETICO_PRED = Consumo.F;
 	private final static double PESO_PRED = 5;
 
-	public enum Color {
-		BLANCO, NEGRO, ROJO, AZUL, GRIS                             //enumeracion de constantes colores          
+	public enum Color {                                                
+		BLANCO, NEGRO, ROJO, AZUL, GRIS                             //enumeracion de constantes colores. solo puede tomar los valores de la enum.  
 	}                                                               //!!la enumeracion es muy util cuando hay que representar un conjunto FIJO de constantes!!!
-	                                                                //!!also, el ENUM puede detectar errores al intentar ingresar un valor que no esta definido en la enumeracion.
-	public enum Consumo{                                            //enumeracion de constantes tipo consumo
+	                                                                //!!also, el ENUM detecta errores al intentar ingresar un valor que no esta definido en la enumeracion.
+	public enum Consumo{                                            //enumeracion de constantes consumo. solo puede tomar los valores de la enum.
 		A, B, C, D, E, F
 	}
 	
@@ -22,7 +22,7 @@ public class Electrodomestico {
 	public Electrodomestico() {
 
 		this.color = COLOR_PRED;
-		this.consumoEnergetico = CONSUMO_ENERGETICO_PRED;
+		this.consumoEnergetico = CONSUMO_ENERGETICO_PRED;                        //constr por defecto que inicializa los atributos con los valores pred
 		this.precioBase = 100;
 		this.peso = 5;
 		
@@ -30,7 +30,7 @@ public class Electrodomestico {
 
 	public Electrodomestico(double precioBase, double peso) {
 		
-		this.color = COLOR_PRED;
+		this.color = COLOR_PRED;                                                 
 		this.consumoEnergetico = CONSUMO_ENERGETICO_PRED;
 		this.precioBase = precioBase;
 		this.peso = peso;
@@ -40,7 +40,7 @@ public class Electrodomestico {
 	public Electrodomestico(double precioBase, double peso, Color color, Consumo consumoEnergetico) {
 		
 		this.color = color;
-		this.consumoEnergetico = consumoEnergetico;
+		this.consumoEnergetico = consumoEnergetico;                                 //constr con todos los parametros
 		this.precioBase = precioBase;
 		this.peso = peso;
 	}
