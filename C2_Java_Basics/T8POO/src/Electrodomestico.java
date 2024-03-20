@@ -11,18 +11,18 @@ public class Electrodomestico {
 	private final static double PESO_PRED = 5;
 
 	public enum Color {                                                
-		BLANCO, NEGRO, ROJO, AZUL, GRIS                             //enumeracion de constantes colores. solo puede tomar los valores de la enum.  
-	}                                                               //!!la enumeracion es muy util cuando hay que representar un conjunto FIJO de constantes!!!
-	                                                                //!!also, el ENUM detecta errores al intentar ingresar un valor que no esta definido en la enumeracion.
-	public enum Consumo{                                            //enumeracion de constantes consumo. solo puede tomar los valores de la enum.
-		A, B, C, D, E, F
-	}
+		BLANCO, NEGRO, ROJO, AZUL, GRIS                                     //enumeracion de constantes colores. solo puede tomar los valores de la enumeracion.  
+	}                                                                       //!!la enumeracion es muy util cuando hay que representar un conjunto FIJO de constantes!!
+	                                                                        //!!also, el ENUM detecta errores al intentar ingresar un valor que no esta definido en la enumeracion.
+	public enum Consumo{                                                    //enumeracion de constantes consumo. solo puede tomar los valores de la enumeracion.
+		A, B, C, D, E, F                                                    //!!also, claridad en el codigo, mas legible
+	}                                                                
 	
 
 	public Electrodomestico() {
 
 		this.color = COLOR_PRED;
-		this.consumoEnergetico = CONSUMO_ENERGETICO_PRED;                        //constr por defecto que inicializa los atributos con los valores pred
+		this.consumoEnergetico = CONSUMO_ENERGETICO_PRED;                           //constr por defecto que inicializa los atributos con los valores pred
 		this.precioBase = 100;
 		this.peso = 5;
 		
@@ -47,7 +47,7 @@ public class Electrodomestico {
 	
 	
 	@Override
-	public String toString() {
+	public String toString() {                                                      //‘toString’ devuelve una cadena con los detalles del electrodomestico
 		return "Precio: " + precioBase + "€" + "\nColor: " + color + "\nConsumo energetico: " + consumoEnergetico + "\nPeso: "
 				+ peso;
 	}
