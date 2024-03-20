@@ -20,9 +20,12 @@ public class UD9Repartidor extends UD9Empleado {
 			this.zona = alcance;
 		}
 
-		@Override
 		public boolean plus(double sueldoPlus) {
-			// TODO Auto-generated method stub
-			return false;
+			boolean aumento=false;
+			if (edad>40) {
+				salario+=sueldoPlus;
+				aumento=true;
+			} 
+			return aumento;
 		}
 }

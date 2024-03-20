@@ -7,6 +7,7 @@ public abstract class UD9Empleado implements UD9Empleable {
 		protected int edad;
 		protected double salario;
 		private String dni;
+		protected final static double SALARIO_DEF=600;
 		
 		//Constructores
 		
@@ -14,7 +15,7 @@ public abstract class UD9Empleado implements UD9Empleable {
 			this.nombre = "";
 			this.apellido = "";
 			this.edad = 0;
-			this.salario = 0.0;
+			this.salario = SALARIO_DEF;
 			this.dni = "123456";
 		}
 
@@ -78,9 +79,8 @@ public abstract class UD9Empleado implements UD9Empleable {
 			
 		}
 
-		@Override
-		public double calcBruto(double pagaExtra) {
 		
+		public double calcBruto(double pagaExtra) {
 			return 0;
 		}
 }
