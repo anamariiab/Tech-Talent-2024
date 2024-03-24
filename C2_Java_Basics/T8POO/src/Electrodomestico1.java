@@ -1,4 +1,4 @@
-public class Electrodomestico {
+public class Electrodomestico1 {
 
 	private double precioBase;
 	private Color color;                                                        //el atributo es de tipo Color. See below enumeracion color
@@ -19,7 +19,7 @@ public class Electrodomestico {
 	}                                                                
 	
 
-	public Electrodomestico() {
+	public Electrodomestico1() {
 
 		this.color = COLOR_PRED;
 		this.consumoEnergetico = CONSUMO_ENERGETICO_PRED;                           //constr por defecto que inicializa los atributos con los valores pred
@@ -28,7 +28,7 @@ public class Electrodomestico {
 		
 	}
 
-	public Electrodomestico(double precioBase, double peso) {
+	public Electrodomestico1(double precioBase, double peso) {
 		
 		this.color = COLOR_PRED;                                                 
 		this.consumoEnergetico = CONSUMO_ENERGETICO_PRED;
@@ -37,7 +37,7 @@ public class Electrodomestico {
 
 	}
 
-	public Electrodomestico(double precioBase, double peso, Color color, Consumo consumoEnergetico) {
+	public Electrodomestico1(double precioBase, double peso, Color color, Consumo consumoEnergetico) {
 		
 		this.color = color;
 		this.consumoEnergetico = consumoEnergetico;                                 //constr con todos los parametros

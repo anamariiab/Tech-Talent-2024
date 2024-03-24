@@ -1,14 +1,14 @@
 
-public class MainElectrodomestico {
+public class MainElectrodomestico1 {
 
     public static void main(String[] args) {
 		
-		Electrodomestico electroA = new Electrodomestico();
-		Electrodomestico electroB = new Electrodomestico(1850, 500);
-		Electrodomestico electroC = new Electrodomestico(850, 700, 
-				Electrodomestico.Color.ROJO, Electrodomestico.Consumo.C);         //se accede y se utiliza la enumeracion Color y Consum definida en la class
-		Electrodomestico electroD = new Electrodomestico(2200, 650, 
-				Electrodomestico.Color.AZUL, Electrodomestico.Consumo.D);         //se accede y se utiliza la enumeracion Color y Consum definida en la class
+		Electrodomestico1 electroA = new Electrodomestico1();
+		Electrodomestico1 electroB = new Electrodomestico1(1850, 500);
+		Electrodomestico1 electroC = new Electrodomestico1(850, 700, 
+				Electrodomestico1.Color.ROJO, Electrodomestico1.Consumo.C);         //se accede y se utiliza la enumeracion Color y Consum definida en la class
+		Electrodomestico1 electroD = new Electrodomestico1(2200, 650, 
+				Electrodomestico1.Color.AZUL, Electrodomestico1.Consumo.D);         //se accede y se utiliza la enumeracion Color y Consum definida en la class
 		
 		System.out.println("===============================");
 		System.out.println("··Nevera Samsung··");
