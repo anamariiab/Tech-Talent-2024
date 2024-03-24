@@ -1,29 +1,111 @@
 
 public class Electrodomestico {
 
-	private double precioBase;
-	private Color color;                                                        //el atributo es de tipo Color. See below enumeracion color
-	private Consumo consumoEnergetico;                                          //el atributo es de tipo Consumo. See below enumeracion consumo
-	private double peso;
-	
-	private final static double PRECIO_BASE_PRED = 100;
-	private final static Color COLOR_PRED = Color.BLANCO;
-	private final static Consumo CONSUMO_ENERGETICO_PRED = Consumo.F;
-	private final static double PESO_PRED = 5;
-		
-	
-	public enum Color {                                                
-		BLANCO, NEGRO, ROJO, AZUL, GRIS                             //enumeracion de constantes colores. solo puede tomar los valores de la enumeracion.  
-	}                                                               //!!la enumeracion es muy util cuando hay que representar un conjunto FIJO de constantes!!
-	                                                                //!!also, el ENUM detecta errores al intentar ingresar un valor que no esta definido en la enumeracion.
-	public enum Consumo{                                            //enumeracion de constantes consumo. solo puede tomar los valores de la enumeracion.
-		A, B, C, D, E, F
-	}	
-	
-	
-	
-	
-	
+	protected double precioBase;
+	protected String color;
+	protected char consumoEnergetico;
+	protected double peso;
 
+	public static final double PRECIO_BASE_PRED = 100;
+	public static final String COLOR_PRED = "blanco";
+	public static final char CONSUMO_PRED = 'F';
+	public static final double PESO_PRED = 5;
+
+	public static final char[] LETRAS_CONSUMO = { 'A', 'B', 'C', 'D', 'E', 'F' };
+	public static final String[] COLORES = { "blanco", "negro", "rojo", "azul", "gris" };
+
+	public Electrodomestico() {
+		super();
+		this.precioBase = PRECIO_BASE_PRED;
+		this.color = COLOR_PRED;
+		this.consumoEnergetico = CONSUMO_PRED;
+		this.peso = PESO_PRED;
+	}
+
+	public Electrodomestico(double precioBase, double peso) {
+		super();
+		this.precioBase = precioBase;
+		this.color = COLOR_PRED;
+		this.consumoEnergetico = CONSUMO_PRED;
+		this.peso = peso;
+	}
+
+	public Electrodomestico(double precioBase, String color, char consumoEnergetico, double peso) {
+		super();
+		this.precioBase = precioBase;
+		this.color = color;
+		this.consumoEnergetico = consumoEnergetico;
+		this.peso = peso;
+	}
+
+	public double getPrecioBase() {
+		return precioBase;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public char getConsumoEnergetico() {
+		return consumoEnergetico;
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+
+	private boolean comprobarConsumoEnergetico(char letra) {
+		for (int i = 0; i < LETRAS_CONSUMO.length; i++) {
+			if (letra == LETRAS_CONSUMO[i]) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private boolean comprobarColor(String color) {
+		for (int i = 0; i < COLORES.length; i++) {
+			if (color.equalsIgnoreCase(COLORES[i])) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public double precioFinal() {
+	    double precioFinal = precioBase;
+
+	    switch (consumoEnergetico) {
+	        case 'A':
+	            precioFinal += 100; 
+	            break;
+	        case 'B':
+	            precioFinal += 80; 
+	            break;
+	        case 'C':
+	            precioFinal += 60; 
+	            break;
+	        case 'D':
+	            precioFinal += 50; 
+	            break;
+	        case 'E':
+	            precioFinal += 30; 
+	            break;
+	        case 'F':
+	            precioFinal += 10; 
+	            break;
+	    }
+
+	    if (peso >= 0 && peso < 19) {
+	        precioFinal += 10; 
+	    } else if (peso >= 20 && peso < 49) {
+	        precioFinal += 50; 
+	    } else if (peso >= 50 && peso < 79) {
+	        precioFinal += 80; 
+	    } else if (peso >= 80) { 
+	        precioFinal += 100; 
+	    }
+	    return precioFinal;
+	}
 
 }
