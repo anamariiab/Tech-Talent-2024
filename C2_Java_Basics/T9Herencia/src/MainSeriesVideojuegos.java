@@ -14,7 +14,7 @@ public class MainSeriesVideojuegos {
         series[5] = new Serie("Peripheral", 1, "Ciencia ficción", "William Gibson"); 
 
         videojuegos[0] = new Videojuego();
-        videojuegos[1] = new Videojuego("Hogwarts", 40, "Aventura", "Warner Bros. Interactive Entertainment");
+        videojuegos[1] = new Videojuego("Hogwarts", 40, "Aventura", "Warner Bros");
         videojuegos[1] = new Videojuego("The Witcher 3: Wild Hunt", 70);
         videojuegos[3] = new Videojuego("God of War", 50, "Acción-Aventura", "Santa Monica Studio");
         videojuegos[4] = new Videojuego("Ghost of Tsushima", 40);
