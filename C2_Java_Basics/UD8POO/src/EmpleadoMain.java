@@ -27,17 +27,7 @@ public class EmpleadoMain {
 			
 		}
 		
-		Empleado empleado1 = new Empleado ();
-		Empleado empleado2 = new Empleado ();
-		
-		if (empleado1.equals(empleado2)) {
-			
-			System.out.println("Los objetos empleado 1 y empleado 2 son iguales");
-		} else {
-			System.out.println("Los objetos empleado 1 y empleado 2 no son iguales");
-			
-		}
-		
+
 
 }
 }
