@@ -24,17 +24,11 @@ public class Raices {
 	}
 
 	public boolean tieneRaices () {
-		return false;
-		
-		
-		
+		return getDiscriminante() >= 0;
 	}
 	
 	public boolean tieneRaiz () {
-		return false;
-		
-		
-		
+		return getDiscriminante() == 0;	
 	}
 	
 	public void calcular () {
@@ -49,4 +43,6 @@ public class Raices {
 	public void obtenerRaiz() {
 		
 	}
+	
+	
 }
