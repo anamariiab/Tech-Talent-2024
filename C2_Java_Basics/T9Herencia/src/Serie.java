@@ -1,14 +1,14 @@
 
 public class Serie implements Entregable {
 
-	protected String titulo;
-	protected int numTemporadas;
-	protected boolean entregado;
-	protected String genero;
-	protected String creador;
+	public String titulo;
+	public int numTemporadas;
+	public boolean entregado;
+	public String genero;
+	public String creador;
 
-	protected final int NUM_TEMPORADAS_PRED = 3;
-	protected final static boolean ENTREGADO_PRED = false;
+	public final int NUM_TEMPORADAS_PRED = 3;
+	public final static boolean ENTREGADO_PRED = false;
 
 	public Serie() {
 		super();

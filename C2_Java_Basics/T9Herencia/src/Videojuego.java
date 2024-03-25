@@ -1,14 +1,14 @@
 
 public class Videojuego implements Entregable {
 
-	protected String titulo;
-	protected int horasEstimadas;
-	protected boolean entregado;
-	protected String genero;
-	protected String companyia;
+	public String titulo;
+	public int horasEstimadas;
+	public boolean entregado;
+	public String genero;
+	public String companyia;
 
-	protected final int HORAS_ESTIMADAS_PRED = 10;
-	protected final static boolean ENTREGADO_PRED = false;
+	public final int HORAS_ESTIMADAS_PRED = 10;
+	public final static boolean ENTREGADO_PRED = false;
 
 	public Videojuego() {
 		super();
@@ -90,9 +90,9 @@ public class Videojuego implements Entregable {
 	}
 
 	@Override
-	public int compareTo(Object obj) {
-		return HORAS_ESTIMADAS_PRED;    ///!!!falta por acabar
-		
+	public int compareTo(Object a) {    //falta implementar el metodo!
+		return 0;
 	}
+
 
 }
