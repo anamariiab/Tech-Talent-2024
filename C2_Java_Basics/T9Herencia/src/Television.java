@@ -1,10 +1,10 @@
 
 public class Television extends Electrodomestico {
 
-	protected double resolucion;
-	protected boolean sintonizadorTDT;
+	public double resolucion;
+	public boolean sintonizadorTDT;
 
-	protected final static double RESOLUCION_PRED = 20;
+	public final static double RESOLUCION_PRED = 20;
 	protected final static boolean SINTONIZADOR_TDT_PRED = false;
 
 	public Television() {

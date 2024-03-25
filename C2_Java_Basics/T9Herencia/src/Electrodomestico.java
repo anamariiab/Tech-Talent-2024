@@ -4,18 +4,17 @@ public class Electrodomestico {
 	protected double precioBase;
 	protected String color;
 	protected char consumoEnergetico;
-	protected double peso;
+	protected double peso;                                         //los atributos private o protected?
 
-	public static final double PRECIO_BASE_PRED = 100;
-	public static final String COLOR_PRED = "blanco";
-	public static final char CONSUMO_PRED = 'F';
-	public static final double PESO_PRED = 5;
+	protected static final double PRECIO_BASE_PRED = 100;
+	protected static final String COLOR_PRED = "blanco";
+	protected static final char CONSUMO_PRED = 'F';
+	protected static final double PESO_PRED = 5;
 
-	public static final char[] LETRAS_CONSUMO = { 'A', 'B', 'C', 'D', 'E', 'F' };
-	public static final String[] COLORES = { "blanco", "negro", "rojo", "azul", "gris" };
+	protected static final char[] LETRAS_CONSUMO = { 'A', 'B', 'C', 'D', 'E', 'F' };
+	protected static final String[] COLORES = { "blanco", "negro", "rojo", "azul", "gris" };
 
 	public Electrodomestico() {
-		super();
 		this.precioBase = PRECIO_BASE_PRED;
 		this.color = COLOR_PRED;
 		this.consumoEnergetico = CONSUMO_PRED;
@@ -23,7 +22,6 @@ public class Electrodomestico {
 	}
 
 	public Electrodomestico(double precioBase, double peso) {
-		super();
 		this.precioBase = precioBase;
 		this.color = COLOR_PRED;
 		this.consumoEnergetico = CONSUMO_PRED;
@@ -31,7 +29,6 @@ public class Electrodomestico {
 	}
 
 	public Electrodomestico(double precioBase, String color, char consumoEnergetico, double peso) {
-		super();
 		this.precioBase = precioBase;
 		this.color = color;
 		this.consumoEnergetico = consumoEnergetico;
