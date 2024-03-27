@@ -4,32 +4,35 @@ public class MainElectrodomesticoLavadoraTelevision {
 
 	public static void main(String[] args) {
 
-		Electrodomestico[] electrodomesticos = new Electrodomestico[13];
+		Electrodomestico[] electrodomesticos = new Electrodomestico[10];
 
-		 electrodomesticos[0] = new Electrodomestico();
-		 electrodomesticos[1] = new Electrodomestico(1250, "rojo", 'E', 85);
-		 electrodomesticos[2] = new Electrodomestico(32, "gris", 'C', 90);
-		 electrodomesticos[3] = new Lavadora();
-		 electrodomesticos[4] = new Lavadora(660, 400);
-		 electrodomesticos[5] = new Lavadora(1200, "azul", 'D', 300, 30);
-		 electrodomesticos[6] = new Lavadora(850, "rojo", 'A', 320, 90);
-		 electrodomesticos[7] = new Lavadora(770, "negro", 'B', 220, 250);
-		 electrodomesticos[8] = new Television(); 
-		 electrodomesticos[9] = new Television(1850, 125);
-		 electrodomesticos[10] = new Television(1100, "gris", 'B', 113, 75, 21, true);
-		 electrodomesticos[11] = new Television(950, "negro", 'C', 99, 33, 32, false);
-		 electrodomesticos[12] = new Television(60, "rojo", 'F', 77, 215, 21, false);
-        
-        double precioTotalElectrodomesticos = 0;
-        double precioTotalLavadoras = 0;
-        double precioTotalTelevisiones = 0;
+		electrodomesticos[0] = new Electrodomestico(1250, "rojo", 'E', 85);
+		electrodomesticos[1] = new Electrodomestico(32, "gris", 'C', 90);
+		electrodomesticos[2] = new Lavadora(660, 400);
+		electrodomesticos[3] = new Lavadora(1200, "azul", 'D', 300, 30);
+		electrodomesticos[4] = new Lavadora(850, "rojo", 'A', 320, 90);
+		electrodomesticos[5] = new Lavadora(770, "negro", 'B', 220, 250);
+		electrodomesticos[6] = new Television(700, "gris", 'B', 113, 75, 40, true);
+		electrodomesticos[7] = new Television(1850, 125);
+		electrodomesticos[8] = new Television(1100, "gris", 'B', 113, 75, 21, true);
+		electrodomesticos[9] = new Television(950, "negro", 'C', 99, 33, 32, false);
 
-     // for (Electrodomestico electrodomestico : electrodomesticos) {
-     // instance of?
+		double precioTotalElectrodomesticos = 0;
+		double precioTotalLavadoras = 0;
+		double precioTotalTelevisiones = 0;
 
-        System.out.println("Precio total de Electrodomesticos: €" + precioTotalElectrodomesticos);
-        System.out.println("Precio total de Lavadoras: €" + precioTotalLavadoras);
-        System.out.println("Precio total de Televisiones: €" + precioTotalTelevisiones);
+		for (Electrodomestico electrodomestico : electrodomesticos) {
+        	if(electrodomestico instanceof Lavadora) {
+        		precioTotalLavadoras += electrodomestico.precioFinal();
+        	}
+        	
+        	if(electrodomestico instanceof Television) {
+        		precioTotalTelevisiones += electrodomestico.precioFinal();
+        	}
+        	
+        	precioTotalElectrodomesticos += electrodomestico.precioFinal();
+        }
+
         
         System.out.println("---------------------------------------");
         System.out.printf("| %-20s | %-10s |\n", "Tipo", "Precio Total");

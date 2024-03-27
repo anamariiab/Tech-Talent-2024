@@ -1,16 +1,12 @@
 
 public class Lavadora extends Electrodomestico {
 
-	protected double carga;
+	private double carga;
 
-	protected final static double CARGA_PRED = 5;
+	private final static double CARGA_PRED = 5;
 
 	public Lavadora() {
 		super();
-		this.precioBase = PRECIO_BASE_PRED;
-		this.color = COLOR_PRED;
-		this.consumoEnergetico = CONSUMO_PRED;
-		this.peso = PESO_PRED;
 		this.carga = CARGA_PRED;
 	}
 
@@ -30,10 +26,9 @@ public class Lavadora extends Electrodomestico {
 
 	@Override
 	public double precioFinal() {
-		double precioFinal = super.precioFinal();
-		if (carga > 30) {
-			precioFinal += 50;
-		}
-		return precioFinal;
+	    double precioFinal = super.precioFinal(); 
+	    precioFinal += (carga > 30) ? 50 : 0;
+
+	    return precioFinal;
 	}
 }

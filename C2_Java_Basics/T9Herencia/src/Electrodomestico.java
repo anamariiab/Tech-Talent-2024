@@ -4,7 +4,7 @@ public class Electrodomestico {
 	protected double precioBase;
 	protected String color;
 	protected char consumoEnergetico;
-	protected double peso;                                         //los atributos private o protected?
+	protected double peso;                                         
 
 	protected static final double PRECIO_BASE_PRED = 100;
 	protected static final String COLOR_PRED = "blanco";
@@ -31,8 +31,8 @@ public class Electrodomestico {
 	public Electrodomestico(double precioBase, String color, char consumoEnergetico, double peso) {
 		this.precioBase = precioBase;
 		this.color = color;
-		this.consumoEnergetico = consumoEnergetico;
-		this.peso = peso;
+		this.consumoEnergetico = consumoEnergetico; //??
+		this.peso = peso; //??
 	}
 
 	public double getPrecioBase() {
@@ -92,7 +92,7 @@ public class Electrodomestico {
 	            precioFinal += 10; 
 	            break;
 	    }
-
+	   
 	    if (peso >= 0 && peso < 19) {
 	        precioFinal += 10; 
 	    } else if (peso >= 20 && peso < 49) {

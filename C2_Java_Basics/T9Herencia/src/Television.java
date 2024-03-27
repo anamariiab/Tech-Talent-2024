@@ -1,18 +1,14 @@
 
 public class Television extends Electrodomestico {
 
-	public double resolucion;
-	public boolean sintonizadorTDT;
+	private double resolucion;
+	private boolean sintonizadorTDT;
 
-	public final static double RESOLUCION_PRED = 20;
-	protected final static boolean SINTONIZADOR_TDT_PRED = false;
+	private final static double RESOLUCION_PRED = 20;
+	private final static boolean SINTONIZADOR_TDT_PRED = false;
 
 	public Television() {
 		super();
-		this.precioBase = PRECIO_BASE_PRED;
-		this.color = COLOR_PRED;
-		this.consumoEnergetico = CONSUMO_PRED;
-		this.peso = PESO_PRED;
 		this.resolucion = RESOLUCION_PRED;
 		this.sintonizadorTDT = SINTONIZADOR_TDT_PRED;
 	}
@@ -31,14 +27,11 @@ public class Television extends Electrodomestico {
 
 	@Override
 	public double precioFinal() {
-		double precioFinal = super.precioFinal();                              //llamamos al precioFinal de la clase padre
-		if (resolucion > 40) {
-			precioFinal *= 1.3;
-		}
-		if (sintonizadorTDT) {
-			precioFinal += 50;
-		}
-		return precioFinal;
+	    double precioFinal = super.precioFinal(); 
+	    precioFinal *= (resolucion > 40) ? 1.3 : 1.0;
+	    precioFinal += (sintonizadorTDT) ? 50 : 0;
+
+	    return precioFinal;
 	}
 
 }
