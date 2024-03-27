@@ -33,7 +33,6 @@ public class MainElectrodomesticoLavadoraTelevision {
         	precioTotalElectrodomesticos += electrodomestico.precioFinal();
         }
 
-        
         System.out.println("---------------------------------------");
         System.out.printf("| %-20s | %-10s |\n", "Tipo", "Precio Total");
         System.out.println("---------------------------------------");

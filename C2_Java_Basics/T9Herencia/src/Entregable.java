@@ -7,5 +7,5 @@ public interface Entregable {
 
 	boolean isEntregado();
 
-	int compareTo(Object a);
+	int compareTo(Object o);
 }

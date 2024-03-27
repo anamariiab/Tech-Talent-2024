@@ -31,8 +31,8 @@ public class Electrodomestico {
 	public Electrodomestico(double precioBase, String color, char consumoEnergetico, double peso) {
 		this.precioBase = precioBase;
 		this.color = color;
-		this.consumoEnergetico = consumoEnergetico; //??
-		this.peso = peso; //??
+		this.consumoEnergetico = consumoEnergetico; 
+		this.peso = peso; 
 	}
 
 	public double getPrecioBase() {
@@ -93,11 +93,11 @@ public class Electrodomestico {
 	            break;
 	    }
 	   
-	    if (peso >= 0 && peso < 19) {
+	    if (peso >= 0 && peso <= 19) {
 	        precioFinal += 10; 
-	    } else if (peso >= 20 && peso < 49) {
+	    } else if (peso >= 20 && peso <= 49) {
 	        precioFinal += 50; 
-	    } else if (peso >= 50 && peso < 79) {
+	    } else if (peso >= 50 && peso <= 79) {
 	        precioFinal += 80; 
 	    } else if (peso >= 80) { 
 	        precioFinal += 100; 

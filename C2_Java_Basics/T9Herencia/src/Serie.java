@@ -11,7 +11,6 @@ public class Serie implements Entregable {
 	public final static boolean ENTREGADO_PRED = false;
 
 	public Serie() {
-		super();
 		this.titulo = " ";
 		this.numTemporadas = NUM_TEMPORADAS_PRED;
 		this.entregado = ENTREGADO_PRED;
@@ -20,7 +19,6 @@ public class Serie implements Entregable {
 	}
 
 	public Serie(String titulo, String creador) {
-		super();
 		this.titulo = titulo;
 		this.numTemporadas = NUM_TEMPORADAS_PRED;
 		this.entregado = ENTREGADO_PRED;
@@ -29,7 +27,6 @@ public class Serie implements Entregable {
 	}
 
 	public Serie(String titulo, int numTemporadas, String genero, String creador) {
-		super();
 		this.titulo = titulo;
 		this.numTemporadas = numTemporadas;
 		this.genero = genero;
@@ -70,8 +67,8 @@ public class Serie implements Entregable {
 
 	@Override
 	public String toString() {
-		return "Titulo: " + titulo + "\nNúmero de temporada: " + numTemporadas + "\nEntregado: " + entregado
-				+ "\nGenero: " + genero + "\nCreador: " + creador;
+		return "  Titulo: " + titulo + "\n  Número de temporada: " + numTemporadas + "\n  Entregado: " + entregado
+				+ "\n  Genero: " + genero + "\n  Creador: " + creador;
 	}
 
 	@Override
@@ -90,9 +87,9 @@ public class Serie implements Entregable {
 	}
 
 	@Override
-    public int compareTo(Object obj) {
-		return NUM_TEMPORADAS_PRED;     ///!!!falta por acabar
-        
-        }
+    public int compareTo(Object o) {
+		Serie otherSerie = (Serie) o;
+        return Integer.compare(this.numTemporadas, otherSerie.getNumTemporadas());
+    }
 
 }
