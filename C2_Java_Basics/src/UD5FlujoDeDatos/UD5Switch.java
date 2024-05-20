@@ -1,4 +1,6 @@
 package UD5FlujoDeDatos;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 
 public class UD5Switch {
 
@@ -38,7 +40,7 @@ public class UD5Switch {
 		System.out.println("El día es: " + nombreDia);
 
 		// Ejemplo con Date()
-		Date fecha = new Date();
+		Date fecha = new Date(dia);
 		System.out.println(fecha);
 		SimpleDateFormat formatoDia = new SimpleDateFormat("u");
 		int diaNumero = Integer.parseInt(formatoDia.format(fecha));
