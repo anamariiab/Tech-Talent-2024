@@ -129,7 +129,7 @@ public class Ejercicio9 {
 				} else if (tabla.equals("equipos")) {
 					System.out.println("Número de Serie: " + resultSet.getString("num_serie") + ", Nombre: "
 							+ resultSet.getString("nombre") + ", Facultad: " + resultSet.getInt("facultad"));
-				} else if (tabla.equals("reservas")) {
+				} else if (tabla.equals("reserva")) {
 					System.out.println("DNI: " + resultSet.getString("DNI") + ", Número de Serie: "
 							+ resultSet.getString("num_serie") + ", Comienzo: " + resultSet.getTimestamp("comienzo")
 							+ ", Fin: " + resultSet.getTimestamp("fin"));
