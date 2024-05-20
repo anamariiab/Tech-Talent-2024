@@ -1,0 +1,11 @@
+package T2JavaIde.C1_Introducción_A_La_Programación.T2JavaIde.src;
+
+public class HolaMundo {
+
+	public static void main(String[] args) {
+
+		System.out.println ("Hello World!");
+
+	}
+
+}
