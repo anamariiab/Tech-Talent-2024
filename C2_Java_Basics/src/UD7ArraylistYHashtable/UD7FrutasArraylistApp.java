@@ -1,6 +1,6 @@
 package UD7ArraylistYHashtable;
-
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class UD7FrutasArraylistApp {
 
