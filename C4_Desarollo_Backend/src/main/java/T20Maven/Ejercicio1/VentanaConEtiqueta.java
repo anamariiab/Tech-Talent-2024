@@ -19,12 +19,13 @@ public class VentanaConEtiqueta extends JFrame {
 
 	private void configurarVentana() {
 		setTitle("Ventanita con etiqueta");
-		setSize(400, 300); // Ajustar el tamaño
+		setSize(400, 300); 
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setResizable(true);
 
-		ImageIcon icono = new ImageIcon(Ejercicio1.class.getClassLoader().getResource("img/CherryBlossom.png"));
+		java.net.URL imgURL = VentanaConEtiqueta.class.getClassLoader().getResource("icon/CherryBlossom.png");
+		ImageIcon icono = new ImageIcon(imgURL);
 		setIconImage(icono.getImage());
 	}
 
