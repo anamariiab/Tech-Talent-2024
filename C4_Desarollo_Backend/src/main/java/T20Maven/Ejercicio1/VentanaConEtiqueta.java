@@ -1,5 +1,5 @@
 package T20Maven.Ejercicio1;
-
+import javax.swing.ImageIcon;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
