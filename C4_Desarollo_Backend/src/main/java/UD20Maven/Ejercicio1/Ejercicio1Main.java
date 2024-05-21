@@ -3,7 +3,7 @@ package UD20Maven.Ejercicio1;
 import javax.swing.*;
 import java.awt.*;
 
-public class Ejercicio1App {
+public class Ejercicio1Main {
 	
 	public static void main(String[] args) {
 		// Configuración de la ventana principal
