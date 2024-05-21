@@ -24,7 +24,7 @@ public class VentanaConEtiqueta extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setResizable(true);
 
-		java.net.URL imgURL = VentanaConEtiqueta.class.getClassLoader().getResource("icon/CherryBlossom.png");
+		java.net.URL imgURL = VentanaConEtiqueta.class.getClassLoader().getResource("icon/CatFace.png");
 		ImageIcon icono = new ImageIcon(imgURL);
 		setIconImage(icono.getImage());
 	}
