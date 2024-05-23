@@ -71,12 +71,4 @@ public class VentanaEventosRaton extends JFrame {
     private void registrarEvento(String evento) {
         areaDeTexto.append(evento + "\n");
     }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaEventosRaton().setVisible(true);
-            }
-        });
-    }
 }
