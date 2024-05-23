@@ -1,4 +1,4 @@
-package TA21JUnit;
+package T21JUnit;
 
 public class MiniCalculadora {
 
