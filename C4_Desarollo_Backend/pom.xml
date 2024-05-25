@@ -29,8 +29,32 @@
     <artifactId>mysql-connector-j</artifactId>
     <version>8.4.0</version>
 </dependency>
+  <!-- https://mvnrepository.com/artifact/com.googlecode.soundlibs/mp3spi -->
+<dependency>
+    <groupId>com.googlecode.soundlibs</groupId>
+    <artifactId>mp3spi</artifactId>
+    <version>1.9.5-1</version>
+</dependency>
 
+<!-- https://mvnrepository.com/artifact/com.googlecode.soundlibs/tritonus-all -->
+<dependency>
+    <groupId>com.googlecode.soundlibs</groupId>
+    <artifactId>tritonus-all</artifactId>
+    <version>0.3.7-1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.googlecode.soundlibs/vorbisspi -->
+<dependency>
+    <groupId>com.googlecode.soundlibs</groupId>
+    <artifactId>vorbisspi</artifactId>
+    <version>1.0.3-1</version>
+</dependency>
+    <dependency>
+      <groupId>javazoom</groupId>
+      <artifactId>jlayer</artifactId>
+      <version>1.0.1</version>
+    </dependency>
   </dependencies>
+
 
   <build>
     <pluginManagement>
