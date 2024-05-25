@@ -19,33 +19,47 @@ class PascalCalculatorTest {
 	        calculator = new PascalCalculator();
 	    }
 
-	    @Test
 	    public void testSumar() {
-	        double resultado = calculator.sumar(5, 3);
-	        assertEquals(8, resultado, "La suma de 5 y 3 debe ser 8.");
+	        double num1 = 5;
+	        double num2 = 3;
+	        double resultadoEsperado = 8;
+	        double resultadoCalculado = calculator.sumar(num1, num2);
+	        assertEquals(resultadoEsperado, resultadoCalculado, "La suma de 5 y 3 debe ser 8.");
 	    }
 
 	    @Test
 	    public void testRestar() {
-	        double resultado = calculator.restar(10, 4);
-	        assertEquals(6, resultado, "La resta de 10 y 4 debe ser 6."); 
+	        double num1 = 10;
+	        double num2 = 4;
+	        double resultadoEsperado = 6;
+	        double resultadoCalculado = calculator.restar(num1, num2);
+	        assertEquals(resultadoEsperado, resultadoCalculado, "La resta de 10 y 4 debe ser 6.");
 	    }
 
 	    @Test
 	    public void testMultiplicar() {
-	        double resultado = calculator.multiplicar(6, 4);
-	        assertEquals(24, resultado, "La multiplicación de 6 y 4 debe ser 24."); 
+	    	double num1 = 6;
+	        double num2 = 4;
+	        double resultadoEsperado = 24;
+	        double resultadoCalculado = calculator.multiplicar(num1, num2);
+	        assertEquals(resultadoEsperado, resultadoCalculado, "La multiplicación de 6 y 4 debe ser 24.");
 	    }
 
 	    @Test
 	    public void testDividir() {
-	        double resultado = calculator.dividir(10, 2);
-	        assertEquals(5, resultado, "La división de 10 entre 2 debe ser 5."); 
+	    	double num1 = 10;
+	        double num2 = 2;
+	        double resultadoEsperado = 5;
+	        double resultadoCalculado = calculator.dividir(num1, num2);
+	        assertEquals(resultadoEsperado, resultadoCalculado, "La división de 10 entre 2 debe ser 5.");
 	    }
 
 	    @Test
 	    public void testCalcularPorcentaje() {
-	        double resultado = calculator.calcularPorcentaje(80, 25);
-	        assertEquals(20, resultado, "El 25% de 80 debe ser 20.");
+	    	double num1 = 80;
+	        double num2 = 25;
+	        double resultadoEsperado = 20;
+	        double resultadoCalculado = calculator.calcularPorcentaje(num1, num2);
+	        assertEquals(resultadoEsperado, resultadoCalculado, "El 25% de 80 debe ser 20.");
 	    }
 	}
