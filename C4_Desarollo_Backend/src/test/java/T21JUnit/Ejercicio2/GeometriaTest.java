@@ -1,4 +1,4 @@
-package T21JUnit;
+package T21JUnit.Ejercicio2;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,8 +8,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import T21JUnit.Ejercicio1.Geometria;
 import T21JUnit.Ejercicio1.PascalCalculator;
+import T21JUnit.Ejercicio2.Geometria;
 
 class GeometriaTest {
 

@@ -162,7 +162,6 @@ public class PascalCalculatorMain extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(this, "¡Ups! " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
-            calculator.agregarAlHistorial(num1, e.getActionCommand(), num2, resultado);
         }
     }
     

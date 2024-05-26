@@ -1,4 +1,4 @@
-package T21JUnit;
+package T21JUnit.Ejercicio1;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -61,5 +61,8 @@ class PascalCalculatorTest {
 	        double resultadoEsperado = 20;
 	        double resultadoCalculado = calculator.calcularPorcentaje(num1, num2);
 	        assertEquals(resultadoEsperado, resultadoCalculado, "El 25% de 80 debe ser 20.");
+	        
+	        
+	        //falta testear el hisotrial!!!!
 	    }
 	}

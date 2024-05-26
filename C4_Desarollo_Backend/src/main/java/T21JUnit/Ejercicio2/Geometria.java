@@ -1,4 +1,4 @@
-package T21JUnit.Ejercicio1;
+package T21JUnit.Ejercicio2;
 
 public class Geometria {
 		

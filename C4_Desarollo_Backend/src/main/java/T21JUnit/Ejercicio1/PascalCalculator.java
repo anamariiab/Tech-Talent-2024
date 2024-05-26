@@ -43,7 +43,7 @@ public class PascalCalculator {
         return resultado;
     }
 
-    public void agregarAlHistorial(double num1, String operador, double num2, double resultado) {
+    private void agregarAlHistorial(double num1, String operador, double num2, double resultado) {
         String calculo = num1 + " " + operador + " " + num2 + " = " + resultado;
         historialCalculos.add(calculo);
     }
