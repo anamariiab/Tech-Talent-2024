@@ -77,7 +77,7 @@ public class MemoryGame extends JFrame implements ActionListener {
 		initializePanels();
 		initializeMenu();
 
-		timer = new Timer(1000, e -> {
+		timer = new Timer(1000, e -> {                         //e = expresion lambda
 			flipBack(firstButton);
 			flipBack(secondButton);
 			firstButton = null;

@@ -4874,3 +4874,574 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.mysql:mys
 2024-05-26 14:26:42,805 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2024-05-26 14:26:42,805 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2024-05-26 14:26:42,805 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 16:47:10,877 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 16:47:10,878 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 16:47:10,894 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-05-26 16:47:10,897 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 16:47:10,897 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 16:47:10,897 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:12:29,717 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:12:29,718 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:12:29,722 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:12:29,748 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:12:29,748 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:12:29,748 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:23:53,796 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-26 20:24:12,483 [Worker-9: Build] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:24:12,485 [Worker-9: Build] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:24:12,491 [Worker-9: Build] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:24:12,802 [Worker-9: Build] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:24:12,802 [Worker-9: Build] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:24:12,802 [Worker-9: Build] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:24:45,706 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:24:45,707 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:24:45,716 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:24:45,740 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:24:45,740 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:24:45,740 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:25:15,761 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:25:15,762 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:25:15,768 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:25:15,795 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:25:15,795 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:25:15,795 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:25:25,693 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:25:25,693 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:25:25,702 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:25:25,726 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:25:25,726 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:25:25,726 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:26:32,162 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:26:32,162 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:26:32,167 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:26:32,188 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:26:32,189 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:26:32,189 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:27:46,155 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:27:46,155 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:27:46,159 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:27:46,175 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:27:46,176 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:27:46,176 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:31:06,733 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:31:06,734 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:31:06,737 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:31:06,752 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:31:06,753 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:31:06,753 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:31:56,724 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:31:56,724 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:31:56,729 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:31:56,746 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:31:56,746 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:31:56,747 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:32:09,799 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:32:09,800 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:32:09,805 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:32:09,823 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:32:09,823 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:32:09,823 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:35:22,903 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:35:22,904 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:35:22,907 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:35:22,922 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:35:22,922 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:35:22,922 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:35:37,628 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:35:37,629 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:35:37,634 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:35:37,650 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:35:37,650 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:35:37,650 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:37:50,133 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:37:50,133 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:37:50,137 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:37:50,152 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:37:50,153 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:37:50,153 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:38:48,347 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:38:48,348 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:38:48,354 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:38:48,371 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:38:48,371 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:38:48,371 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:46:22,533 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:46:22,533 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:46:22,537 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:46:22,555 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:46:22,555 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:46:22,555 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:46:29,353 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:46:29,354 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:46:29,357 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:46:29,372 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:46:29,372 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:46:29,372 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 20:46:51,744 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:46:51,745 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:46:51,748 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 20:46:51,763 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 20:46:51,763 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 20:46:51,763 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:04:20,471 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:04:20,471 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:04:20,475 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:04:20,491 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:04:20,491 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:04:20,491 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:04:58,854 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:04:58,854 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:04:58,857 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:04:58,869 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:04:58,870 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:04:58,870 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:25:05,309 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:25:05,310 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:25:05,313 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:25:05,325 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:25:05,325 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:25:05,325 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:26:49,082 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:26:49,082 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:26:49,087 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:26:49,097 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:26:49,097 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:26:49,097 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:33:27,646 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:33:27,646 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:33:27,650 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:33:27,665 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:33:27,666 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:33:27,666 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:33:54,448 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:33:54,449 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:33:54,456 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:33:54,473 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:33:54,474 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:33:54,474 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:38:48,438 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:38:48,438 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:38:48,442 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:38:48,456 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:38:48,456 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:38:48,456 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:38:54,963 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:38:54,963 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:38:54,967 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:38:54,981 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:38:54,981 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:38:54,981 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:51:13,154 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:51:13,154 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:51:13,158 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:51:13,173 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:51:13,173 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:51:13,173 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:52:32,164 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:52:32,164 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:52:32,168 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:52:32,201 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:52:32,201 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:52:32,201 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:52:49,473 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:52:49,473 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:52:49,477 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:52:49,492 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:52:49,492 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:52:49,492 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:53:48,315 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:53:48,315 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:53:48,319 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:53:48,333 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:53:48,333 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:53:48,333 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:54:11,945 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:54:11,945 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:54:11,949 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:54:11,966 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:54:11,966 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:54:11,966 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 21:54:45,317 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:54:45,317 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:54:45,321 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 21:54:45,336 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 21:54:45,337 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 21:54:45,337 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:04:39,730 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:04:39,730 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:04:39,734 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:04:39,748 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:04:39,748 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:04:39,748 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:28:30,671 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:28:30,671 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:28:30,677 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:28:30,691 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:28:30,691 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:28:30,691 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:28:38,160 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:28:38,161 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:28:38,164 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:28:38,175 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:28:38,176 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:28:38,176 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:36:34,017 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:36:34,017 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:36:34,018 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:36:34,031 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:36:34,031 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:36:34,031 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:36:37,046 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:36:37,046 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:36:37,050 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:36:37,061 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:36:37,061 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:36:37,061 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:36:44,976 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:36:44,976 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:36:44,977 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:36:44,992 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:36:44,992 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:36:44,992 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:36:50,514 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:36:50,514 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:36:50,518 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:36:50,531 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:36:50,532 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:36:50,532 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:37:00,097 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:37:00,097 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:37:00,097 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:37:00,110 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:37:00,110 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:37:00,110 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:37:07,927 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:37:07,927 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:37:07,931 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:37:07,942 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:37:07,942 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:37:07,942 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:37:21,978 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:37:21,978 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:37:21,981 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:37:21,999 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:37:21,999 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:37:21,999 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:40:54,906 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:40:54,906 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:40:54,907 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:40:54,918 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:40:54,918 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:40:54,919 [Worker-66: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:43:55,509 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:43:55,510 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:43:55,510 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:43:55,522 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:43:55,523 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:43:55,523 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:48:22,271 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:48:22,271 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:48:22,276 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:48:22,289 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:48:22,290 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:48:22,290 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:49:40,528 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:49:40,528 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:49:40,528 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:49:40,544 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:49:40,544 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:49:40,544 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:50:45,416 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:50:45,417 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:50:45,420 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:50:45,434 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:50:45,434 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:50:45,434 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:52:59,683 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:52:59,683 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:52:59,687 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:52:59,700 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:52:59,700 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:52:59,700 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:53:22,487 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:53:22,487 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:53:22,491 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:53:22,506 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:53:22,506 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:53:22,506 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:53:34,983 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:53:34,983 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:53:34,987 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:53:35,002 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:53:35,002 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:53:35,002 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:53:51,897 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:53:51,897 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:53:51,901 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:53:51,921 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:53:51,921 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:53:51,921 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:54:00,222 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:54:00,222 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:54:00,226 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:54:00,239 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:54:00,239 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:54:00,240 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:54:09,045 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:54:09,045 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:54:09,048 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:54:09,062 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:54:09,062 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:54:09,062 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:54:18,635 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:54:18,635 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:54:18,638 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:54:18,652 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:54:18,652 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:54:18,652 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:54:39,040 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:54:39,040 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:54:39,044 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:54:39,059 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:54:39,059 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:54:39,059 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:54:58,022 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:54:58,022 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:54:58,026 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:54:58,040 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:54:58,040 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:54:58,040 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:55:09,647 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:55:09,647 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:55:09,651 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:55:09,665 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:55:09,665 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:55:09,665 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:55:26,331 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:55:26,331 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:55:26,335 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:55:26,349 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:55:26,349 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:55:26,349 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 22:57:49,012 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:57:49,012 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:57:49,015 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 22:57:49,029 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 22:57:49,029 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 22:57:49,029 [Worker-70: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:04:55,567 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:04:55,567 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:04:55,571 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:04:55,586 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:04:55,586 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:04:55,586 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:07:12,302 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:07:12,303 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:07:12,306 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:07:12,320 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:07:12,321 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:07:12,321 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:08:22,369 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:08:22,369 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:08:22,373 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:08:22,391 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:08:22,391 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:08:22,391 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:09:05,322 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:09:05,323 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:09:05,327 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:09:05,341 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:09:05,341 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:09:05,341 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:09:37,399 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:09:37,399 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:09:37,403 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:09:37,418 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:09:37,418 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:09:37,418 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:12:48,261 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:12:48,262 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:12:48,265 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:12:48,279 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:12:48,279 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:12:48,279 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:14:29,104 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:14:29,104 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:14:29,108 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:14:29,122 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:14:29,122 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:14:29,122 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:15:14,878 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:15:14,879 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:15:14,885 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:15:14,902 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:15:14,902 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:15:14,902 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:15:51,477 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:15:51,477 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:15:51,481 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:15:51,498 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:15:51,498 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:15:51,498 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:16:00,641 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:16:00,642 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:16:00,647 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:16:00,668 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:16:00,668 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:16:00,668 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:16:12,169 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:16:12,169 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:16:12,175 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:16:12,194 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:16:12,194 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:16:12,194 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:16:21,375 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:16:21,375 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:16:21,382 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:16:21,397 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:16:21,397 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:16:21,397 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:16:41,767 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:16:41,767 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:16:41,771 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:16:41,792 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:16:41,792 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:16:41,792 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:16:52,136 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:16:52,136 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:16:52,140 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:16:52,160 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:16:52,160 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:16:52,160 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:17:16,726 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:17:16,726 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:17:16,731 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:17:16,746 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:17:16,746 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:17:16,747 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:17:31,759 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:17:31,759 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:17:31,765 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:17:31,781 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:17:31,781 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:17:31,781 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:17:41,309 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:17:41,309 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:17:41,316 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:17:41,339 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:17:41,339 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:17:41,339 [Worker-80: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:17:59,200 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:17:59,201 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:17:59,205 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:17:59,225 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:17:59,225 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:17:59,225 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:18:05,484 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:18:05,484 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:18:05,489 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:18:05,510 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:18:05,510 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:18:05,510 [Worker-87: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:18:12,036 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:18:12,036 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:18:12,041 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:18:12,062 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:18:12,062 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:18:12,062 [Worker-81: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:18:24,097 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:18:24,098 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:18:24,101 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:18:24,117 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:18:24,117 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:18:24,117 [Worker-85: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:18:46,543 [Worker-83: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:18:46,543 [Worker-83: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:18:46,547 [Worker-83: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:18:46,568 [Worker-83: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:18:46,568 [Worker-83: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:18:46,568 [Worker-83: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:18:54,684 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:18:54,684 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:18:54,688 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:18:54,701 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:18:54,701 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:18:54,701 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:21:09,513 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:21:09,514 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:21:09,519 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:21:09,535 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:21:09,535 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:21:09,535 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:21:14,575 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:21:14,575 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:21:14,580 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:21:14,598 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:21:14,598 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:21:14,598 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:21:20,884 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:21:20,884 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:21:20,888 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:21:20,907 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:21:20,907 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:21:20,907 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:21:28,825 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:21:28,825 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:21:28,830 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:21:28,847 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:21:28,847 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:21:28,847 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:21:55,752 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:21:55,752 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:21:55,757 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:21:55,776 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:21:55,776 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:21:55,776 [Worker-88: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:22:02,389 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:22:02,389 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:22:02,393 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:22:02,408 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:22:02,408 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:22:02,408 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:22:16,346 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:22:16,346 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:22:16,351 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:22:16,366 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:22:16,366 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:22:16,366 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:22:23,644 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:22:23,644 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:22:23,648 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:22:23,663 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:22:23,663 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:22:23,663 [Worker-73: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:22:32,755 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:22:32,755 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:22:32,761 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:22:32,779 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:22:32,779 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:22:32,779 [Worker-91: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:22:44,590 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:22:44,590 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:22:44,593 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:22:44,609 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:22:44,609 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:22:44,609 [Worker-86: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:23:04,930 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:23:04,930 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:23:04,935 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:23:04,954 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:23:04,954 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:23:04,955 [Worker-90: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:23:10,501 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:23:10,501 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:23:10,509 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:23:10,525 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:23:10,525 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:23:10,525 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
+2024-05-26 23:23:17,928 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:23:17,928 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:23:17,932 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2024-05-26 23:23:17,947 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-05-26 23:23:17,947 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-05-26 23:23:17,947 [Worker-89: Launching ViewProyecto] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\C4_Desarollo_Backend\src\test\resources
