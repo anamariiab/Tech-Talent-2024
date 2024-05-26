@@ -129,13 +129,13 @@ public class MemoryGame extends JFrame implements ActionListener {
 	        for (int j = 0; j < cols; j++) {
 	            cardLayouts[i][j] = new CardLayout();
 	            panels[i][j] = new JPanel(cardLayouts[i][j]);
-	            panels[i][j].setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10)); // Agregar un borde
+	            panels[i][j].setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10)); // agregar un borde
 
 	            JButton button = new JButton();
 	            button.addActionListener(this);
 	            button.setActionCommand(shuffledNames[i * cols + j]);
 	            button.setName(i + "," + j);
-	            button.setPreferredSize(new Dimension(180, 180)); // Establecer un tamaño preferido para los botones
+	            button.setPreferredSize(new Dimension(180, 180)); // nuevo tamaño para los botones
 	            panels[i][j].add(button, "back");
 
 	            addImageToPanel(panels[i][j], shuffledNames[i * cols + j]);
@@ -155,7 +155,7 @@ public class MemoryGame extends JFrame implements ActionListener {
 	        }
 	        ImageIcon imageIcon = new ImageIcon(imgURL);
 	        Image image = imageIcon.getImage();
-	        Image newimg = image.getScaledInstance(180, 180, java.awt.Image.SCALE_SMOOTH); // Escalar la imagen
+	        Image newimg = image.getScaledInstance(180, 180, java.awt.Image.SCALE_SMOOTH); 
 	        imageIcon = new ImageIcon(newimg);
 
 	        JLabel label = new JLabel(imageIcon);

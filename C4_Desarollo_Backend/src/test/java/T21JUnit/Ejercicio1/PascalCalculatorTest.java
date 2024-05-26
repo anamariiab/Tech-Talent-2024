@@ -19,6 +19,7 @@ class PascalCalculatorTest {
 	        calculator = new PascalCalculator();
 	    }
 
+	    @Test
 	    public void testSumar() {
 	        double num1 = 5;
 	        double num2 = 3;
@@ -61,8 +62,6 @@ class PascalCalculatorTest {
 	        double resultadoEsperado = 20;
 	        double resultadoCalculado = calculator.calcularPorcentaje(num1, num2);
 	        assertEquals(resultadoEsperado, resultadoCalculado, "El 25% de 80 debe ser 20.");
-	        
-	        
-	        //falta testear el hisotrial!!!!
+
 	    }
 	}
