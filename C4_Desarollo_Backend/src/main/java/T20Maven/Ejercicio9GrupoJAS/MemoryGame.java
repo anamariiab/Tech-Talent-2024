@@ -169,6 +169,10 @@ public class MemoryGame extends JFrame implements ActionListener {
 		itemHistorial.addActionListener(e -> showHistory());
 		menuOpciones.add(itemHistorial);
 
+		JMenuItem itemGuardarPartida = new JMenuItem("Guardar Partida");
+		itemGuardarPartida.addActionListener(e -> saveGame());
+		menuOpciones.add(itemGuardarPartida);
+
 		JMenuItem itemReiniciar = new JMenuItem("Reiniciar juego");
 		itemReiniciar.addActionListener(e -> resetGame());
 		menuOpciones.add(itemReiniciar);
@@ -280,22 +284,26 @@ public class MemoryGame extends JFrame implements ActionListener {
 	private void resetGame() {
 		selectTheme();
 	}
-	
-	private String getGameData(String theme) {
-	    StringBuilder data = new StringBuilder();
-	    data.append("Jugador: ").append(playerName).append("\n");
-	    data.append("Tema: ").append(theme).append("\n");
 
-	    for (int i = 0; i < rows; i++) {
-	        for (int j = 0; j < cols; j++) {
-	            JButton button = (JButton) panels[i][j].getComponent(0);
-	            String cardState = button.isEnabled() ? "Oculta" : "Volteada";
-	            data.append("Carta en la posición (").append(i).append(",").append(j).append("): ").append(cardState).append("\n");
-	        }
-	    }
-	    return data.toString();
+	private String getGameData() {
+		StringBuilder data = new StringBuilder();
+		data.append("Jugador: ").append(playerName).append("\n");
+
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < cols; j++) {
+				JButton button = (JButton) panels[i][j].getComponent(0);
+				String cardState = button.isEnabled() ? "Oculta" : "Volteada";
+				data.append("Carta en la posición (").append(i).append(",").append(j).append("): ").append(cardState)
+						.append("\n");
+			}
+		}
+		return data.toString();
 	}
-	
+
+	private void saveGame() {
+		String gameData = getGameData();
+		GameSaver.saveGame("saved_game.txt", gameData);
+	}
 
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(MemoryGame::new);
