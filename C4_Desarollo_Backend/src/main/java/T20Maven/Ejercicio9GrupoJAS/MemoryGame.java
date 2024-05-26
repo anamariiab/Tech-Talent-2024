@@ -48,21 +48,22 @@ public class MemoryGame extends JFrame implements ActionListener {
 				names = new String[] { "España", "Portugal", "China", "Colombia", "Brasil", "Francia", "Japon",
 						"Rumania" };
 			}
-
-			try {
-				java.net.URL imgURL = MemoryGame.class.getClassLoader().getResource("icon/memory_icon.jpg");
-				if (imgURL == null) {
-					throw new RuntimeException("¡Ups! No se pudo encontrar la imagen del icono del juego.");
-				}
-				ImageIcon icon = new ImageIcon(imgURL);
-				setIconImage(icon.getImage());
-			} catch (Exception e) {
-				JOptionPane.showMessageDialog(this, "¡Ups! No se pudo cargar el icono del juego.", "Error",
-						JOptionPane.ERROR_MESSAGE);
-			}
-			initializeGame();
+			setIcon();
+            initializeGame();
 		}
 	}
+	
+	private void setIcon() {
+        try {
+            java.net.URL imgURL = getClass().getClassLoader().getResource("icon/memory_icon.jpg");
+            if (imgURL != null) {
+                ImageIcon icon = new ImageIcon(imgURL);
+                setIconImage(icon.getImage());
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "¡Ups! No se pudo cargar el icono del juego.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
 
 	private void initializeGame() {
 		setTitle("MemoryGame - Gamertag: " + playerName);
@@ -135,31 +136,32 @@ public class MemoryGame extends JFrame implements ActionListener {
 				button.setName(i + "," + j);
 				panels[i][j].add(button, "back");
 
-				try {
-					java.net.URL imgURL = getClass().getClassLoader()
-							.getResource("img/" + shuffledNames[i * cols + j] + ".jpg");
-					if (imgURL == null) {
-						throw new RuntimeException(
-								"¡Ups! No se pudo encontrar la imagen para " + shuffledNames[i * cols + j]);
-					}
-					ImageIcon imageIcon = new ImageIcon(imgURL);
-					Image image = imageIcon.getImage();
-					Image newimg = image.getScaledInstance(200, 200, java.awt.Image.SCALE_SMOOTH);
-					imageIcon = new ImageIcon(newimg);
+				addImageToPanel(panels[i][j], shuffledNames[i * cols + j]);
 
-					JLabel label = new JLabel(imageIcon);
-					panels[i][j].add(label, "front");
-				} catch (Exception e) {
-					System.err.println("¡Ups! Hubo un error al cargar la imagen " + shuffledNames[i * cols + j] + ": "
-							+ e.getMessage());
-				}
-
-				add(panels[i][j]);
+                add(panels[i][j]);
 			}
 		}
 		revalidate();
 		repaint();
 	}
+	
+	private void addImageToPanel(JPanel panel, String imageName) {
+        try {
+            java.net.URL imgURL = getClass().getClassLoader().getResource("img/" + imageName + ".jpg");
+            if (imgURL == null) {
+                throw new RuntimeException("¡Ups! No se pudo encontrar la imagen para " + imageName);
+            }
+            ImageIcon imageIcon = new ImageIcon(imgURL);
+            Image image = imageIcon.getImage();
+            Image newimg = image.getScaledInstance(200, 200, java.awt.Image.SCALE_SMOOTH);
+            imageIcon = new ImageIcon(newimg);
+
+            JLabel label = new JLabel(imageIcon);
+            panel.add(label, "front");
+        } catch (Exception e) {
+            System.err.println("¡Ups! Hubo un error al cargar la imagen " + imageName + ": " + e.getMessage());
+        }
+    }
 
 	private void initializeMenu() {
 		JMenuBar barraMenu = new JMenuBar();
@@ -169,7 +171,7 @@ public class MemoryGame extends JFrame implements ActionListener {
 		itemHistorial.addActionListener(e -> showHistory());
 		menuOpciones.add(itemHistorial);
 
-		JMenuItem itemGuardarPartida = new JMenuItem("Guardar Partida");
+		JMenuItem itemGuardarPartida = new JMenuItem("Guardar partida");
 		itemGuardarPartida.addActionListener(e -> saveGame());
 		menuOpciones.add(itemGuardarPartida);
 
@@ -257,10 +259,10 @@ public class MemoryGame extends JFrame implements ActionListener {
 			timeElapsed = seconds + " segundos";
 		}
 
-		String message = playerName + ", has encontrado todas las parejas en " + attempts + " intentos y " + timeElapsed
+		String message = "¡Felicidades, " + playerName + "! Has encontrado todas las parejas en " + attempts + " intentos y " + timeElapsed
 				+ ".";
 		history.add(playerName + " - " + attempts + " intentos en " + timeElapsed);
-		JOptionPane.showMessageDialog(this, message, "¡Felicidades!", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(this, message, "¡Juego completado!", JOptionPane.INFORMATION_MESSAGE);
 		int choice = JOptionPane.showConfirmDialog(this, "¿Quieres volver a jugar?", "New Game",
 				JOptionPane.YES_NO_OPTION);
 		if (choice == JOptionPane.YES_OPTION) {
