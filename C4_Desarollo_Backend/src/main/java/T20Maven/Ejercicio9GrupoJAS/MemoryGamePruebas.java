@@ -124,44 +124,46 @@ public class MemoryGamePruebas extends JFrame implements ActionListener {
 	}
 
 	private void initializePanels() {
-        getContentPane().removeAll();
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                cardLayouts[i][j] = new CardLayout();
-                panels[i][j] = new JPanel(cardLayouts[i][j]);
+	    getContentPane().removeAll();
+	    for (int i = 0; i < rows; i++) {
+	        for (int j = 0; j < cols; j++) {
+	            cardLayouts[i][j] = new CardLayout();
+	            panels[i][j] = new JPanel(cardLayouts[i][j]);
+	            panels[i][j].setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10)); // Agregar un borde
 
-                JButton button = new JButton();
-                button.addActionListener(this);
-                button.setActionCommand(shuffledNames[i * cols + j]);
-                button.setName(i + "," + j);
-                panels[i][j].add(button, "back");
+	            JButton button = new JButton();
+	            button.addActionListener(this);
+	            button.setActionCommand(shuffledNames[i * cols + j]);
+	            button.setName(i + "," + j);
+	            button.setPreferredSize(new Dimension(180, 180)); // Establecer un tamaño preferido para los botones
+	            panels[i][j].add(button, "back");
 
-                addImageToPanel(panels[i][j], shuffledNames[i * cols + j]);
+	            addImageToPanel(panels[i][j], shuffledNames[i * cols + j]);
 
-                add(panels[i][j]);
-            }
-        }
-        revalidate();
-        repaint();
-    }
+	            add(panels[i][j]);
+	        }
+	    }
+	    revalidate();
+	    repaint();
+	}
 	
 	private void addImageToPanel(JPanel panel, String imageName) {
-        try {
-            java.net.URL imgURL = getClass().getClassLoader().getResource("img/" + imageName + ".jpg");
-            if (imgURL == null) {
-                throw new RuntimeException("¡Ups! No se pudo encontrar la imagen para " + imageName);
-            }
-            ImageIcon imageIcon = new ImageIcon(imgURL);
-            Image image = imageIcon.getImage();
-            Image newimg = image.getScaledInstance(200, 200, java.awt.Image.SCALE_SMOOTH);
-            imageIcon = new ImageIcon(newimg);
+	    try {
+	        java.net.URL imgURL = getClass().getClassLoader().getResource("img/" + imageName + ".jpg");
+	        if (imgURL == null) {
+	            throw new RuntimeException("¡Ups! No se pudo encontrar la imagen para " + imageName);
+	        }
+	        ImageIcon imageIcon = new ImageIcon(imgURL);
+	        Image image = imageIcon.getImage();
+	        Image newimg = image.getScaledInstance(180, 180, java.awt.Image.SCALE_SMOOTH); // Escalar la imagen
+	        imageIcon = new ImageIcon(newimg);
 
-            JLabel label = new JLabel(imageIcon);
-            panel.add(label, "front");
-        } catch (Exception e) {
-            System.err.println("¡Ups! Hubo un error al cargar la imagen " + imageName + ": " + e.getMessage());
-        }
-    }
+	        JLabel label = new JLabel(imageIcon);
+	        panel.add(label, "front");
+	    } catch (Exception e) {
+	        System.err.println("¡Ups! Hubo un error al cargar la imagen " + imageName + ": " + e.getMessage());
+	    }
+	}
 
 	private void initializeMenu() {
 		JMenuBar barraMenu = new JMenuBar();
