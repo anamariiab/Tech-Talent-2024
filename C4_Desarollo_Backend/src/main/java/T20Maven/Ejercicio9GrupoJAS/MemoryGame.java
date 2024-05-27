@@ -4,8 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.time.Duration;
 import java.util.Collections;
 import java.util.ArrayList;
@@ -35,7 +33,7 @@ public class MemoryGame extends JFrame implements ActionListener {
 	}
 
 	private void selectTheme() {
-		String[] themes = { "Animales", "Frutas", "Países" };
+		String[] themes = { "Animales", "Frutas", "Paises" };
 		String selectedTheme = (String) JOptionPane.showInputDialog(this, "Selecciona un tema:",
 				"Configuración del Juego", JOptionPane.PLAIN_MESSAGE, null, themes, themes[0]);
 
@@ -44,7 +42,7 @@ public class MemoryGame extends JFrame implements ActionListener {
 				names = new String[] { "Leon", "Tigre", "Elefante", "Jirafa", "Cebra", "Mapache", "Canguro", "Panda" };
 			} else if (selectedTheme.equals("Frutas")) {
 				names = new String[] { "Manzana", "Platano", "Fresa", "Naranja", "Pera", "Uva", "Kiwi", "Piña" };
-			} else if (selectedTheme.equals("Países")) {
+			} else if (selectedTheme.equals("Paises")) {
 				names = new String[] { "España", "Portugal", "China", "Colombia", "Brasil", "Francia", "Japon",
 						"Rumania" };
 			}
@@ -77,7 +75,7 @@ public class MemoryGame extends JFrame implements ActionListener {
 		initializePanels();
 		initializeMenu();
 
-		timer = new Timer(1000, e -> {                         //e = expresion lambda
+		timer = new Timer(1000, e -> {                         
 			flipBack(firstButton);
 			flipBack(secondButton);
 			firstButton = null;
@@ -124,18 +122,23 @@ public class MemoryGame extends JFrame implements ActionListener {
 	}
 
 	private void initializePanels() {
+		
+		Color buttonBackgroundColor = new Color(175, 238, 238);                          //coloritooooo botones
 	    getContentPane().removeAll();
 	    for (int i = 0; i < rows; i++) {
 	        for (int j = 0; j < cols; j++) {
 	            cardLayouts[i][j] = new CardLayout();
 	            panels[i][j] = new JPanel(cardLayouts[i][j]);
-	            panels[i][j].setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10)); // agregar un borde
+	            panels[i][j].setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));  // agregar un borde
 
 	            JButton button = new JButton();
 	            button.addActionListener(this);
 	            button.setActionCommand(shuffledNames[i * cols + j]);
 	            button.setName(i + "," + j);
-	            button.setPreferredSize(new Dimension(180, 180)); // nuevo tamaño para los botones
+	            button.setPreferredSize(new Dimension(180, 180));                         // nuevo tamaño para los botones
+	           
+	            button.setBackground(buttonBackgroundColor);
+	            
 	            panels[i][j].add(button, "back");
 
 	            addImageToPanel(panels[i][j], shuffledNames[i * cols + j]);
@@ -215,7 +218,6 @@ public class MemoryGame extends JFrame implements ActionListener {
 		JOptionPane.showMessageDialog(this, message, "Acerca de", JOptionPane.INFORMATION_MESSAGE, icon);
 	}
 
-	@Override
 	public void actionPerformed(ActionEvent e) {
 		JButton clickedButton = (JButton) e.getSource();
 		String[] position = clickedButton.getName().split(",");
@@ -249,7 +251,7 @@ public class MemoryGame extends JFrame implements ActionListener {
 	}
 
 	private void gameCompletion() {
-		long endTime = System.currentTimeMillis(); // Obtener tiempo actual
+		long endTime = System.currentTimeMillis();                     // obtener tiempo actual
 		Duration duration = Duration.ofMillis(endTime - startTime);
 		long minutes = duration.toMinutes();
 		long seconds = duration.minusMinutes(minutes).getSeconds();
@@ -308,7 +310,7 @@ public class MemoryGame extends JFrame implements ActionListener {
 		String gameData = getGameData();
 		GameSaver.saveGame("saved_game.txt", gameData);
 	}
-
+	
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(MemoryGame::new);
 	}
