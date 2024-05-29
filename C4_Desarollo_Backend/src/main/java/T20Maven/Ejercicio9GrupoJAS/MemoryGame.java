@@ -43,7 +43,7 @@ public class MemoryGame extends JFrame implements ActionListener {
 			} else if (selectedTheme.equals("Frutas")) {
 				names = new String[] { "Manzana", "Platano", "Fresa", "Naranja", "Pera", "Uva", "Kiwi", "Piña" };
 			} else if (selectedTheme.equals("Paises")) {
-				names = new String[] { "España", "Portugal", "China", "Colombia", "Brasil", "Francia", "Japon",
+				names = new String[] { "USA", "Canada", "China", "Colombia", "Brasil", "Francia", "Japon",
 						"Rumania" };
 			}
 			setIcon();
@@ -287,6 +287,7 @@ public class MemoryGame extends JFrame implements ActionListener {
 		cardLayouts[row][col].previous(panels[row][col]);
 	}
 
+	
 	private void resetGame() {
 		selectTheme();
 	}

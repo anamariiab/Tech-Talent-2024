@@ -16,7 +16,7 @@ public class VentanaEventos extends JFrame {
     }
 
     private void configurarVentana() {
-        setTitle("Eventos de Ventana");
+        setTitle("Eventos Ventana");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);

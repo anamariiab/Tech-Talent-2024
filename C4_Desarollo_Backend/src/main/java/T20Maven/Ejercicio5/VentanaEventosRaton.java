@@ -14,7 +14,7 @@ public class VentanaEventosRaton extends JFrame {
     }
 
     private void configurarVentana() {
-        setTitle("Eventos del ratón");
+        setTitle("Eventos Ratón");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);

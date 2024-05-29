@@ -4,6 +4,9 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import javax.swing.table.DefaultTableModel;
+
 import T22MVC.Ejercicio2.ConexionBD;
 
 public class ControllerAsignacion {
@@ -41,33 +44,27 @@ public class ControllerAsignacion {
 	        System.out.println("Proyecto asignado al científico con éxito.");
 	    } catch (SQLException e) {
 	        System.out.println("ERROR: No se ha podido asignar el proyecto al científico.");
-	        e.printStackTrace();
 	    }
 	}
 
-	public void mostrarAsignaciones() {
-	    try (ResultSet resultSet = statement.executeQuery("SELECT * FROM asignado_a")) {
-	        System.out.println("Asignaciones:");
-	        while (resultSet.next()) {
-	            System.out.println("Científico: " + resultSet.getString("cientifico") + ", Proyecto: " + resultSet.getString("proyecto"));
-	        }
-	    } catch (SQLException e) {
-	        System.out.println("ERROR al mostrar registros.");
-	        e.printStackTrace();
-	    }
-	}
-
-	public void actualizarAsignacion() {
-	    //mm?por implementar..
-	}
-
+	public void cargarDatos(DefaultTableModel modeloTabla) {
+        try (ResultSet resultSet = statement.executeQuery("SELECT * FROM asignado_a")) {
+            while (resultSet.next()) {
+                String cientifico = resultSet.getString("cientifico");
+                String proyecto = resultSet.getString("proyecto");
+                modeloTabla.addRow(new Object[]{cientifico, proyecto});
+            }
+        } catch (SQLException e) {
+            System.out.println("ERROR al cargar datos.");
+        }
+    }
+	
 	public void eliminarAsignacion(String cientifico, String proyecto) {
 	    try {
 	        statement.executeUpdate("DELETE FROM asignado_a WHERE cientifico = '" + cientifico + "' AND proyecto = '" + proyecto + "'");
 	        System.out.println("Asignación eliminada con éxito.");
 	    } catch (SQLException e) {
 	        System.out.println("ERROR: No se ha podido eliminar la asignación.");
-	        e.printStackTrace();
 	    }
 	}
 }	

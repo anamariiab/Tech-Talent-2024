@@ -58,7 +58,7 @@ public class ControllerProyecto {
 		}
 	}
 
-	public void actualizarProyecto() {
+	public void actualizarProyecto(String ID, String nombre, int horas) {
 		// falta por implementar!
 	}
 
@@ -71,5 +71,7 @@ public class ControllerProyecto {
 			e.printStackTrace();
 		}
 	}
+
+	
 
 }

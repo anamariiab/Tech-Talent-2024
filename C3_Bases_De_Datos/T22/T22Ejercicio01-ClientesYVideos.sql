@@ -1,0 +1,20 @@
+DROP DATABASE IF EXISTS ClientesYVideos;
+CREATE DATABASE ClientesYVideos;
+USE ClientesYVideos;
+
+CREATE TABLE cliente (
+    id INT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(250) DEFAULT NULL,
+    apellido VARCHAR(250) DEFAULT NULL,
+    direccion VARCHAR(250) DEFAULT NULL,
+    dni INT NOT NULL,
+    fecha DATE DEFAULT NULL,
+    PRIMARY KEY (id));
+
+CREATE TABLE videos (
+    id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(250) DEFAULT NULL,
+    director VARCHAR(250) DEFAULT NULL,
+    cli_id INT,
+    PRIMARY KEY (id),
+    CONSTRAINT videos_fk FOREIGN KEY (cli_id) REFERENCES cliente (id) ON DELETE CASCADE ON UPDATE CASCADE);
