@@ -9,8 +9,8 @@ INDEX VERSION 1.134+C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\.metadata\.plu
 1865797976.index
 3423835015.index
 336592820.index
-3617312122.index
 1668575867.index
+3617312122.index
 3678146664.index
 3424614572.index
 2254588667.index
@@ -22,10 +22,10 @@ INDEX VERSION 1.134+C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\.metadata\.plu
 4258407289.index
 977261541.index
 3758534191.index
-514745937.index
 2672537359.index
 1284889417.index
 1167205488.index
 394907393.index
+3337217914.index
 4235133420.index
 2393405341.index
