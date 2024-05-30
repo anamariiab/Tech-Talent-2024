@@ -16,8 +16,9 @@ public class ViewCliente extends JFrame {
 
 	public ViewCliente() {
 		setTitle("Lista de Clientes");
-		setSize(600, 400);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(800, 500);
+	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    setLocationRelativeTo(null); 
 
 		modeloTabla = new DefaultTableModel();
 		modeloTabla.addColumn("ID");
@@ -28,23 +29,65 @@ public class ViewCliente extends JFrame {
 		modeloTabla.addColumn("Fecha");
 
 		tablaClientes = new JTable(modeloTabla);
-		JScrollPane scrollPane = new JScrollPane(tablaClientes);
+        tablaClientes.setFillsViewportHeight(true);
+        tablaClientes.setRowHeight(25);
+        tablaClientes.getTableHeader().setFont(new Font("Arial", Font.BOLD, 14));
+        tablaClientes.getTableHeader().setBackground(new Color(70, 130, 180));
+        tablaClientes.getTableHeader().setForeground(Color.WHITE);
+        tablaClientes.setFont(new Font("Arial", Font.PLAIN, 14));
+        
+        JScrollPane scrollPane = new JScrollPane(tablaClientes);
 
 		btnActualizar = new JButton("Actualizar");
 		btnEliminar = new JButton("Eliminar");
-		btnInsertar = new JButton("Insertar Nuevo");
+		btnInsertar = new JButton("Insertar nuevo registro");
 
-		JPanel panelBotones = new JPanel();
-		panelBotones.setLayout(new FlowLayout());
-		panelBotones.add(btnActualizar);
-		panelBotones.add(btnEliminar);
+		btnActualizar.setBackground(new Color(70, 130, 180));
+        btnActualizar.setForeground(Color.WHITE);
+        btnEliminar.setBackground(new Color(220, 20, 60));
+        btnEliminar.setForeground(Color.WHITE);
+        btnInsertar.setBackground(new Color(34, 139, 34));
+        btnInsertar.setForeground(Color.WHITE);
 
-		// Agregar tabla y panel de botones al frame
-		getContentPane().setLayout(new BorderLayout());
-		getContentPane().add(scrollPane, BorderLayout.CENTER);
-		getContentPane().add(panelBotones, BorderLayout.EAST);
-		getContentPane().add(btnInsertar, BorderLayout.SOUTH);
-	}
+        Font buttonFont = new Font("Arial", Font.BOLD, 14);
+        btnActualizar.setFont(buttonFont);
+        btnEliminar.setFont(buttonFont);
+        btnInsertar.setFont(buttonFont);
+
+        btnActualizar.setToolTipText("Actualizar la información del cliente seleccionado");               
+        btnEliminar.setToolTipText("Eliminar el cliente seleccionado");
+        btnInsertar.setToolTipText("Insertar un nuevo cliente");
+
+        JPanel panelBotones = new JPanel();
+        panelBotones.setLayout(new GridLayout(2, 1, 10, 10));
+        panelBotones.add(btnActualizar);
+        panelBotones.add(btnEliminar);
+
+        JPanel panelPrincipal = new JPanel(new BorderLayout(10, 10));
+        panelPrincipal.add(scrollPane, BorderLayout.CENTER);
+        panelPrincipal.add(panelBotones, BorderLayout.EAST);
+        panelPrincipal.add(btnInsertar, BorderLayout.SOUTH);
+        panelPrincipal.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        
+        getContentPane().add(panelPrincipal);
+        
+        /* 
+        JMenuBar menuBar = new JMenuBar();
+        JMenu menuArchivo = new JMenu("Archivo");
+        JMenuItem menuItemSalir = new JMenuItem("Salir");
+        menuItemSalir.addActionListener(e -> System.exit(0));
+        menuArchivo.add(menuItemSalir);
+        menuBar.add(menuArchivo);
+        
+        JMenu menuAyuda = new JMenu("Ayuda");
+        JMenuItem menuItemAcercaDe = new JMenuItem("Acerca de");
+        menuItemAcercaDe.addActionListener(e -> JOptionPane.showMessageDialog(this, "Aplicación gestión de clientes v1.0"));
+        menuAyuda.add(menuItemAcercaDe);
+        menuBar.add(menuAyuda);
+
+        setJMenuBar(menuBar);*/     
+        
+    }
 
 	public void mostrarClientes(Object[][] datos) {
 		modeloTabla.setDataVector(datos, new Object[] { "ID", "Nombre", "Apellido", "Dirección", "DNI", "Fecha" }); // cargar

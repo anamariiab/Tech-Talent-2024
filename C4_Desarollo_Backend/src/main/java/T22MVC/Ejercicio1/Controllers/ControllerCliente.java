@@ -70,7 +70,7 @@ public class ControllerCliente {
 	private void insertarCliente() {
 		String nombre = JOptionPane.showInputDialog("Introduce el nombre del cliente:");
 		if (nombre == null)
-			return;                                            // si cancela, salir del método
+			return; // si cancela, salir del método
 
 		String apellido = JOptionPane.showInputDialog("Introduce el apellido del cliente:");
 		if (apellido == null)
@@ -80,6 +80,57 @@ public class ControllerCliente {
 		if (direccion == null)
 			return;
 
+		String dniString;
+		int dni;
+		do {
+			dniString = JOptionPane.showInputDialog("Introduzca el DNI del cliente (8 dígitos):");
+			if (dniString == null)
+				return;
+			try {
+				dni = Integer.parseInt(dniString);
+				if (dniString.length() != 8) {
+					JOptionPane.showMessageDialog(null, "El DNI debe tener exactamente 8 dígitos.", "Aviso",
+							JOptionPane.WARNING_MESSAGE);
+				}
+			} catch (NumberFormatException e) {
+				JOptionPane.showMessageDialog(null, "El DNI debe ser un número entero.", "Error",
+						JOptionPane.ERROR_MESSAGE);
+				dni = -1;                                          //para repetir el bucle
+			}
+		} while (dniString.length() != 8 || dni == -1);
+
+		String fechaString;
+		java.sql.Date fecha;
+		while (true) {
+			fechaString = JOptionPane.showInputDialog("Introduzca la fecha (YYYY-MM-DD):");
+			if (fechaString == null)
+				return;
+			try {
+				fecha = java.sql.Date.valueOf(fechaString);
+				break;                                                           // salir del bucle si la fecha es válida
+			} catch (IllegalArgumentException e) {
+				JOptionPane.showMessageDialog(null, "Formato de fecha incorrecto. Usa el formato YYYY-MM-DD.", "Error",
+						JOptionPane.ERROR_MESSAGE);
+			}
+		}
+
+		try {
+			String query = "INSERT INTO cliente (nombre, apellido, direccion, dni, fecha) VALUES (?, ?, ?, ?, ?)";
+			PreparedStatement preparedStatement = conexion.prepareStatement(query);
+			preparedStatement.setString(1, nombre);
+			preparedStatement.setString(2, apellido);
+			preparedStatement.setString(3, direccion);
+			preparedStatement.setInt(4, dni);
+			preparedStatement.setDate(5, fecha);
+			preparedStatement.executeUpdate();
+			preparedStatement.close();
+			JOptionPane.showMessageDialog(null, "Cliente insertado exitosamente.", "Éxito",
+					JOptionPane.INFORMATION_MESSAGE);
+			clientesView.mostrarClientes(obtenerDatosClientes()); // recargar los clientes en la vista
+		} catch (SQLException e) {
+			JOptionPane.showMessageDialog(null, "Error al insertar el cliente: " + e.getMessage(), "Error",
+					JOptionPane.ERROR_MESSAGE);
+		}
 	}
 
 	private void actualizarCliente() {
@@ -120,18 +171,18 @@ public class ControllerCliente {
 			}
 			try {
 				nuevoDNI = Integer.parseInt(nuevoDNIString);
-				if (nuevoDNIString.length() != 11) {
-					JOptionPane.showMessageDialog(null, "El DNI debe tener exactamente 11 dígitos.", "Aviso",
+				if (nuevoDNIString.length() != 8) {
+					JOptionPane.showMessageDialog(null, "El DNI debe tener exactamente 8 dígitos.", "Aviso",
 							JOptionPane.WARNING_MESSAGE);
 				} else {
-					break; // SIGUE SIN DEJAR ACTUALIZAR EL CMAPO DNI!!! VOLVER A MIRAR!!!!
+					break; 
 				}
 			} catch (NumberFormatException e) {
 				JOptionPane.showMessageDialog(null, "El DNI debe ser un número entero.", "Error",
 						JOptionPane.ERROR_MESSAGE);
 			}
 		}
-		String nuevaFechaString = JOptionPane.showInputDialog("Introduzca la nueva fecha (formato: YYYY-MM-DD):",
+		String nuevaFechaString = JOptionPane.showInputDialog("Introduce la nueva fecha (formato: YYYY-MM-DD):",
 				fechaActual.toString());
 		Date nuevaFecha;
 		try {
