@@ -37,7 +37,7 @@ public class ControllerVideos {
 	            resultSet.close();
 	            statement.close();
 	        } catch (SQLException e) {
-	            JOptionPane.showMessageDialog(null, "Error al cargar los videos: " + e.getMessage(), "Error",
+	            JOptionPane.showMessageDialog(null, "ERROR al cargar los registros: " + e.getMessage(), "¡Error!",
 	                    JOptionPane.ERROR_MESSAGE);
 	        }
 	    }
@@ -66,11 +66,11 @@ public class ControllerVideos {
 	    }
 	    
 	    private void insertarVideo() {
-	        String title = JOptionPane.showInputDialog("Introduce el título del video:");
+	        String title = JOptionPane.showInputDialog("Introduce el título:");
 	        if (title == null)
 	            return; // si cancela, salir del método
 
-	        String director = JOptionPane.showInputDialog("Introduce el director del video:");
+	        String director = JOptionPane.showInputDialog("Introduce el director:");
 	        if (director == null)
 	            return;
 	        int clientId;
@@ -83,7 +83,7 @@ public class ControllerVideos {
 	                clientId = Integer.parseInt(clientIdString);
 	                // Puedes agregar más validaciones si lo consideras necesario
 	            } catch (NumberFormatException e) {
-	                JOptionPane.showMessageDialog(null, "El ID del cliente debe ser un número entero.", "Error",
+	                JOptionPane.showMessageDialog(null, "El ID del cliente debe ser un número entero.", "¡Error!",
 	                        JOptionPane.ERROR_MESSAGE);
 	                clientId = -1; // para repetir el bucle
 	            }
@@ -97,11 +97,11 @@ public class ControllerVideos {
 	            preparedStatement.setInt(3, clientId);
 	            preparedStatement.executeUpdate();
 	            preparedStatement.close();
-	            JOptionPane.showMessageDialog(null, "Video insertado exitosamente.", "Éxito",
+	            JOptionPane.showMessageDialog(null, "El registro se ha insertado.", "¡Éxito!",
 	                    JOptionPane.INFORMATION_MESSAGE);
 	            videosView.mostrarVideos(obtenerDatosVideos()); // recargar los videos en la vista
 	        } catch (SQLException e) {
-	            JOptionPane.showMessageDialog(null, "Error al insertar el video: " + e.getMessage(), "Error",
+	            JOptionPane.showMessageDialog(null, "ERRROR al insertar el registro " + e.getMessage(), "¡Error!",
 	                    JOptionPane.ERROR_MESSAGE);
 	        }
 	    }
@@ -109,8 +109,8 @@ public class ControllerVideos {
 	    private void actualizarVideo() {
 	        int filaSeleccionada = videosView.getTablaVideos().getSelectedRow();
 	        if (filaSeleccionada == -1) {
-	            JOptionPane.showMessageDialog(null, "Por favor, selecciona una fila para actualizar.", "Error",
-	                    JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, "Por favor, selecciona una fila para actualizar.", "¡Atención!",
+						JOptionPane.WARNING_MESSAGE);
 	            return;
 	        }
 
@@ -139,14 +139,14 @@ public class ControllerVideos {
 	            try {
 	                nuevoClientId = Integer.parseInt(nuevoClientIdString);
 	            } catch (NumberFormatException e) {
-	                JOptionPane.showMessageDialog(null, "El ID del cliente debe ser un número entero.", "Error",
+	                JOptionPane.showMessageDialog(null, "El ID del cliente debe ser un número entero.", "¡Error!",
 	                        JOptionPane.ERROR_MESSAGE);
 	                nuevoClientId = -1; // para repetir el bucle
 	            }
 	        } while (nuevoClientId == -1);
 
 	        int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que desea actualizar los datos?",
-	                "Confirmar actualización datos", JOptionPane.YES_NO_OPTION);
+	                "Confirmar actualización", JOptionPane.YES_NO_OPTION);
 	        if (opcion == JOptionPane.YES_OPTION) {
 	            try {
 	                String query = "UPDATE videos SET title=?, director=?, cli_id=? WHERE id=?";
@@ -160,7 +160,7 @@ public class ControllerVideos {
 
 	                videosView.mostrarVideos(obtenerDatosVideos()); // recargar los videos en la vista
 	            } catch (SQLException e) {
-	                JOptionPane.showMessageDialog(null, "Error al actualizar el video: " + e.getMessage(), "Error",
+	                JOptionPane.showMessageDialog(null, "ERROR al actualizar el registro: " + e.getMessage(), "¡Error!",
 	                        JOptionPane.ERROR_MESSAGE);
 	            }
 	        }
@@ -169,8 +169,8 @@ public class ControllerVideos {
 	    private void eliminarVideo() {
 	        int filaSeleccionada = videosView.getTablaVideos().getSelectedRow();
 	        if (filaSeleccionada == -1) {
-	            JOptionPane.showMessageDialog(null, "Por favor, selecciona una fila para eliminar.", "Error",
-	                    JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, "Por favor, selecciona la fila que quieres eliminar.", "¡Atención!",
+						JOptionPane.WARNING_MESSAGE);
 	            return;
 	        }
 
@@ -184,11 +184,11 @@ public class ControllerVideos {
 	                preparedStatement.setInt(1, idVideoAEliminar);
 	                preparedStatement.executeUpdate();
 	                preparedStatement.close();
-	                JOptionPane.showMessageDialog(null, "Video eliminado con éxito.", "Éxito",
+	                JOptionPane.showMessageDialog(null, "Registro eliminado con éxito.", "¡Éxito!",
 	                        JOptionPane.INFORMATION_MESSAGE);
 	                videosView.mostrarVideos(obtenerDatosVideos()); // recargar los videos en la vista
 	            } catch (SQLException e) {
-	                JOptionPane.showMessageDialog(null, "Error al eliminar el video: " + e.getMessage(), "Error",
+	                JOptionPane.showMessageDialog(null, "ERROR al eliminar el registro: " + e.getMessage(), "¡Error!",
 	                        JOptionPane.ERROR_MESSAGE);
 	            }
 	        }
@@ -214,7 +214,7 @@ public class ControllerVideos {
 	            statement.close();
 	            return datos;
 	        } catch (SQLException e) {
-	            JOptionPane.showMessageDialog(null, "Error al cargar los videos: " + e.getMessage(), "Error",
+	            JOptionPane.showMessageDialog(null, "ERROR al cargar los registros: " + e.getMessage(), "¡Error!",
 	                    JOptionPane.ERROR_MESSAGE);
 	            return new Object[0][0];
 	        }

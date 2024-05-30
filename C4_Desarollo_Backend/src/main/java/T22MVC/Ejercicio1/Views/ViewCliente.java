@@ -15,10 +15,13 @@ public class ViewCliente extends JFrame {
 	private JButton btnInsertar;
 
 	public ViewCliente() {
-		setTitle("Lista de Clientes");
+		setTitle("Clientes");
 		setSize(800, 500);
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    setLocationRelativeTo(null); 
+	    
+	    ImageIcon icono = new ImageIcon(getClass().getResource("/icon/green_book.png")); 
+	    setIconImage(icono.getImage());
 
 		modeloTabla = new DefaultTableModel();
 		modeloTabla.addColumn("ID");
@@ -37,6 +40,7 @@ public class ViewCliente extends JFrame {
         tablaClientes.setFont(new Font("Arial", Font.PLAIN, 14));
         
         JScrollPane scrollPane = new JScrollPane(tablaClientes);
+        tablaClientes.setDefaultEditor(Object.class, null);
 
 		btnActualizar = new JButton("Actualizar");
 		btnEliminar = new JButton("Eliminar");
@@ -71,13 +75,22 @@ public class ViewCliente extends JFrame {
         
         getContentPane().add(panelPrincipal);
         
-        /* 
-        JMenuBar menuBar = new JMenuBar();
-        JMenu menuArchivo = new JMenu("Archivo");
+         
+    /*    JMenu menuOpciones = new JMenu("Opciones");
+        JMenuItem menuItemGuardarArchivo = new JMenuItem("Guardar archivo");
+        menuItemGuardarArchivo.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e) {
+   
+        });
+        menuOpciones.add(menuItemGuardarArchivo);
+
         JMenuItem menuItemSalir = new JMenuItem("Salir");
         menuItemSalir.addActionListener(e -> System.exit(0));
-        menuArchivo.add(menuItemSalir);
-        menuBar.add(menuArchivo);
+        menuOpciones.add(menuItemSalir);
+
+        mmenuBar.add(menuOpciones);
+        
+        
         
         JMenu menuAyuda = new JMenu("Ayuda");
         JMenuItem menuItemAcercaDe = new JMenuItem("Acerca de");
@@ -85,7 +98,7 @@ public class ViewCliente extends JFrame {
         menuAyuda.add(menuItemAcercaDe);
         menuBar.add(menuAyuda);
 
-        setJMenuBar(menuBar);*/     
+        setJMenuBar(menuBar);    */ 
         
     }
 

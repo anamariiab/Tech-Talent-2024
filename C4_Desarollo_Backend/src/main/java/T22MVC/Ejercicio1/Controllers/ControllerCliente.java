@@ -39,7 +39,7 @@ public class ControllerCliente {
 			resultSet.close();
 			statement.close();
 		} catch (SQLException e) {
-			JOptionPane.showMessageDialog(null, "Error al cargar los clientes: " + e.getMessage(), "Error",
+			JOptionPane.showMessageDialog(null, "Error al cargar los registros: " + e.getMessage(), "¡Error!",
 					JOptionPane.ERROR_MESSAGE);
 		}
 	}
@@ -68,32 +68,32 @@ public class ControllerCliente {
 	}
 
 	private void insertarCliente() {
-		String nombre = JOptionPane.showInputDialog("Introduce el nombre del cliente:");
+		String nombre = JOptionPane.showInputDialog("Introduce el nombre:");
 		if (nombre == null)
 			return; // si cancela, salir del método
 
-		String apellido = JOptionPane.showInputDialog("Introduce el apellido del cliente:");
+		String apellido = JOptionPane.showInputDialog("Introduce el apellido:");
 		if (apellido == null)
 			return;
 
-		String direccion = JOptionPane.showInputDialog("Introduce la dirección del cliente:");
+		String direccion = JOptionPane.showInputDialog("Introduce la dirección:");
 		if (direccion == null)
 			return;
 
 		String dniString;
 		int dni;
 		do {
-			dniString = JOptionPane.showInputDialog("Introduzca el DNI del cliente (8 dígitos):");
+			dniString = JOptionPane.showInputDialog("Introduce el DNI (8 dígitos):");
 			if (dniString == null)
 				return;
 			try {
 				dni = Integer.parseInt(dniString);
 				if (dniString.length() != 8) {
-					JOptionPane.showMessageDialog(null, "El DNI debe tener exactamente 8 dígitos.", "Aviso",
+					JOptionPane.showMessageDialog(null, "El DNI debe tener exactamente 8 dígitos.", "¡Atención!",
 							JOptionPane.WARNING_MESSAGE);
 				}
 			} catch (NumberFormatException e) {
-				JOptionPane.showMessageDialog(null, "El DNI debe ser un número entero.", "Error",
+				JOptionPane.showMessageDialog(null, "El DNI debe ser un número entero.", "¡Error!",
 						JOptionPane.ERROR_MESSAGE);
 				dni = -1;                                          //para repetir el bucle
 			}
@@ -102,14 +102,14 @@ public class ControllerCliente {
 		String fechaString;
 		java.sql.Date fecha;
 		while (true) {
-			fechaString = JOptionPane.showInputDialog("Introduzca la fecha (YYYY-MM-DD):");
+			fechaString = JOptionPane.showInputDialog("Introduce la fecha (YYYY-MM-DD):");
 			if (fechaString == null)
 				return;
 			try {
 				fecha = java.sql.Date.valueOf(fechaString);
-				break;                                                           // salir del bucle si la fecha es válida
+				break;                                                           // salir del bucle si la fecha es valida
 			} catch (IllegalArgumentException e) {
-				JOptionPane.showMessageDialog(null, "Formato de fecha incorrecto. Usa el formato YYYY-MM-DD.", "Error",
+				JOptionPane.showMessageDialog(null, "Formato de fecha incorrecto. Usa el formato YYYY-MM-DD.", "¡Error!",
 						JOptionPane.ERROR_MESSAGE);
 			}
 		}
@@ -124,11 +124,11 @@ public class ControllerCliente {
 			preparedStatement.setDate(5, fecha);
 			preparedStatement.executeUpdate();
 			preparedStatement.close();
-			JOptionPane.showMessageDialog(null, "Cliente insertado exitosamente.", "Éxito",
+			JOptionPane.showMessageDialog(null, "El registro se ha insertado en la tabla.", "¡Éxito!",
 					JOptionPane.INFORMATION_MESSAGE);
 			clientesView.mostrarClientes(obtenerDatosClientes()); // recargar los clientes en la vista
 		} catch (SQLException e) {
-			JOptionPane.showMessageDialog(null, "Error al insertar el cliente: " + e.getMessage(), "Error",
+			JOptionPane.showMessageDialog(null, "ERROR al insertar el registro: " + e.getMessage(), "¡Error!",
 					JOptionPane.ERROR_MESSAGE);
 		}
 	}
@@ -136,8 +136,8 @@ public class ControllerCliente {
 	private void actualizarCliente() {
 		int filaSeleccionada = clientesView.getTablaClientes().getSelectedRow();
 		if (filaSeleccionada == -1) {
-			JOptionPane.showMessageDialog(null, "Por favor, selecciona una fila para actualizar.", "Error",
-					JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Por favor, selecciona una fila para actualizar.", "¡Atención!",
+					JOptionPane.WARNING_MESSAGE);
 			return;
 		}
 
@@ -172,13 +172,13 @@ public class ControllerCliente {
 			try {
 				nuevoDNI = Integer.parseInt(nuevoDNIString);
 				if (nuevoDNIString.length() != 8) {
-					JOptionPane.showMessageDialog(null, "El DNI debe tener exactamente 8 dígitos.", "Aviso",
+					JOptionPane.showMessageDialog(null, "El DNI debe tener exactamente 8 dígitos.", "¡Atención!",
 							JOptionPane.WARNING_MESSAGE);
 				} else {
 					break; 
 				}
 			} catch (NumberFormatException e) {
-				JOptionPane.showMessageDialog(null, "El DNI debe ser un número entero.", "Error",
+				JOptionPane.showMessageDialog(null, "El DNI debe ser un número entero.", "¡Error!",
 						JOptionPane.ERROR_MESSAGE);
 			}
 		}
@@ -188,13 +188,13 @@ public class ControllerCliente {
 		try {
 			nuevaFecha = Date.valueOf(nuevaFechaString);
 		} catch (IllegalArgumentException e) {
-			JOptionPane.showMessageDialog(null, "Formato de fecha incorrecto. ¡Utiliza el formato YYYY-MM-DD!.",
-					"Error", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Formato de fecha incorrecto. Utiliza el formato YYYY-MM-DD.",
+					"¡Error!", JOptionPane.ERROR_MESSAGE);
 			return;
 		}
 
-		int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseaa actualizar los datos?",
-				"Confirmar actualización datos", JOptionPane.YES_NO_OPTION);
+		int opcion = JOptionPane.showConfirmDialog(null, "¿Estás seguro de que deseas actualizar los datos?",
+				"Confirmar actualización", JOptionPane.YES_NO_OPTION);
 		if (opcion == JOptionPane.YES_OPTION) {
 			try {
 				String query = "UPDATE cliente SET nombre=?, apellido=?, direccion=?, dni=?, fecha=? WHERE id=?";
@@ -210,7 +210,7 @@ public class ControllerCliente {
 
 				clientesView.mostrarClientes(obtenerDatosClientes());
 			} catch (SQLException e) {
-				JOptionPane.showMessageDialog(null, "Error al actualizar el cliente: " + e.getMessage(), "Error",
+				JOptionPane.showMessageDialog(null, "ERROR al actualizar el registro: " + e.getMessage(), "¡Error!",
 						JOptionPane.ERROR_MESSAGE);
 			}
 		}
@@ -219,8 +219,8 @@ public class ControllerCliente {
 	private void eliminarCliente() {
 		int filaSeleccionada = clientesView.getTablaClientes().getSelectedRow();
 		if (filaSeleccionada == -1) {
-			JOptionPane.showMessageDialog(null, "Por favor, selecciona una fila para eliminar.", "Error",
-					JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Por favor, selecciona la fila que quieres eliminar.", "¡Atención!",
+					JOptionPane.WARNING_MESSAGE);
 			return;
 		}
 
@@ -234,11 +234,11 @@ public class ControllerCliente {
 				preparedStatement.setInt(1, idClienteAEliminar);
 				preparedStatement.executeUpdate();
 				preparedStatement.close();
-				JOptionPane.showMessageDialog(null, "Cliente eliminado con exito.", "Éxito",
+				JOptionPane.showMessageDialog(null, "Registro eliminado con exito.", "¡Éxito!",
 						JOptionPane.INFORMATION_MESSAGE);
 				clientesView.mostrarClientes(obtenerDatosClientes());
 			} catch (SQLException e) {
-				JOptionPane.showMessageDialog(null, "Error al eliminar el cliente: " + e.getMessage(), "Error",
+				JOptionPane.showMessageDialog(null, "ERROR al eliminar el registro: " + e.getMessage(), "¡Error!",
 						JOptionPane.ERROR_MESSAGE);
 			}
 		}
@@ -246,8 +246,8 @@ public class ControllerCliente {
 
 	private Object[][] obtenerDatosClientes() {
 		try {
-			Statement statement = conexion.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, // para cargar en tiempo
-																								// real
+			Statement statement = conexion.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,   //permitir la navegacion bidireccional
+																								
 					ResultSet.CONCUR_READ_ONLY);
 			ResultSet resultSet = statement.executeQuery("SELECT * FROM cliente");
 			resultSet.last();
@@ -268,7 +268,7 @@ public class ControllerCliente {
 			statement.close();
 			return datos;
 		} catch (SQLException e) {
-			JOptionPane.showMessageDialog(null, "Error al cargar los clientes: " + e.getMessage(), "Error",
+			JOptionPane.showMessageDialog(null, "ERROR al cargar los registros: " + e.getMessage(), "¡Error!",
 					JOptionPane.ERROR_MESSAGE);
 			return new Object[0][0];
 		}

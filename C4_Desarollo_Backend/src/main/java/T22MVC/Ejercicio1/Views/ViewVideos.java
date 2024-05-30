@@ -13,12 +13,14 @@ public class ViewVideos extends JFrame {
 	private JButton btnActualizar;
 	private JButton btnEliminar;
 	private JButton btnInsertar;
-
 	public ViewVideos() {
-		setTitle("Lista de Videos");
+		setTitle("Videos");
 		setSize(800, 500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
+		
+		ImageIcon icono = new ImageIcon(getClass().getResource("/icon/videocassette.png")); 
+	    setIconImage(icono.getImage());
 
 		modeloTabla = new DefaultTableModel();
 		modeloTabla.addColumn("ID");
@@ -35,10 +37,11 @@ public class ViewVideos extends JFrame {
 		tablaVideos.setFont(new Font("Arial", Font.PLAIN, 14));
 
 		JScrollPane scrollPane = new JScrollPane(tablaVideos);
+		tablaVideos.setDefaultEditor(Object.class, null);
 
 		btnActualizar = new JButton("Actualizar");
 		btnEliminar = new JButton("Eliminar");
-		btnInsertar = new JButton("Insertar nuevo video");
+		btnInsertar = new JButton("Insertar un nuevo registro");
 
 		btnActualizar.setBackground(new Color(70, 130, 180));
 		btnActualizar.setForeground(Color.WHITE);
