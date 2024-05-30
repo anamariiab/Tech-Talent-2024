@@ -13,10 +13,9 @@ public class MainCientificos {
         conexionBD.connect();
         Connection conexion = conexionBD.getConnection();
         
-        ViewCientificos cientificosView = new ViewCientificos();
-        ControllerCientificos controller = new ControllerCientificos(cientificosView, conexion);
+        ViewCientificos cientificoView = new  ViewCientificos();
+        ControllerCientificos controller = new ControllerCientificos(cientificoView, conexion);
         
-        cientificosView.setVisible(true);
+        cientificoView.setVisible(true);
     }
-
 }

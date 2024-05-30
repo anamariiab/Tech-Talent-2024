@@ -1,7 +1,6 @@
 package T22MVC.Ejercicio2.Models;
 
 public class ModelCientificos {
-	
 	private String dni;
     private String nomApels;
 
