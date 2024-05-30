@@ -4,96 +4,113 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionListener;
-import java.sql.Date;
 
 public class ViewVideos extends JFrame {
-	private JTable tablaVideos;
-	private DefaultTableModel modeloTabla;
+    private JTable tablaVideos;
+    private DefaultTableModel modeloTabla;
+    private JButton btnActualizar;
+    private JButton btnEliminar;
+    private JButton btnInsertar;
 
-	private JButton btnActualizar;
-	private JButton btnEliminar;
-	private JButton btnInsertar;
-	public ViewVideos() {
-		setTitle("Videos");
-		setSize(800, 500);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setLocationRelativeTo(null);
-		
-		ImageIcon icono = new ImageIcon(getClass().getResource("/icon/videocassette.png")); 
-	    setIconImage(icono.getImage());
+    public ViewVideos() {
+        configurarVentana();
+        inicializarComponentes();
+        agregarComponentes();
+    }
 
-		modeloTabla = new DefaultTableModel();
-		modeloTabla.addColumn("ID");
-		modeloTabla.addColumn("Título");
-		modeloTabla.addColumn("Director");
-		modeloTabla.addColumn("ID Cliente");
+    private void configurarVentana() {
+        setTitle("Videos");
+        setSize(800, 500);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
 
-		tablaVideos = new JTable(modeloTabla);
-		tablaVideos.setFillsViewportHeight(true);
-		tablaVideos.setRowHeight(25);
-		tablaVideos.getTableHeader().setFont(new Font("Arial", Font.BOLD, 14));
-		tablaVideos.getTableHeader().setBackground(new Color(70, 130, 180));
-		tablaVideos.getTableHeader().setForeground(Color.WHITE);
-		tablaVideos.setFont(new Font("Arial", Font.PLAIN, 14));
+        ImageIcon icono = new ImageIcon(getClass().getResource("/icon/videocassette.png"));
+        setIconImage(icono.getImage());
+    }
 
-		JScrollPane scrollPane = new JScrollPane(tablaVideos);
-		tablaVideos.setDefaultEditor(Object.class, null);
+    private void inicializarComponentes() {
+        modeloTabla = new DefaultTableModel();
+        modeloTabla.addColumn("ID");
+        modeloTabla.addColumn("Título");
+        modeloTabla.addColumn("Director");
+        modeloTabla.addColumn("ID Cliente");
 
-		btnActualizar = new JButton("Actualizar");
-		btnEliminar = new JButton("Eliminar");
-		btnInsertar = new JButton("Insertar un nuevo registro");
+        tablaVideos = new JTable(modeloTabla);
+        configurarTabla();
 
-		btnActualizar.setBackground(new Color(70, 130, 180));
-		btnActualizar.setForeground(Color.WHITE);
-		btnEliminar.setBackground(new Color(220, 20, 60));
-		btnEliminar.setForeground(Color.WHITE);
-		btnInsertar.setBackground(new Color(34, 139, 34));
-		btnInsertar.setForeground(Color.WHITE);
+        btnActualizar = new JButton("Actualizar");
+        btnEliminar = new JButton("Eliminar");
+        btnInsertar = new JButton("Insertar un nuevo registro");
+        configurarBotones();
+    }
 
-		Font buttonFont = new Font("Arial", Font.BOLD, 14);
-		btnActualizar.setFont(buttonFont);
-		btnEliminar.setFont(buttonFont);
-		btnInsertar.setFont(buttonFont);
+    private void configurarTabla() {
+        tablaVideos.setFillsViewportHeight(true);
+        tablaVideos.setRowHeight(25);
+        tablaVideos.getTableHeader().setFont(new Font("Arial", Font.BOLD, 14));
+        tablaVideos.getTableHeader().setBackground(new Color(70, 130, 180));
+        tablaVideos.getTableHeader().setForeground(Color.WHITE);
+        tablaVideos.setFont(new Font("Arial", Font.PLAIN, 14));
+        tablaVideos.setDefaultEditor(Object.class, null);
+    }
 
-		btnActualizar.setToolTipText("Actualizar la información del video seleccionado");
-		btnEliminar.setToolTipText("Eliminar el video seleccionado");
-		btnInsertar.setToolTipText("Insertar un nuevo video");
+    private void configurarBotones() {
+        Font buttonFont = new Font("Arial", Font.BOLD, 14);
 
-		JPanel panelBotones = new JPanel();
-		panelBotones.setLayout(new GridLayout(2, 1, 10, 10));
-		panelBotones.add(btnActualizar);
-		panelBotones.add(btnEliminar);
+        btnActualizar.setBackground(new Color(70, 130, 180));
+        btnActualizar.setForeground(Color.WHITE);
+        btnActualizar.setFont(buttonFont);
+        btnActualizar.setToolTipText("Actualizar la información del video seleccionado");
 
-		JPanel panelPrincipal = new JPanel(new BorderLayout(10, 10));
-		panelPrincipal.add(scrollPane, BorderLayout.CENTER);
-		panelPrincipal.add(panelBotones, BorderLayout.EAST);
-		panelPrincipal.add(btnInsertar, BorderLayout.SOUTH);
-		panelPrincipal.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        btnEliminar.setBackground(new Color(220, 20, 60));
+        btnEliminar.setForeground(Color.WHITE);
+        btnEliminar.setFont(buttonFont);
+        btnEliminar.setToolTipText("Eliminar el video seleccionado");
 
-		getContentPane().add(panelPrincipal);
-	}
+        btnInsertar.setBackground(new Color(34, 139, 34));
+        btnInsertar.setForeground(Color.WHITE);
+        btnInsertar.setFont(buttonFont);
+        btnInsertar.setToolTipText("Insertar un nuevo video");
+    }
 
-	public void mostrarVideos(Object[][] datos) {
-		modeloTabla.setDataVector(datos, new Object[] { "ID", "Título", "Director", "ID Cliente" });
-	}
+    private void agregarComponentes() {
+        JScrollPane scrollPane = new JScrollPane(tablaVideos);
 
-	public void agregarVideoATabla(int id, String title, String director, int clientId) {
-		modeloTabla.addRow(new Object[] { id, title, director, clientId });
-	}
+        JPanel panelBotones = new JPanel();
+        panelBotones.setLayout(new GridLayout(2, 1, 10, 10));
+        panelBotones.add(btnActualizar);
+        panelBotones.add(btnEliminar);
 
-	public void agregarListenerActualizar(ActionListener listener) {
-		btnActualizar.addActionListener(listener);
-	}
+        JPanel panelPrincipal = new JPanel(new BorderLayout(10, 10));
+        panelPrincipal.add(scrollPane, BorderLayout.CENTER);
+        panelPrincipal.add(panelBotones, BorderLayout.EAST);
+        panelPrincipal.add(btnInsertar, BorderLayout.SOUTH);
+        panelPrincipal.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-	public void agregarListenerEliminar(ActionListener listener) {
-		btnEliminar.addActionListener(listener);
-	}
+        getContentPane().add(panelPrincipal);
+    }
 
-	public void agregarListenerInsertar(ActionListener listener) {
-		btnInsertar.addActionListener(listener);
-	}
+    public void mostrarVideos(Object[][] datos) {
+        modeloTabla.setDataVector(datos, new Object[]{"ID", "Título", "Director", "ID Cliente"});
+    }
 
-	public JTable getTablaVideos() {
-		return tablaVideos;
-	}
+    public void agregarVideoATabla(int id, String titulo, String director, int idCliente) {
+        modeloTabla.addRow(new Object[]{id, titulo, director, idCliente});
+    }
+
+    public void agregarListenerActualizar(ActionListener listener) {
+        btnActualizar.addActionListener(listener);
+    }
+
+    public void agregarListenerEliminar(ActionListener listener) {
+        btnEliminar.addActionListener(listener);
+    }
+
+    public void agregarListenerInsertar(ActionListener listener) {
+        btnInsertar.addActionListener(listener);
+    }
+
+    public JTable getTablaVideos() {
+        return tablaVideos;
+    }
 }
