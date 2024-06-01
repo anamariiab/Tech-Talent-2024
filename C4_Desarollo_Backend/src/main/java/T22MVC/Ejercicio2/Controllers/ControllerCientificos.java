@@ -67,7 +67,7 @@ public class ControllerCientificos {
 	private void insertarCientifico() {
 		String nomApels = JOptionPane.showInputDialog("Introduce el nombre y los apellidos:");
 		if (nomApels == null || nomApels.isEmpty()) {
-			JOptionPane.showMessageDialog(null, "El nombre no puede estar vacío.", "¡Atención!",
+			JOptionPane.showMessageDialog(null, "El nombre y los apellidos no pueden estar vacíos.", "¡Atención!",
 					JOptionPane.WARNING_MESSAGE);
 			return;
 		}

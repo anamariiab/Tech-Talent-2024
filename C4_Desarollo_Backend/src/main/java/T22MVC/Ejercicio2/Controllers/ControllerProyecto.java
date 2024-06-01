@@ -157,12 +157,27 @@ public class ControllerProyecto {
 	}
 
 	private void eliminarProyecto() {
-		int filaSeleccionada = proyectoView.getTablaProyectos().getSelectedRow();
-		if (filaSeleccionada == -1) {
-			JOptionPane.showMessageDialog(null, "Por favor, selecciona la fila que quieres eliminar.", "¡Atención!",
-					JOptionPane.WARNING_MESSAGE);
-			return;
-		}
+	    int filaSeleccionada = proyectoView.getTablaProyectos().getSelectedRow();
+	    if (filaSeleccionada == -1) {
+	        JOptionPane.showMessageDialog(null, "Por favor, selecciona la fila que quieres eliminar.", "¡Atención!", JOptionPane.WARNING_MESSAGE);
+	        return;
+	    }
+
+	    int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseas eliminar este proyecto?", "Confirmar eliminación", JOptionPane.YES_NO_OPTION);
+	    if (opcion == JOptionPane.YES_OPTION) {
+	        try {
+	            String idProyectoEliminar = (String) proyectoView.getTablaProyectos().getValueAt(filaSeleccionada, 0);
+	            String query = "DELETE FROM proyecto WHERE ID=?";
+	            PreparedStatement preparedStatement = conexion.prepareStatement(query);
+	            preparedStatement.setString(1, idProyectoEliminar);
+	            preparedStatement.executeUpdate();
+	            preparedStatement.close();
+	            JOptionPane.showMessageDialog(null, "Proyecto eliminado con éxito.", "¡Éxito!", JOptionPane.INFORMATION_MESSAGE);
+	            proyectoView.mostrarProyectos(obtenerDatosProyectos());
+	        } catch (SQLException e) {
+	            JOptionPane.showMessageDialog(null, "ERROR al eliminar el proyecto: " + e.getMessage(), "¡Error!", JOptionPane.ERROR_MESSAGE);
+	        }
+	    }
 	}
 
 	private Object[][] obtenerDatosProyectos() {

@@ -35,7 +35,7 @@ public class ViewAsignadoA extends JFrame {
         tablaAsignaciones = new JTable(modeloTabla);
         configurarTabla();
 
-        btnAsignar = new JButton("Asignar científico a proyecto");
+        btnAsignar = new JButton("Asignar");
         btnEliminarAsignacion = new JButton("Eliminar asignación");
         configurarBotones();
     }
@@ -56,6 +56,7 @@ public class ViewAsignadoA extends JFrame {
         btnAsignar.setBackground(new Color(34, 139, 34));
         btnAsignar.setForeground(Color.WHITE);
         btnAsignar.setFont(buttonFont);
+        btnAsignar.setToolTipText("Asignar científico a proyecto");
 
         btnEliminarAsignacion.setBackground(new Color(220, 20, 60));
         btnEliminarAsignacion.setForeground(Color.WHITE);
@@ -95,12 +96,5 @@ public class ViewAsignadoA extends JFrame {
 
     public JTable getTablaAsignaciones() {
         return tablaAsignaciones;
-    }
-    
-    public static void main(String[] args) {
-
-        ViewAsignadoA asignadoAView = new ViewAsignadoA();
-
-        asignadoAView.setVisible(true);
     }
 }

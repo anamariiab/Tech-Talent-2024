@@ -90,14 +90,6 @@ public class ViewVideos extends JFrame {
         getContentPane().add(panelPrincipal);
     }
 
-    public void mostrarVideos(Object[][] datos) {
-        modeloTabla.setDataVector(datos, new Object[]{"ID", "Título", "Director", "ID Cliente"});
-    }
-
-    public void agregarVideoATabla(int id, String titulo, String director, int idCliente) {
-        modeloTabla.addRow(new Object[]{id, titulo, director, idCliente});
-    }
-
     public void agregarListenerActualizar(ActionListener listener) {
         btnActualizar.addActionListener(listener);
     }
@@ -108,9 +100,5 @@ public class ViewVideos extends JFrame {
 
     public void agregarListenerInsertar(ActionListener listener) {
         btnInsertar.addActionListener(listener);
-    }
-
-    public JTable getTablaVideos() {
-        return tablaVideos;
     }
 }

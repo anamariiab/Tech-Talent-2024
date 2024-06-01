@@ -1,5 +1,7 @@
 package T22MVC.Ejercicio1.Models;
 
+import java.sql.Date;
+
 public class ModelCliente {
     private int id;
     private String nombre;
