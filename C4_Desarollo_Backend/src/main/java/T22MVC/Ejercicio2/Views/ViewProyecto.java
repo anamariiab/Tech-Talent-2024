@@ -1,5 +1,8 @@
 package T22MVC.Ejercicio2.Views;
 
+import T22MVC.Ejercicio2.Models.ModelProyecto;
+
+import java.util.List;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -27,7 +30,7 @@ public class ViewProyecto extends JFrame {
         ImageIcon icono = new ImageIcon(getClass().getResource("/icon/proyecto.png"));
         setIconImage(icono.getImage());
     }
-    
+
     private void inicializarComponentes() {
         modeloTabla = new DefaultTableModel();
         modeloTabla.addColumn("ID");
@@ -89,12 +92,21 @@ public class ViewProyecto extends JFrame {
         getContentPane().add(panelPrincipal);
     }
 
-    public void mostrarProyectos(Object[][] datos) {
-        modeloTabla.setDataVector(datos, new Object[]{"ID", "Nombre", "Horas"});
+    public void mostrarProyectos(List<ModelProyecto> proyectos) {
+        modeloTabla.setRowCount(0); // limpiar la tabla antes de llenarla de nuevo
+
+        for (ModelProyecto proyecto : proyectos) {
+            Object[] fila = {
+                proyecto.getId(),
+                proyecto.getNombre(),
+                proyecto.getHoras()
+            };
+            modeloTabla.addRow(fila);
+        }
     }
 
-    public void agregarProyectoATabla(String id, String nombre, int horas) {
-        modeloTabla.addRow(new Object[]{id, nombre, horas});
+    public void actualizarListaProyectos(List<ModelProyecto> proyectos) {
+        mostrarProyectos(proyectos);
     }
 
     public void agregarListenerActualizar(ActionListener listener) {

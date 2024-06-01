@@ -1,11 +1,11 @@
 package T22MVC.Ejercicio2.Models;
 
-public class ModelAsignadoA {
+public class ModelAsignacion {
 
 	private String cientifico;
 	private String proyecto;
 
-	public ModelAsignadoA(String cientifico, String proyecto) {
+	public ModelAsignacion(String cientifico, String proyecto) {
 		this.cientifico = cientifico;
 		this.proyecto = proyecto;
 	}

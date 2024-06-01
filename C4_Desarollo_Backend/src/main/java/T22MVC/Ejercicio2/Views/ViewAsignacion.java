@@ -1,17 +1,20 @@
 package T22MVC.Ejercicio2.Views;
 
+import T22MVC.Ejercicio2.Models.ModelAsignacion;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.util.List;
 
-public class ViewAsignadoA extends JFrame {
+public class ViewAsignacion extends JFrame {
     private JTable tablaAsignaciones;
     private DefaultTableModel modeloTabla;
-    private JButton btnAsignar;
-    private JButton btnEliminarAsignacion;
+    private JButton btnInsertar;
+    private JButton btnEliminar;
 
-    public ViewAsignadoA() {
+    public ViewAsignacion() {
         configurarVentana();
         inicializarComponentes();
         agregarComponentes();
@@ -22,7 +25,7 @@ public class ViewAsignadoA extends JFrame {
         setSize(800, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        
+
         ImageIcon icono = new ImageIcon(getClass().getResource("/icon/asignar.png"));
         setIconImage(icono.getImage());
     }
@@ -35,8 +38,8 @@ public class ViewAsignadoA extends JFrame {
         tablaAsignaciones = new JTable(modeloTabla);
         configurarTabla();
 
-        btnAsignar = new JButton("Asignar");
-        btnEliminarAsignacion = new JButton("Eliminar asignación");
+        btnInsertar = new JButton("Insertar");
+        btnEliminar = new JButton("Eliminar");
         configurarBotones();
     }
 
@@ -53,45 +56,55 @@ public class ViewAsignadoA extends JFrame {
     private void configurarBotones() {
         Font buttonFont = new Font("Arial", Font.BOLD, 14);
 
-        btnAsignar.setBackground(new Color(34, 139, 34));
-        btnAsignar.setForeground(Color.WHITE);
-        btnAsignar.setFont(buttonFont);
-        btnAsignar.setToolTipText("Asignar científico a proyecto");
+        btnInsertar.setBackground(new Color(70, 130, 180));
+        btnInsertar.setForeground(Color.WHITE);
+        btnInsertar.setFont(buttonFont);
+        btnInsertar.setToolTipText("Asignar");
 
-        btnEliminarAsignacion.setBackground(new Color(220, 20, 60));
-        btnEliminarAsignacion.setForeground(Color.WHITE);
-        btnEliminarAsignacion.setFont(buttonFont);
+        btnEliminar.setBackground(new Color(220, 20, 60));
+        btnEliminar.setForeground(Color.WHITE);
+        btnEliminar.setFont(buttonFont);
+        btnEliminar.setToolTipText("Eliminar asignación");
     }
-    
+
     private void agregarComponentes() {
         JScrollPane scrollPane = new JScrollPane(tablaAsignaciones);
 
-        JPanel panelBotones = new JPanel(new GridLayout(2, 1, 0, 10));
-        panelBotones.add(btnAsignar);
-        panelBotones.add(btnEliminarAsignacion);
+        JPanel panelBotones = new JPanel();
+        panelBotones.setLayout(new GridLayout(2, 1, 10, 10));
+        panelBotones.add(btnInsertar);
+        panelBotones.add(btnEliminar);
 
         JPanel panelPrincipal = new JPanel(new BorderLayout(10, 10));
         panelPrincipal.add(scrollPane, BorderLayout.CENTER);
-        panelPrincipal.add(panelBotones, BorderLayout.SOUTH);
+        panelPrincipal.add(panelBotones, BorderLayout.EAST);
         panelPrincipal.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         getContentPane().add(panelPrincipal);
     }
 
-    public void mostrarAsignaciones(Object[][] datos) {
-        modeloTabla.setDataVector(datos, new Object[]{"Científico", "Proyecto"});
+    public void mostrarAsignaciones(List<ModelAsignacion> asignaciones) {
+        modeloTabla.setRowCount(0); // limpiar la tabla antes de llenarla de nuevo
+
+        for (ModelAsignacion asignacion : asignaciones) {
+            Object[] fila = {
+                    asignacion.getCientifico(),
+                    asignacion.getProyecto()
+            };
+            modeloTabla.addRow(fila);
+        }
+    }
+    
+    public void actualizarListaAsignaciones(List<ModelAsignacion> asignaciones) {
+        mostrarAsignaciones(asignaciones);
     }
 
-    public void agregarAsignacionATabla(String cientifico, String proyecto) {
-        modeloTabla.addRow(new Object[]{cientifico, proyecto});
+    public void agregarListenerInsertar(ActionListener listener) {
+        btnInsertar.addActionListener(listener);
     }
 
-    public void agregarListenerAsignar(ActionListener listener) {
-        btnAsignar.addActionListener(listener);
-    }
-
-    public void agregarListenerEliminarAsignacion(ActionListener listener) {
-        btnEliminarAsignacion.addActionListener(listener);
+    public void agregarListenerEliminar(ActionListener listener) {
+        btnEliminar.addActionListener(listener);
     }
 
     public JTable getTablaAsignaciones() {
