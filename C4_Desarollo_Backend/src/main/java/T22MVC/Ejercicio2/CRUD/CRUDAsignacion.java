@@ -1,14 +1,13 @@
 package T22MVC.Ejercicio2.CRUD;
 
 import T22MVC.Ejercicio2.Models.ModelAsignacion;
-import T22MVC.Utilidades;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CRUDAsignacion {
 
@@ -23,12 +22,9 @@ public class CRUDAsignacion {
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, asignacion.getCientifico());
             statement.setString(2, asignacion.getProyecto());
-            int rowsInserted = statement.executeUpdate();
-            if (rowsInserted > 0) {
-                Utilidades.mostrarMensajeExito("Asignación insertada correctamente.");
-            }
+            statement.executeUpdate();
         } catch (SQLException ex) {
-            Utilidades.mostrarMensajeError("Error al insertar la asignación: " + ex.getMessage());
+            throw ex;                                 
         }
     }
 
@@ -37,12 +33,9 @@ public class CRUDAsignacion {
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, cientifico);
             statement.setString(2, proyecto);
-            int rowsDeleted = statement.executeUpdate();
-            if (rowsDeleted > 0) {
-                Utilidades.mostrarMensajeExito("Asignación eliminada correctamente.");
-            }
+            statement.executeUpdate();
         } catch (SQLException ex) {
-            Utilidades.mostrarMensajeError("Error al eliminar la asignación: " + ex.getMessage());
+            throw ex; 
         }
     }
 
@@ -59,7 +52,7 @@ public class CRUDAsignacion {
                 asignaciones.add(asignacion);
             }
         } catch (SQLException ex) {
-            Utilidades.mostrarMensajeError("Error al obtener los datos: " + ex.getMessage());
+            throw ex; 
         }
         return asignaciones;
     }

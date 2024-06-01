@@ -61,18 +61,22 @@ public class ControllerProyecto {
             List<ModelProyecto> proyectos = proyectoCRUD.obtenerDatosProyectos();
             proyectoView.mostrarProyectos(proyectos);
         } catch (SQLException e) {
-            Utilidades.mostrarMensajeError("Error al cargar los registros: " + e.getMessage());
+            Utilidades.mostrarMensajeError("ERROR al cargar los registros: " + e.getMessage());
         }
     }
 
     public void insertarProyecto() {
         String id = obtenerId();
+        if (id == null) {
+            return; 
+        }
         String nombre = obtenerNombre();
+        if (nombre == null) {
+            return; 
+        }
         int horas = obtenerHoras();
-
-        if (id == null || nombre == null || horas == -1) {
-            Utilidades.mostrarMensajeAdvertencia("La operación ha sido cancelada.");
-            return;
+        if (horas == -1) {
+            return; 
         }
 
         try {
@@ -81,7 +85,7 @@ public class ControllerProyecto {
             Utilidades.mostrarMensajeExito("Registro insertado correctamente.");
             proyectoView.actualizarListaProyectos(proyectoCRUD.obtenerDatosProyectos()); // actualizar la vista
         } catch (SQLException ex) {
-            Utilidades.mostrarMensajeError("Error al insertar el proyecto: " + ex.getMessage());
+            Utilidades.mostrarMensajeError("ERROR al insertar el proyecto: " + ex.getMessage());
         }
     }
 
@@ -113,7 +117,7 @@ public class ControllerProyecto {
             Utilidades.mostrarMensajeExito("Proyecto actualizado correctamente.");
             proyectoView.actualizarListaProyectos(proyectoCRUD.obtenerDatosProyectos()); // actualizar la vista
         } catch (SQLException ex) {
-            Utilidades.mostrarMensajeError("Error al actualizar el proyecto: " + ex.getMessage());
+            Utilidades.mostrarMensajeError("ERROR al actualizar el proyecto: " + ex.getMessage());
         }
     }
 
@@ -123,13 +127,13 @@ public class ControllerProyecto {
             Utilidades.mostrarMensajeAdvertencia("Por favor, selecciona la fila que quieres eliminar.");
             return;
         }
-        int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseas eliminar este proyecto?",
+        int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseas eliminar este registro?",
                 "Confirmar eliminación", JOptionPane.YES_NO_OPTION);
         if (opcion == JOptionPane.YES_OPTION) {
             try {
                 String idProyectoAEliminar = (String) proyectoView.getTablaProyectos().getValueAt(filaSeleccionada, 0);
                 proyectoCRUD.eliminarProyecto(idProyectoAEliminar);
-                Utilidades.mostrarMensajeExito("Proyecto eliminado correctamente.");
+                Utilidades.mostrarMensajeExito("Registro eliminado correctamente.");
                 proyectoView.actualizarListaProyectos(proyectoCRUD.obtenerDatosProyectos()); // actualizar la vista
             } catch (SQLException e) {
                 Utilidades.mostrarMensajeError("ERROR al eliminar el registro: " + e.getMessage());
@@ -140,7 +144,6 @@ public class ControllerProyecto {
     private String obtenerId() {
         while (true) {
             String id = Utilidades.obtenerEntrada("Introduce el ID (4 caracteres):");
-            if (id == null) return null; // si se cancela la operación
             if (id.length() != 4) {
                 Utilidades.mostrarMensajeError("El ID debe tener exactamente 4 caracteres.");
                 continue;

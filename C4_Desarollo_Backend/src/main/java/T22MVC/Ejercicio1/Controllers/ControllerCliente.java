@@ -61,16 +61,31 @@ public class ControllerCliente {
 			List<ModelCliente> clientes = clienteCRUD.obtenerDatosClientes();
 			clienteView.mostrarClientes(clientes);
 		} catch (SQLException e) {
-			Utilidades.mostrarMensajeError("Error al cargar los registros: " + e.getMessage());
+			Utilidades.mostrarMensajeError("ERROR al cargar los registros: " + e.getMessage());
 		}
 	}
 
 	public void insertarCliente() {
 		String nombre = Utilidades.obtenerEntrada("Introduce el nombre:");
+		if (nombre == null) {
+	        return;             //para que el usuario pueda cancelar
+	    }
 		String apellido = Utilidades.obtenerEntrada("Introduce el apellido:");
+		if (apellido == null) {
+	        return; 
+	    }
 		String direccion = Utilidades.obtenerEntrada("Introduce la dirección:");
+		if (direccion == null) {
+	        return; 
+	    }
 		int dni = obtenerDNI();
+		if (dni == -1) {
+	        return; 
+	    }
 		java.sql.Date fecha = obtenerFecha();
+		if (fecha == null) {
+	        return;
+	    }
 
 		try {
 			ModelCliente cliente = new ModelCliente(0, nombre, apellido, direccion, dni, fecha.toString());
@@ -78,7 +93,7 @@ public class ControllerCliente {
 			Utilidades.mostrarMensajeExito("Registro insertado correctamente.");
 			clienteView.actualizarListaClientes(clienteCRUD.obtenerDatosClientes()); // actualizar la vista
 		} catch (SQLException ex) {
-			Utilidades.mostrarMensajeError("Error al insertar el cliente: " + ex.getMessage());
+			Utilidades.mostrarMensajeError("ERROR al insertar el registro: " + ex.getMessage());
 		}
 	}
 
@@ -103,21 +118,21 @@ public class ControllerCliente {
 		int nuevoDNI = obtenerDNI();
 		java.sql.Date nuevaFecha = obtenerFecha();
 
-		// si algun campo es nulo = se cancela la operacion
+		
 		if (nuevoNombre == null || nuevoApellido == null || nuevaDireccion == null || nuevoDNI == -1
 				|| nuevaFecha == null) {
-			Utilidades.mostrarMensajeAdvertencia("La operación ha sido cancelada.");
-			return;
+			Utilidades.mostrarMensajeAdvertencia("Los campos no se han actualizado."); 
+			return;                         //para que el usuario pueda cancelar la operacion
 		}
 		ModelCliente clienteActualizado = new ModelCliente(idCliente, nuevoNombre, nuevoApellido, nuevaDireccion,
 				nuevoDNI, nuevaFecha.toString());
 
 		try {
 			clienteCRUD.actualizarCliente(clienteActualizado);
-			Utilidades.mostrarMensajeExito("Cliente actualizado correctamente.");
+			Utilidades.mostrarMensajeExito("Registro actualizado correctamente.");
 			clienteView.actualizarListaClientes(clienteCRUD.obtenerDatosClientes()); // actualizar la vista
 		} catch (SQLException ex) {
-			Utilidades.mostrarMensajeError("Error al actualizar el cliente: " + ex.getMessage());
+			Utilidades.mostrarMensajeError("ERROR al actualizar el registro: " + ex.getMessage());
 		}
 	}
 
@@ -127,13 +142,13 @@ public class ControllerCliente {
 			Utilidades.mostrarMensajeAdvertencia("Por favor, selecciona la fila que quieres eliminar.");
 			return;
 		}
-		int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseas eliminar este cliente?",
+		int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseas eliminar este registro?",
 				"Confirmar eliminación", JOptionPane.YES_NO_OPTION);
 		if (opcion == JOptionPane.YES_OPTION) {
 			try {
 				int idClienteAEliminar = (int) clienteView.getTablaClientes().getValueAt(filaSeleccionada, 0);
 				clienteCRUD.eliminarCliente(idClienteAEliminar);
-				Utilidades.mostrarMensajeExito("Cliente eliminado correctamente.");
+				Utilidades.mostrarMensajeExito("Registro eliminado correctamente.");
 				clienteView.actualizarListaClientes(clienteCRUD.obtenerDatosClientes()); // actualizar la vista
 			} catch (SQLException e) {
 				Utilidades.mostrarMensajeError("ERROR al eliminar el registro: " + e.getMessage());
@@ -162,7 +177,7 @@ public class ControllerCliente {
 			try {
 				return java.sql.Date.valueOf(fechaStr);
 			} catch (IllegalArgumentException e) {
-				Utilidades.mostrarMensajeError("Formato de fecha incorrecto. Usa el formato YYYY-MM-DD.");
+				Utilidades.mostrarMensajeError("Fecha incorrecta. Usa el formato YYYY-MM-DD.");
 			}
 		}
 	}

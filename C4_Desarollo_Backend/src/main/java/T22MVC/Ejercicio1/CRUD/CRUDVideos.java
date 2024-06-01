@@ -1,4 +1,5 @@
 package T22MVC.Ejercicio1.CRUD;
+
 import T22MVC.Ejercicio1.Models.ModelVideos;
 import T22MVC.Utilidades;
 
@@ -23,28 +24,22 @@ public class CRUDVideos {
             statement.setString(1, video.getTitle());
             statement.setString(2, video.getDirector());
             statement.setInt(3, video.getCli_id());
-            int rowsInserted = statement.executeUpdate();
-            if (rowsInserted > 0) {
-                Utilidades.mostrarMensajeExito("Video insertado correctamente.");
-            }
+            statement.executeUpdate();
         } catch (SQLException ex) {
-            Utilidades.mostrarMensajeError("Error al insertar el video: " + ex.getMessage());
+            throw ex; // se propaga y la manejamos en la clase controller
         }
     }
 
-    public void actualizarVideo(ModelVideos video) {
+    public void actualizarVideo(ModelVideos video) throws SQLException {
         String sql = "UPDATE videos SET title = ?, director = ?, cli_id = ? WHERE id = ?";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, video.getTitle());
             statement.setString(2, video.getDirector());
             statement.setInt(3, video.getCli_id());
             statement.setInt(4, video.getId());
-            int rowsUpdated = statement.executeUpdate();
-            if (rowsUpdated > 0) {
-                Utilidades.mostrarMensajeExito("Video actualizado correctamente.");
-            }
+            statement.executeUpdate();
         } catch (SQLException ex) {
-            Utilidades.mostrarMensajeError("Error al actualizar el video: " + ex.getMessage());
+            throw ex; 
         }
     }
 
@@ -52,12 +47,9 @@ public class CRUDVideos {
         String sql = "DELETE FROM videos WHERE id = ?";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setInt(1, idVideo);
-            int rowsDeleted = statement.executeUpdate();
-            if (rowsDeleted > 0) {
-                Utilidades.mostrarMensajeExito("Video eliminado correctamente.");
-            }
+            statement.executeUpdate();
         } catch (SQLException ex) {
-            Utilidades.mostrarMensajeError("Error al eliminar el video: " + ex.getMessage());
+            throw ex; 
         }
     }
 
@@ -74,7 +66,7 @@ public class CRUDVideos {
                 videos.add(video);
             }
         } catch (SQLException ex) {
-            Utilidades.mostrarMensajeError("Error al obtener los datos: " + ex.getMessage());
+            throw ex; 
         }
         return videos;
     }

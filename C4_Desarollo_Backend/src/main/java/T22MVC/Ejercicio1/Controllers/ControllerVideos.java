@@ -61,22 +61,28 @@ public class ControllerVideos {
 			List<ModelVideos> videos = videosCRUD.obtenerDatosVideos();
 			videoView.mostrarVideos(videos);
 		} catch (SQLException e) {
-			Utilidades.mostrarMensajeError("Error al cargar los registros: " + e.getMessage());
+			Utilidades.mostrarMensajeError("ERROR al cargar los registros: " + e.getMessage());
 		}
 	}
 
 	public void insertarVideo() {
 		String title = Utilidades.obtenerEntrada("Introduce el título:");
+		if (title == null) {
+	        return; 
+	    }
 		String director = Utilidades.obtenerEntrada("Introduce el director:");
+		if (director == null) {
+	        return; 
+	    }
 		int cli_id = obtenerClienteID();
 
 		try {
 			ModelVideos video = new ModelVideos(0, title, director, cli_id);
 			videosCRUD.insertarVideo(video);
-			Utilidades.mostrarMensajeExito("Video insertado correctamente.");
+			Utilidades.mostrarMensajeExito("Registro insertado correctamente.");
 			videoView.actualizarListaVideos(videosCRUD.obtenerDatosVideos()); // actualizar la vista
 		} catch (SQLException ex) {
-			Utilidades.mostrarMensajeError("Error al insertar el video: " + ex.getMessage());
+			Utilidades.mostrarMensajeError("ERROR al insertar el registro: " + ex.getMessage());
 		}
 	}
 
@@ -106,10 +112,10 @@ public class ControllerVideos {
 
 		try {
 			videosCRUD.actualizarVideo(videoActualizado);
-			Utilidades.mostrarMensajeExito("Video actualizado correctamente.");
+			Utilidades.mostrarMensajeExito("Registro actualizado correctamente.");
 			videoView.actualizarListaVideos(videosCRUD.obtenerDatosVideos()); // actualizar la vista
 		} catch (SQLException ex) {
-			Utilidades.mostrarMensajeError("Error al actualizar el video: " + ex.getMessage());
+			Utilidades.mostrarMensajeError("ERROR al actualizar el registro: " + ex.getMessage());
 		}
 	}
 
@@ -119,16 +125,16 @@ public class ControllerVideos {
 			Utilidades.mostrarMensajeAdvertencia("Por favor, selecciona la fila que quieres eliminar.");
 			return;
 		}
-		int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseas eliminar este video?",
+		int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseas eliminar este registro?",
 				"Confirmar eliminación", JOptionPane.YES_NO_OPTION);
 		if (opcion == JOptionPane.YES_OPTION) {
 			try {
 				int idVideoAEliminar = (int) videoView.getTablaVideos().getValueAt(filaSeleccionada, 0);
 				videosCRUD.eliminarVideo(idVideoAEliminar);
-				Utilidades.mostrarMensajeExito("Video eliminado correctamente.");
+				Utilidades.mostrarMensajeExito("Registro eliminado correctamente.");
 				videoView.actualizarListaVideos(videosCRUD.obtenerDatosVideos()); // actualizar la vista
 			} catch (SQLException e) {
-				Utilidades.mostrarMensajeError("ERROR al eliminar el video: " + e.getMessage());
+				Utilidades.mostrarMensajeError("ERROR al eliminar el registro: " + e.getMessage());
 			}
 		}
 	}

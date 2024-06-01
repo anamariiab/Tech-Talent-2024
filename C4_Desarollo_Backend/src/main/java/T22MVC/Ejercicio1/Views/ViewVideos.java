@@ -43,7 +43,7 @@ public class ViewVideos extends JFrame {
 
 		btnActualizar = new JButton("Actualizar");
 		btnEliminar = new JButton("Eliminar");
-		btnInsertar = new JButton("Insertar nuevo video");
+		btnInsertar = new JButton("Insertar nuevo registro");
 		configurarBotones();
 	}
 

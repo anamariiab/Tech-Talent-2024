@@ -54,7 +54,7 @@ public class ControllerAsignacion {
 	        List<ModelAsignacion> asignaciones = asignacionCRUD.obtenerDatosAsignaciones();
 	        asignacionView.actualizarListaAsignaciones(asignaciones);
 	    } catch (SQLException e) {
-	        Utilidades.mostrarMensajeError("Error al cargar las asignaciones: " + e.getMessage());
+	        Utilidades.mostrarMensajeError("ERROR al cargar los registros: " + e.getMessage());
 	    }
 	}
 
@@ -68,10 +68,10 @@ public class ControllerAsignacion {
 		try {
 			ModelAsignacion asignacion = new ModelAsignacion(cientifico, proyecto);
 			asignacionCRUD.insertarAsignacion(asignacion);
-			Utilidades.mostrarMensajeExito("Asignación insertada correctamente.");
+			Utilidades.mostrarMensajeExito("Registro insertado correctamente.");
 			asignacionView.actualizarListaAsignaciones(asignacionCRUD.obtenerDatosAsignaciones()); // actualizar la vista
 		} catch (SQLException ex) {
-			Utilidades.mostrarMensajeError("Error al insertar la asignación: " + ex.getMessage());
+			Utilidades.mostrarMensajeError("ERROR al insertar el registro: " + ex.getMessage());
 		}
 	}
 
@@ -81,17 +81,17 @@ public class ControllerAsignacion {
 			Utilidades.mostrarMensajeAdvertencia("Por favor, selecciona la fila que quieres eliminar.");
 			return;
 		}
-		int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseas eliminar esta asignación?",
+		int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseas eliminar este registro?",
 				"Confirmar eliminación", JOptionPane.YES_NO_OPTION);
 		if (opcion == JOptionPane.YES_OPTION) {
 			try {
 				String cientifico = (String) asignacionView.getTablaAsignaciones().getValueAt(filaSeleccionada, 0);
 				String proyecto = (String) asignacionView.getTablaAsignaciones().getValueAt(filaSeleccionada, 1);
 				asignacionCRUD.eliminarAsignacion(cientifico, proyecto);
-				Utilidades.mostrarMensajeExito("Asignación eliminada correctamente.");
+				Utilidades.mostrarMensajeExito("Registro eliminado correctamente.");
 				asignacionView.actualizarListaAsignaciones(asignacionCRUD.obtenerDatosAsignaciones()); // actualizar la vista
 			} catch (SQLException e) {
-				Utilidades.mostrarMensajeError("ERROR al eliminar la asignación: " + e.getMessage());
+				Utilidades.mostrarMensajeError("ERROR al eliminar el registro: " + e.getMessage());
 			}
 		}
 	}

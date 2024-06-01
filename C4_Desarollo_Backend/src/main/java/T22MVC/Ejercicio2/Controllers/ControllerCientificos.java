@@ -68,13 +68,12 @@ public class ControllerCientificos {
 	public void insertarCientifico() {
 		String dni = obtenerDNI();
 		if (dni == null) {
-			Utilidades.mostrarMensajeAdvertencia("La operación ha sido cancelada.");
 			return;
 		}
 
 		String nomApels = Utilidades.obtenerEntrada("Introduce el nombre y apellidos:");
 		if (nomApels == null || nomApels.isEmpty()) {
-			Utilidades.mostrarMensajeError("El nombre y apellidos no pueden estar vacios.");
+			Utilidades.mostrarMensajeError("El nombre y los apellidos no pueden estar vacios.");
 			return;
 		}
 
@@ -85,7 +84,7 @@ public class ControllerCientificos {
 			cientificosView.actualizarListaCientificos(cientificosCRUD.obtenerDatosCientificos()); // actualizar la
 																									// vista
 		} catch (SQLException ex) {
-			Utilidades.mostrarMensajeError("Error al insertar el científico: " + ex.getMessage());
+			Utilidades.mostrarMensajeError("ERROR al insertar el registro: " + ex.getMessage());
 		}
 	}
 
@@ -112,11 +111,11 @@ public class ControllerCientificos {
 
 		try {
 			cientificosCRUD.actualizarCientifico(cientificoActualizado);
-			Utilidades.mostrarMensajeExito("Científico actualizado correctamente.");
+			Utilidades.mostrarMensajeExito("Registro actualizado correctamente.");
 			cientificosView.actualizarListaCientificos(cientificosCRUD.obtenerDatosCientificos()); // actualizar la
 																									// vista
 		} catch (SQLException ex) {
-			Utilidades.mostrarMensajeError("Error al actualizar el científico: " + ex.getMessage());
+			Utilidades.mostrarMensajeError("ERROR al actualizar el registro: " + ex.getMessage());
 		}
 	}
 
@@ -126,17 +125,17 @@ public class ControllerCientificos {
 			Utilidades.mostrarMensajeAdvertencia("Por favor, selecciona la fila que quieres eliminar.");
 			return;
 		}
-		int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseas eliminar este científico?",
+		int opcion = JOptionPane.showConfirmDialog(null, "¿Está seguro de que deseas eliminar este registro?",
 				"Confirmar eliminación", JOptionPane.YES_NO_OPTION);
 		if (opcion == JOptionPane.YES_OPTION) {
 			try {
 				String dniAEliminar = (String) cientificosView.getTablaCientificos().getValueAt(filaSeleccionada, 0);
 				cientificosCRUD.eliminarCientifico(dniAEliminar);
-				Utilidades.mostrarMensajeExito("Científico eliminado correctamente.");
+				Utilidades.mostrarMensajeExito("Registro eliminado correctamente.");
 				cientificosView.actualizarListaCientificos(cientificosCRUD.obtenerDatosCientificos()); // actualizar la
 																										// vista
 			} catch (SQLException e) {
-				Utilidades.mostrarMensajeError("Error al eliminar el científico: " + e.getMessage());
+				Utilidades.mostrarMensajeError("ERROR al eliminar el científico: " + e.getMessage());
 			}
 		}
 	}
