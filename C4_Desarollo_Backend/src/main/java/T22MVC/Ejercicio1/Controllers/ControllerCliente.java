@@ -18,7 +18,7 @@ public class ControllerCliente {
 
 	private CRUDCliente clienteCRUD;
 	private ViewCliente clienteView;
-	private final Connection conexion;
+	private Connection conexion;
 
 	public ControllerCliente(CRUDCliente clienteCRUD, ViewCliente viewCliente, Connection conexion) {
 		this.conexion = conexion;

@@ -1,5 +1,4 @@
 package T22MVC.Ejercicio1.CRUD;
-
 import T22MVC.Ejercicio1.Models.ModelCliente;
 
 import java.sql.SQLException;
@@ -27,7 +26,7 @@ public class CRUDCliente {
             statement.setDate(5, java.sql.Date.valueOf(cliente.getFecha()));
             statement.executeUpdate();
         } catch (SQLException ex) {
-            throw ex;        //solo se propaga aqui. se maneja en la clase controller
+            throw ex;        
         }
     }
 

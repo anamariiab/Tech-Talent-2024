@@ -27,8 +27,8 @@ public class ViewCientificos extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 
-	//	ImageIcon icono = new ImageIcon(getClass().getResource("/icon/green_book.png"));
-		//setIconImage(icono.getImage());
+		ImageIcon icono = new ImageIcon(getClass().getResource("/icon/cientifico.png"));
+		setIconImage(icono.getImage());
 	}
 
 	private void inicializarComponentes() {
