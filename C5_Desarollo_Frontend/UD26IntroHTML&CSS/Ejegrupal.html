@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Pagina del grupo AJA</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="16x16">
 	<style>
 		body {
 			font-family: Arial, sans-serif;
@@ -56,7 +57,7 @@
 		}
 		.form-control:focus {
 			border-color: #aaa;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			box-shadow: 0 0 10px rgba(144, 127, 127, 0.1);
 		}
 		.form-btn {
 			background-color: #4CAF50;
@@ -97,6 +98,15 @@
 			<textarea id="mensaje" name="mensaje" class="form-control"></textarea><br><br>
 			<input type="submit" value="Enviar" class="form-btn">
 		</form>
+		<h2>Another Form</h2>
+    <form>
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" class="form-control"><br><br>
+      <label for="pregunta">Pregunta:</label>
+      <textarea id="pregunta" name="pregunta" class="form-control"></textarea><br><br>
+      <input type="submit" value="Enviar pregunta" class="form-btn">
+    </form>
+		 
 	</div>
 </body>
 </html>

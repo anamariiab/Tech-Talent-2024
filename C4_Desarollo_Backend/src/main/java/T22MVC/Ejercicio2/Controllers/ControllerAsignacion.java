@@ -7,6 +7,7 @@ import T22MVC.Ejercicio2.Models.ModelAsignacion;
 import T22MVC.Ejercicio2.CRUD.CRUDAsignacion;
 import T22MVC.Ejercicio2.Views.ViewAsignacion;
 import T22MVC.Utilidades;
+import T22MVC.Ejercicio2.Views.ViewSeleccionTabla2;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,12 +19,14 @@ public class ControllerAsignacion {
 
 	private CRUDAsignacion asignacionCRUD;
 	private ViewAsignacion asignacionView;
+	private ViewSeleccionTabla2 seleccionTablaView;
 	private final Connection conexion;
 
-	public ControllerAsignacion(CRUDAsignacion asignacionCRUD, ViewAsignacion asignacionView, Connection conexion) {
+	public ControllerAsignacion(CRUDAsignacion asignacionCRUD, ViewAsignacion asignacionView, Connection conexion, ViewSeleccionTabla2 seleccionTablaView) {
 		this.conexion = conexion;
 		this.asignacionCRUD = asignacionCRUD;
 		this.asignacionView = asignacionView;
+		this.seleccionTablaView = seleccionTablaView;
 		inicializarVista();
 		asignarListeners();
 		cargarAsignaciones();

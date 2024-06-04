@@ -5,6 +5,7 @@ import javax.swing.JTable;
 
 import T22MVC.Ejercicio1.Models.ModelVideos;
 import T22MVC.Ejercicio1.CRUD.CRUDVideos;
+import T22MVC.Ejercicio1.Views.ViewSeleccionTabla1;
 import T22MVC.Ejercicio1.Views.ViewVideos;
 import T22MVC.Utilidades;
 
@@ -18,12 +19,14 @@ public class ControllerVideos {
 
 	private CRUDVideos videosCRUD;
 	private ViewVideos videoView;
+	private ViewSeleccionTabla1 seleccionTablaView;
 	private final Connection conexion;
 
-	public ControllerVideos(CRUDVideos videosCRUD, ViewVideos viewVideos, Connection conexion) {
+	public ControllerVideos(CRUDVideos videosCRUD, ViewVideos viewVideos, Connection conexion, ViewSeleccionTabla1 seleccionTablaView) {
 		this.conexion = conexion;
 		this.videosCRUD = videosCRUD;
 		this.videoView = viewVideos;
+		this.seleccionTablaView = seleccionTablaView;
 		inicializarVista();
 		cargarVideos();
 		asignarListeners();

@@ -6,6 +6,7 @@ import javax.swing.JTable;
 import T22MVC.Ejercicio1.Models.ModelCliente;
 import T22MVC.Ejercicio1.CRUD.CRUDCliente;
 import T22MVC.Ejercicio1.Views.ViewCliente;
+import T22MVC.Ejercicio1.Views.ViewSeleccionTabla1;
 import T22MVC.Utilidades;
 
 import java.awt.event.ActionEvent;
@@ -18,12 +19,14 @@ public class ControllerCliente {
 
 	private CRUDCliente clienteCRUD;
 	private ViewCliente clienteView;
+	private ViewSeleccionTabla1 seleccionTablaView;
 	private Connection conexion;
 
-	public ControllerCliente(CRUDCliente clienteCRUD, ViewCliente viewCliente, Connection conexion) {
+	public ControllerCliente(CRUDCliente clienteCRUD, ViewCliente viewCliente, Connection conexion, ViewSeleccionTabla1 seleccionTablaView) {
 		this.conexion = conexion;
 		this.clienteCRUD = clienteCRUD;
 		this.clienteView = viewCliente;
+		this.seleccionTablaView = seleccionTablaView;
 		inicializarVista();
 		cargarClientes();
 		asignarListeners();

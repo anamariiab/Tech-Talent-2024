@@ -7,6 +7,7 @@ import T22MVC.Ejercicio2.Models.ModelProyecto;
 import T22MVC.Ejercicio2.CRUD.CRUDProyecto;
 import T22MVC.Ejercicio2.Views.ViewProyecto;
 import T22MVC.Utilidades;
+import T22MVC.Ejercicio2.Views.ViewSeleccionTabla2;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,12 +19,14 @@ public class ControllerProyecto {
 
     private CRUDProyecto proyectoCRUD;
     private ViewProyecto proyectoView;
+    private ViewSeleccionTabla2 seleccionTablaView;
     private final Connection conexion;
 
-    public ControllerProyecto(CRUDProyecto proyectoCRUD, ViewProyecto viewProyecto, Connection conexion) {
+    public ControllerProyecto(CRUDProyecto proyectoCRUD, ViewProyecto viewProyecto, Connection conexion, ViewSeleccionTabla2 seleccionTablaView) {
         this.conexion = conexion;
         this.proyectoCRUD = proyectoCRUD;
         this.proyectoView = viewProyecto;
+        this.seleccionTablaView = seleccionTablaView;
         inicializarVista();
         cargarProyectos();
         asignarListeners();

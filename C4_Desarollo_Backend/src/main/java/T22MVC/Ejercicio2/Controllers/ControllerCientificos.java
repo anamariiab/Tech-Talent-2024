@@ -4,6 +4,7 @@ import T22MVC.Ejercicio2.Models.ModelCientificos;
 import T22MVC.Ejercicio2.CRUD.CRUDCientificos;
 import T22MVC.Ejercicio2.Views.ViewCientificos;
 import T22MVC.Utilidades;
+import T22MVC.Ejercicio2.Views.ViewSeleccionTabla2;
 
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
@@ -17,13 +18,14 @@ public class ControllerCientificos {
 
 	private CRUDCientificos cientificosCRUD;
 	private ViewCientificos cientificosView;
+	private ViewSeleccionTabla2 seleccionTablaView;
 	private final Connection conexion;
 
-	public ControllerCientificos(CRUDCientificos cientificosCRUD, ViewCientificos vistaCientificos,
-			Connection conexion) {
+	public ControllerCientificos(CRUDCientificos cientificosCRUD, ViewCientificos vistaCientificos, Connection conexion, ViewSeleccionTabla2 seleccionTablaView) {
 		this.conexion = conexion;
 		this.cientificosCRUD = cientificosCRUD;
 		this.cientificosView = vistaCientificos;
+		this.seleccionTablaView = seleccionTablaView;
 		inicializarVista();
 		cargarCientificos();
 		asignarListeners();
