@@ -20,7 +20,7 @@ public class ControllerProyecto {
     private CRUDProyecto proyectoCRUD;
     private ViewProyecto proyectoView;
     private ViewSeleccionTabla2 seleccionTablaView;
-    private final Connection conexion;
+    private Connection conexion;
 
     public ControllerProyecto(CRUDProyecto proyectoCRUD, ViewProyecto viewProyecto, Connection conexion, ViewSeleccionTabla2 seleccionTablaView) {
         this.conexion = conexion;

@@ -19,7 +19,7 @@ public class ControllerCientificos {
 	private CRUDCientificos cientificosCRUD;
 	private ViewCientificos cientificosView;
 	private ViewSeleccionTabla2 seleccionTablaView;
-	private final Connection conexion;
+	private Connection conexion;
 
 	public ControllerCientificos(CRUDCientificos cientificosCRUD, ViewCientificos vistaCientificos, Connection conexion, ViewSeleccionTabla2 seleccionTablaView) {
 		this.conexion = conexion;

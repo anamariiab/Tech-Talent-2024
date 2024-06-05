@@ -20,7 +20,7 @@ public class ControllerAsignacion {
 	private CRUDAsignacion asignacionCRUD;
 	private ViewAsignacion asignacionView;
 	private ViewSeleccionTabla2 seleccionTablaView;
-	private final Connection conexion;
+	private Connection conexion;
 
 	public ControllerAsignacion(CRUDAsignacion asignacionCRUD, ViewAsignacion asignacionView, Connection conexion, ViewSeleccionTabla2 seleccionTablaView) {
 		this.conexion = conexion;
