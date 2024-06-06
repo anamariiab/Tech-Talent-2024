@@ -71,16 +71,21 @@
             box-shadow: 0 0 10px rgba(144, 127, 127, 0.1);
         }
         .form-btn {
-            background-color: #4CAF50;
-            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            background: linear-gradient(90deg, green, rgb(195, 219, 73));
+            color: rgb(255, 255, 255);
+            transition: background 0.3s ease;
         }
+
         .form-btn:hover {
-            background-color: #3e8e41;
+            background: linear-gradient(90deg, rgb(195, 219, 73), green);
         }
+<button onclick="window.location.href = 'otra_pagina.html';" class="form-btn">¡Compra aqui tus entradas!</button>
         .hidden {
             display: none;
         }

@@ -1,0 +1,14 @@
+p:first-child {
+    color: blue;
+    }
+    /*Primer parrafo en azul*/
+
+p i:first-child {
+        color: blue;
+    }    
+    /*Primer italic de cada parrafo*/
+
+p:first-child i {
+    color: blue;
+    }
+   /*Los elementos cursiva italic del primer parrafo en azul*/
