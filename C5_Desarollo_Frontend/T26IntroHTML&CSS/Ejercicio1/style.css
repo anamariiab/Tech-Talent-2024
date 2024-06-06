@@ -1,0 +1,10 @@
+body {
+  background-color: #88afc168;
+}
+h1,
+h2 {
+  font-size: 30px;
+  font-family: "Comic Sans MS";
+  font-style: italic;
+  color: #1c444b;
+}
