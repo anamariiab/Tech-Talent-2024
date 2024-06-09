@@ -1,0 +1,40 @@
+* {
+  font-family: "Lucida Sans Unicode";
+}
+
+.dgreen-text {
+  color: rgb(87, 145, 12);
+}
+
+.lgreen-text {
+  color: rgb(143, 206, 34);
+}
+
+.ochre-text {
+  color: rgba(190, 118, 2, 0.781);
+}
+
+hr {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 8px;
+}
+.container {
+  background-color: #fff;
+  padding: 10px;
+  border: 7px solid #ccc;
+}
+
+.box {
+  background-color: #fff;
+  padding: 0px 10px 10px 10px;
+  border: 1px solid #ccc;
+  width: 96%;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}

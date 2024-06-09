@@ -1,0 +1,65 @@
+* {
+  font-family: "Lucida Sans Unicode";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dgreen-text {
+  color: rgb(87, 145, 12);
+}
+
+.lgreen-text {
+  color: rgb(143, 206, 34);
+}
+
+.ochre-text {
+  color: rgba(190, 118, 2, 0.781);
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border: 10px solid #ccc;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav main";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr;
+  width: 100%;
+  min-height: 100vh;
+}
+
+hr {
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+header {
+  grid-area: header;
+  text-align: left;
+  padding-left: 220px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: left;
+  letter-spacing: 7px;
+}
+
+nav {
+  grid-area: nav;
+  padding: 30px;
+}
+
+main {
+  grid-area: main;
+  padding: 10px;
+}
+
+.box {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
