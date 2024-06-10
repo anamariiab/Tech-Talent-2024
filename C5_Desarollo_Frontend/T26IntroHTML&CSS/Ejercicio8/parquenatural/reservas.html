@@ -1,0 +1,76 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reservas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <span class="dgreen-text">Parque Natural</span>
+          <span class="ochre-text">Sierra Bicuerca</span>
+        </h1>
+      </header>
+
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="especies.html">Especies</a></li>
+          <li><a href="reservas.html">Reservas</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="box">
+          <h2>
+            <span class="lgreen-text">Haz tu reserva</span>
+            <hr />
+          </h2>
+
+          <p>
+            Por favor, completa el siguiente formulario para hacer una reserva.
+          </p>
+          <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="telefono">Teléfono de contacto:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              required
+            /><br /><br />
+
+            <label for="fecha">Fecha de visita:</label>
+            <input type="date" id="fecha" name="fecha" required /><br /><br />
+
+            <label for="tipo">Tipo de reserva:</label>
+            <select id="tipo" name="tipo" required>
+              <option value="Visita guiada">Visita guiada</option>
+              <option value="Excursión">Excursión</option>
+              <option value="Campamento">Campamento</option></select
+            ><br /><br />
+
+            <label for="comentarios">Comentarios adicionales:</label><br />
+            <textarea
+              id="comentarios"
+              name="comentarios"
+              rows="4"
+              cols="50"
+            ></textarea
+            ><br /><br />
+
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
