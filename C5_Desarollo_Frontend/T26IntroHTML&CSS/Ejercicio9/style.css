@@ -64,3 +64,31 @@ main {
   padding: 20px;
   border: 1px solid #ccc;
 }
+
+#menu li {
+  display: inline-block;
+  width: 120px;
+}
+
+#menu li a {
+  display: block;
+  padding: 5px 30px;
+  margin-bottom: 10px;
+  background-color: rgba(143, 206, 34, 0.584);
+  color: #4e4d4d91;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#menu li:first-child a {
+  color: black;
+}
+
+#menu li a:hover {
+  background-color: rgba(190, 118, 2, 0.444);
+}
+
+#menu li.current a {
+  background-color: rgba(190, 118, 2, 0.781);
+}
