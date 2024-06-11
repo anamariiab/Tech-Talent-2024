@@ -31,6 +31,7 @@ h1 {
 }
 
 .box {
+  text-align: justify;
   background-color: #fff;
   padding: 0px 10px 10px 10px;
   border: 1px solid #ccc;

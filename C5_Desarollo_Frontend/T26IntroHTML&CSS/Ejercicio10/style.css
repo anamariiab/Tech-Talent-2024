@@ -24,11 +24,13 @@
   display: grid;
   grid-template-areas:
     "header header"
-    "nav main";
+    "nav main"
+    "footer footer";
   grid-template-columns: 200px 1fr;
   grid-template-rows: auto 1fr;
   width: 100%;
   min-height: 100vh;
+  border-radius: 20px;
 }
 
 hr {
@@ -39,13 +41,13 @@ hr {
 
 header {
   grid-area: header;
-  text-align: left;
   padding-left: 220px;
   margin-bottom: 20px;
+  padding: 10px 40px;
 }
 
 h1 {
-  text-align: left;
+  text-align: center;
   letter-spacing: 7px;
 }
 
@@ -59,7 +61,7 @@ section {
 
 nav {
   grid-area: nav;
-  padding: 30px;
+  padding: 30px 30px 30px 10px;
 }
 
 main {
@@ -69,9 +71,10 @@ main {
 
 .box {
   text-align: justify;
-  background-color: #fff;
+  background-image: linear-gradient(135deg, #ffffff, #e1dede);
   padding: 20px;
   border: 1px solid #ccc;
+  margin-left: -30px;
 }
 
 #menu li {
@@ -84,6 +87,7 @@ main {
   padding: 5px 30px;
   margin-bottom: 10px;
   background-color: rgba(143, 206, 34, 0.584);
+  background-image: linear-gradient(135deg, #ffffff, rgba(143, 206, 34, 0.584));
   color: #4e4d4d91;
   text-decoration: none;
   text-align: center;
@@ -95,9 +99,24 @@ main {
 }
 
 #menu li a:hover {
-  background-color: rgba(190, 118, 2, 0.444);
+  background-color: rgb(255, 132, 0);
 }
 
-#menu li.current a {
-  background-color: rgba(190, 118, 2, 0.781);
+footer {
+  grid-area: footer;
+  font-style: italic;
+  color: gray;
+  text-align: center;
+}
+
+header img {
+  width: 1200px;
+  height: auto;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
