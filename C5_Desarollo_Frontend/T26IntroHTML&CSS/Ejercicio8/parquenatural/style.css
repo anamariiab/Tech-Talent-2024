@@ -1,8 +1,5 @@
 * {
   font-family: "Lucida Sans Unicode";
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .dgreen-text {
@@ -17,59 +14,37 @@
   color: rgba(190, 118, 2, 0.781);
 }
 
-.container {
-  background-color: #fff;
-  padding: 30px;
-  border: 10px solid #ccc;
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "nav main";
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: auto 1fr;
-  width: 100%;
-  min-height: 100vh;
-}
-
 hr {
   margin-top: -5px;
-  margin-bottom: 20px;
+  margin-bottom: -5px;
   border-color: rgba(143, 206, 34, 0.332);
 }
 
+.container {
+  background-color: #fff;
+  padding: 10px;
+  border: 10px solid #ccc;
+  width: 900px;
+  margin: 0 auto;
+}
+
 header {
-  grid-area: header;
-  text-align: left;
-  padding-left: 220px;
-  margin-bottom: 20px;
-}
-
-h1 {
-  text-align: left;
-  letter-spacing: 7px;
-}
-
-h3 {
-  margin-bottom: 20px;
-}
-
-section {
-  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 5px;
 }
 
 nav {
-  grid-area: nav;
-  padding: 30px;
-}
-
-main {
-  grid-area: main;
-  padding: 10px;
+  float: left;
+  width: 10%;
+  padding-right: 10px;
 }
 
 .box {
   text-align: justify;
   background-color: #fff;
-  padding: 20px;
+  padding: 0px 10px 10px 10px;
   border: 1px solid #ccc;
+  width: 82%;
+  margin-left: 15%;
 }

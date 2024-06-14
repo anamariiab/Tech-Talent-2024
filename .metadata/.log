@@ -4210,3 +4210,111 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.oomph.setup.ui 1 0 2024-06-11 12:33:57.210
 !MESSAGE Setup tasks were performed during startup. See 'C:\Users\Ana-Maria B\eclipse\jee-2023-12\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2024-06-13 09:07:50.180 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-06-13 09:07:56.246
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-13 09:07:56.572
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-13 09:08:00.674
+!MESSAGE Logback config file: C:\Users\Ana-Maria B\Desktop\Tech-Talent-2024\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-06-13 09:08:01.269
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-13 09:08:01.269
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-06-13 09:08:01.779
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-13 09:08:01.779
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-13 09:08:06.586
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Program Files\Amazon Corretto\jdk17.0.10_7\bin\javaw.exe
+-cp
+C:\Users\Ana-Maria B\eclipse\jee-2023-12\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\Ana-Maria B\eclipse\jee-2023-12\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\Ana-Maria B\eclipse\jee-2023-12\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/Ana-Maria B/Desktop/Tech-Talent-2024/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1718262486585
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-13 09:08:06.586
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-13 09:08:06.606
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 19132
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-13 09:08:08.349
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Ana-Maria B'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-13 09:08:08.478
+!MESSAGE Boot project ADDED: spring-mvc-demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-13 09:08:08.479
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-13 09:08:08.483
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.equinox.p2.director 2 10054 2024-06-13 09:08:24.776
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE Software being installed: artificial_root 1.0.0.v1718262501588
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2024-06-13 09:08:24.776
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE Mylyn WikiText Help UI 3.0.48.202308291007 (org.eclipse.mylyn.wikitext.help.ui 3.0.48.202308291007)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE Mylyn WikiText Help UI 4.2.0.v20240130-0811 (org.eclipse.mylyn.wikitext.help.ui 4.2.0.v20240130-0811)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2024-06-13 09:08:24.776
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE From: artificial_root 1.0.0.v1718262501588
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.mylyn.wikitext.feature.feature.group 4.2.0.v20240302-0923
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2024-06-13 09:08:24.776
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE From: artificial_root 1.0.0.v1718262501588
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.mylyn.wikitext_feature.feature.group 0.0.0
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2024-06-13 09:08:24.776
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE From: Mylyn WikiText Editors 3.0.48.202308291007 (org.eclipse.mylyn.wikitext.editors_feature.feature.group 3.0.48.202308291007)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.mylyn.wikitext.help.ui [3.0.48.202308291007,3.0.48.202308291007]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2024-06-13 09:08:24.776
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE From: Mylyn WikiText 4.2.0.v20240302-0923 (org.eclipse.mylyn.wikitext.feature.feature.group 4.2.0.v20240302-0923)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.mylyn.wikitext.help.ui [4.2.0.v20240130-0811,4.2.0.v20240130-0811]
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2024-06-13 09:08:24.776
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE From: Mylyn WikiText 3.0.48.202308291007 (org.eclipse.mylyn.wikitext_feature.feature.group 3.0.48.202308291007)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-06-13 09:08:24.776
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.mylyn.wikitext.editors_feature.feature.group [3.0.48.202308291007,3.0.48.202308291007]
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2024-06-13 09:08:24.779
+!MESSAGE Setup tasks were performed during startup. See 'C:\Users\Ana-Maria B\eclipse\jee-2023-12\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
