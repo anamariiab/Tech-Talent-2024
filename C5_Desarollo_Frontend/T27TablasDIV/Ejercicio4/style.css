@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../Ejercicio4/imagenes/penguins.jpg") no-repeat top center
+    fixed;
+  background-size: 900px;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  border: 5px ridge #cadade;
+  box-shadow: 1px 1px 0px 1px #242728;
+}
+
+.tabla {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+th {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 2px;
+}
+
+.celda-1,
+.celda-2 {
+  background-color: rgb(238, 236, 144);
+  text-align: center;
+  padding: 4px;
+  border: 3px ridge rgb(238, 236, 144);
+  padding: 2px;
+}
