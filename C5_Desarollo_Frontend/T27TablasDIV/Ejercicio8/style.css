@@ -1,0 +1,38 @@
+.mario {
+  width: 210px;
+  height: 110px;
+  border: 2px solid rgb(130, 134, 238);
+  background-color: deepskyblue;
+  background-image: url("../Ejercicio8/imagenes/f02.png"),
+    url("../Ejercicio8/imagenes/f03.png"), url("../Ejercicio8/imagenes/f01.png");
+  background-repeat: repeat-x, no-repeat, repeat-x;
+  background-position: 10% bottom, left top, left bottom;
+  width: 210px;
+  height: 110px;
+  border: 2px solid rgb(130, 134, 238);
+}
+
+.mario2 {
+  background-color: deepskyblue;
+  margin-left: 20px;
+  width: 440px;
+  height: 300px;
+  border: 5px solid rgb(254, 0, 0);
+  background-image: url("../Ejercicio8/imagenes/f02.png"),
+    url("../Ejercicio8/imagenes/f03.png"), url("../Ejercicio8/imagenes/f01.png");
+  background-repeat: no-repeat, repeat-x, repeat-x;
+  background-position: 0% bottom, left top, left bottom;
+  margin-top: 20px;
+}
+
+.mario3 {
+  background-color: deepskyblue;
+  background-image: url("../Ejercicio8/imagenes/f02.png"),
+    url("../Ejercicio8/imagenes/f03.png"), url("../Ejercicio8/imagenes/f01.png");
+  background-repeat: repeat-x, no-repeat, repeat-x;
+  background-position: 10% bottom, left top, left bottom;
+  width: 210px;
+  height: 110px;
+  border: 2px solid rgb(130, 134, 238);
+  margin-top: 20px;
+}

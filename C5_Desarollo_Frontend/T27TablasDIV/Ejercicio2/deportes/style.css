@@ -1,15 +1,16 @@
+div {
+  border: 2px solid #1693b3;
+}
+
 table {
   width: 100%;
-  border-collapse: collapse;
-  margin: 20px auto;
-  border: 10px ridge #1693b3;
+  background-color: #1693b3;
+  border: 5px outset rgb(242, 234, 234);
 }
 
 th,
 td {
-  padding: 3px;
-  text-align: left;
-  border: 6px ridge #1693b3;
+  border: 1px inset;
 }
 
 th {
@@ -26,6 +27,6 @@ tr {
   background-color: #54866a;
 }
 
-.center {
+.centrar {
   text-align: center;
 }

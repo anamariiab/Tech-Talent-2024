@@ -4,13 +4,12 @@
 
 table {
   width: 100%;
-  border-collapse: collapse;
-  border: 5px ridge #cadade;
-  box-shadow: 1px 1px 0px 1px #6a7375;
+  border: 3px outset #aebbbe;
 }
+
 th,
 td {
-  border: 3px ridge #cadade;
+  border: 1px inset #cadade;
   text-align: center;
   padding: 4px;
 }
@@ -19,20 +18,25 @@ td {
   background-color: lightgreen;
   font-size: 16px;
 }
+
 .celda-2 {
   background-color: aqua;
   text-align: left;
 }
+
 .celda-3,
 .celda-5,
 .celda-8 {
   color: red;
+  border: 1px inset #ff000063;
 }
+
 .celda-6 {
   background-color: violet;
   text-align: right;
   vertical-align: bottom;
 }
+
 h1 {
   font-size: 10px;
   text-align: center;

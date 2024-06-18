@@ -1,0 +1,27 @@
+table {
+  width: 10%;
+  border-collapse: separate;
+  border-spacing: 3px;
+  margin: 20px auto;
+  border: 4px ridge #1693b3;
+}
+
+th,
+td {
+  padding: 3px;
+  border: 2px ridge #1693b3;
+}
+
+th {
+  background-color: #003333;
+  color: #76ba94;
+}
+
+tr {
+  background-color: #76ba94;
+}
+
+.bold-center {
+  font-weight: bold;
+  text-align: center;
+}

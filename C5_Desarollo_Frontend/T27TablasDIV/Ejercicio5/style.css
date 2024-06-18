@@ -1,0 +1,20 @@
+p {
+  margin-bottom: -15px;
+}
+
+.l {
+  list-style-type: lower-alpha;
+}
+
+.r {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+
+.espacio-texto1 {
+  margin-left: 20px;
+}
+
+.espacio-texto2 {
+  margin-left: 14px;
+}
