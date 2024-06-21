@@ -1,0 +1,142 @@
+* {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url("../Ejercicio2/imagenes/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 20px;
+  margin-right: 40px;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav .left-links,
+nav .right-links {
+  display: flex;
+  align-items: center;
+}
+
+nav .left-links {
+  flex: 1;
+}
+
+nav .left-links a {
+  margin-right: 10px;
+}
+
+nav .right-links a {
+  margin-left: 10px;
+  color: #f2f2f2;
+}
+
+nav img {
+  height: 20px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.background-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  width: 150%;
+  margin-top: 80px;
+  margin-left: -80px;
+}
+
+.search-box .search-input {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.search-box img {
+  height: 24px;
+  margin-left: 10px;
+}
+
+.container-photos {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container-photos .item {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.container-photos .item img {
+  height: 150px;
+}
+
+.container-photos .item p {
+  color: #000;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #3c3c3c;
+}
+
+.footer-left-links {
+  display: flex;
+}
+
+.footer-left-links a {
+  color: #605e5e;
+  margin-right: 10px;
+}
+
+footer h4 {
+  margin: 0;
+  color: #605e5e;
+}
