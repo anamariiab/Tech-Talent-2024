@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validar DNI</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="bg-white p-4 rounded shadow" style="width: 300px">
+        <h2 class="mb-4">Validar DNI</h2>
+        <div class="form-group">
+          <label for="dniNumero">Número:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="dniNumero"
+            name="dniNumero"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="dniLetra">Letra:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="dniLetra"
+            name="dniLetra"
+            required
+            maxlength="1"
+          />
+        </div>
+        <button
+          type="button"
+          class="btn btn-success btn-block"
+          onclick="validarDNI()"
+        >
+          Validar
+        </button>
+        <p class="result mt-3" id="resultado"></p>
+      </div>
+    </div>
+    <script src="codigo.js"></script>
+  </body>
+</html>
