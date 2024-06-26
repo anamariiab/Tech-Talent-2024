@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { AboutComponent } from './shared/pages/about/about.component';
-import { TermsComponent } from './shared/pages/terms/terms.component';
+import { AboutComponent } from './pages/about/about.component';
+import { TermsComponent } from './pages/terms/terms.component';
 
 @Component({
   selector: 'app-root',
