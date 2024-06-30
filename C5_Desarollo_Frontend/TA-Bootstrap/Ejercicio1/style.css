@@ -1,0 +1,25 @@
+body {
+  background: url("imagenes/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.custom-width {
+  max-width: 550px;
+}
+
+.form-upper img {
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.submit-btn {
+  background-color: #cc78a2;
+  color: white;
+}
+.text-rose-gray {
+  color: #a898a7;
+}
+.bg-rose-gray {
+  background-color: #a898a7;
+}

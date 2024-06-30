@@ -1,0 +1,9 @@
+.nav-scroller {
+  background-color: #0076ba;
+}
+.nav-link {
+  color: #fff;
+}
+.nav-link.active {
+  border-bottom: 2px solid;
+}

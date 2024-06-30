@@ -1,0 +1,22 @@
+body {
+  background-color: #e6e6e6;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-group img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.submit-btn {
+  margin: auto;
+  background-color: #0088cc;
+  border-color: #0088cc;
+}
+
+h2 {
+  color: #0088cc;
+}
