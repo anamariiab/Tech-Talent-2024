@@ -1,0 +1,28 @@
+.navbar-custom {
+  background-color: #0076ba;
+}
+.dropdown-menu-dark {
+  background-color: #343a40;
+}
+.dropdown-item {
+  color: white;
+}
+
+.bg-dark-blue {
+  background-color: #004c78;
+}
+.dropdown-item:hover {
+  background-color: #495057;
+}
+.navbar-nav .nav-link.white-bg {
+  background-color: white;
+  color: black !important;
+}
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+.dropdown-menu-left {
+  left: 0;
+  right: auto;
+}
